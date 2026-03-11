@@ -1,38 +1,248 @@
 [
     {
-        "entreprise": "Crédit Agricole de Champagne-Bourgogne",
-        "titre": "Alternance - Chargé d'affaires entreprise - H/F",
-        "localisation": "Auxerre",
-        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-d-affaires-entreprise-h-f-at-cr%C3%A9dit-agricole-de-champagne-bourgogne-4367979360?position=1&pageNum=0&refId=F766BEeNHvN7hskhuSYhsQ%3D%3D&trackingId=ZXuMzhLC3Z1KAN1IUIhkuw%3D%3D"
+        "entreprise": "Air Liquide",
+        "titre": "Stage - Siège social - Real Estate project and data manager H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/stage-si%C3%A8ge-social-real-estate-project-and-data-manager-h-f-at-air-liquide-4366052783?position=7&pageNum=0&refId=ZaMVdN98vOw7el8%2Fx08CbA%3D%3D&trackingId=IWrSF5VbUCTB3ZkjwKbSHQ%3D%3D"
     },
     {
-        "entreprise": "Crédit Agricole de Champagne-Bourgogne",
-        "titre": "Alternance - Chargé d'affaires entreprises - H/F",
-        "localisation": "Troyes",
-        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-d-affaires-entreprises-h-f-at-cr%C3%A9dit-agricole-de-champagne-bourgogne-4367969470?position=2&pageNum=0&refId=F766BEeNHvN7hskhuSYhsQ%3D%3D&trackingId=KqOTuW3hihieoLxXlr8QOA%3D%3D"
+        "entreprise": "Airbus Aircraft",
+        "titre": "ALT 2026 _ Apprenti(e) en développement fullstack (F/H)",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-2026-apprenti-e-en-d%C3%A9veloppement-fullstack-f-h-at-airbus-aircraft-4380857176?position=7&pageNum=2&refId=NhSosr47uohUg6KQ741ddQ%3D%3D&trackingId=JlHggV0m7MlyxRCqCX4kAA%3D%3D"
     },
     {
-        "entreprise": "Crédit Agricole Alsace Vosges",
-        "titre": "Chargé d'affaires entreprises en alternance H/F",
-        "localisation": "Strasbourg",
-        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d-affaires-entreprises-en-alternance-h-f-at-cr%C3%A9dit-agricole-alsace-vosges-4378183730?position=3&pageNum=0&refId=F766BEeNHvN7hskhuSYhsQ%3D%3D&trackingId=T09yjubjIcowWy6i4m1LnQ%3D%3D"
+        "entreprise": "Airbus Helicopters",
+        "titre": "ALT 2026 - Apprenti(e) Ingénieur Industrialisation & Supply Chain Aéronautique (ALL GENDER)",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-2026-apprenti-e-ing%C3%A9nieur-industrialisation-supply-chain-a%C3%A9ronautique-all-gender-at-airbus-helicopters-4380849503?position=9&pageNum=2&refId=NhSosr47uohUg6KQ741ddQ%3D%3D&trackingId=ucxlX8q1ga%2BHkJ%2F7IRIoEQ%3D%3D"
+    },
+    {
+        "entreprise": "Airbus Helicopters",
+        "titre": "ALT 2026 Apprenti(e) Etude Facteur humain pour le développement d'un cockpit (ALL GENDER)",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-2026-apprenti-e-etude-facteur-humain-pour-le-d%C3%A9veloppement-d-un-cockpit-all-gender-at-airbus-helicopters-4374539123?position=10&pageNum=2&refId=NhSosr47uohUg6KQ741ddQ%3D%3D&trackingId=6jPwo5%2Fuu9dNWe%2BT4WMBiw%3D%3D"
+    },
+    {
+        "entreprise": "Alstom",
+        "titre": "ALT - Alternant(e) ingénieur(e) soudeur (IWE) - F/H",
+        "localisation": "Le Creusot",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-alternant-e-ing%C3%A9nieur-e-soudeur-iwe-f-h-at-alstom-4378969103?position=9&pageNum=0&refId=Wc2xG9oGD%2BDzzNxfWU9sOg%3D%3D&trackingId=ntCak8pPZ9UMcg6AJCImmw%3D%3D"
+    },
+    {
+        "entreprise": "Alstom",
+        "titre": "Alternant Ingénieur Etudes Mécaniques (H/F)",
+        "localisation": "Le Creusot",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-ing%C3%A9nieur-etudes-m%C3%A9caniques-h-f-at-alstom-4380266708?position=10&pageNum=0&refId=Wc2xG9oGD%2BDzzNxfWU9sOg%3D%3D&trackingId=uuz5Cqod7YZFHE%2FyiXXdJg%3D%3D"
+    },
+    {
+        "entreprise": "BNP Paribas",
+        "titre": "Chargé d’Affaires Professionnels - Paris Sud - H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-professionnels-paris-sud-h-f-at-bnp-paribas-4299190042?position=9&pageNum=2&refId=%2BB1uwOAWj1sS9neEvf%2B6jg%3D%3D&trackingId=v%2FD76fevYC89a41t3hWGjg%3D%3D"
+    },
+    {
+        "entreprise": "Bouygues Telecom",
+        "titre": "Alternance Commercialisation locale F/H",
+        "localisation": "Illkirch-Graffenstaden",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-commercialisation-locale-f-h-at-bouygues-telecom-4380362440?position=9&pageNum=2&refId=TR0dUVcoPHG1RGRt2mPMbw%3D%3D&trackingId=%2FNCDiTpQgkHtu2%2BwRh3SUw%3D%3D"
+    },
+    {
+        "entreprise": "Bouygues Construction",
+        "titre": "Alternance - Droit des sociétés/ Droit des affaires H/F",
+        "localisation": "Guyancourt",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-droit-des-soci%C3%A9t%C3%A9s-droit-des-affaires-h-f-at-bouygues-construction-4382069304?position=10&pageNum=2&refId=TR0dUVcoPHG1RGRt2mPMbw%3D%3D&trackingId=fG%2Bj9NgnV4zCl%2BSY%2F%2FS1cg%3D%3D"
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Développeuse / Développeur Java - Alternance",
+        "localisation": "Lille",
+        "lien": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeuse-d%C3%A9veloppeur-java-alternance-at-capgemini-4378758464?position=8&pageNum=2&refId=NUb1AmkblAKEUvxhlwtOPw%3D%3D&trackingId=QLTae%2Ffvs%2FsTVSH3vTSVfg%3D%3D"
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Développeuse / Développeur Fullstack - Alternance",
+        "localisation": "Aix-en-Provence",
+        "lien": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeuse-d%C3%A9veloppeur-fullstack-alternance-at-capgemini-4380322034?position=9&pageNum=2&refId=NUb1AmkblAKEUvxhlwtOPw%3D%3D&trackingId=byyoA%2FTJvqS%2Fvtjmar9tnw%3D%3D"
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Data Engineer - Alternance",
+        "localisation": "Pau",
+        "lien": "https://fr.linkedin.com/jobs/view/data-engineer-alternance-at-capgemini-4379934793?position=10&pageNum=2&refId=NUb1AmkblAKEUvxhlwtOPw%3D%3D&trackingId=IisuqUdSFrdC8IQPUM2rOA%3D%3D"
+    },
+    {
+        "entreprise": "Carrefour",
+        "titre": "Employé commercial caisse & services (F/H) CQP en alternance",
+        "localisation": "Nîmes",
+        "lien": "https://fr.linkedin.com/jobs/view/employ%C3%A9-commercial-caisse-services-f-h-cqp-en-alternance-at-carrefour-4364517371?position=9&pageNum=2&refId=rkrWBs%2Fnp4Q2WaWRRDPmIQ%3D%3D&trackingId=Gwxm9AOXy8mC6PoOecl5%2FQ%3D%3D"
+    },
+    {
+        "entreprise": "Carrefour",
+        "titre": "Employé commercial fruits et légumes CQP en alternance",
+        "localisation": "Coudekerque-Branche",
+        "lien": "https://fr.linkedin.com/jobs/view/employ%C3%A9-commercial-fruits-et-l%C3%A9gumes-cqp-en-alternance-at-carrefour-4371980310?position=10&pageNum=2&refId=rkrWBs%2Fnp4Q2WaWRRDPmIQ%3D%3D&trackingId=VA1kxWItRNaLcNxbRslT5A%3D%3D"
+    },
+    {
+        "entreprise": "Groupe Crédit Agricole",
+        "titre": "Alternance - Assistant(e) chef de projet marketing prix H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-chef-de-projet-marketing-prix-h-f-at-groupe-cr%C3%A9dit-agricole-4382112791?position=10&pageNum=2&refId=oDOhM3QumWlciq52nInncA%3D%3D&trackingId=7yhzh9s%2Bry6HycwRXtcbsA%3D%3D"
+    },
+    {
+        "entreprise": "Danone",
+        "titre": "ALTERNANCE - Animateur Sécurité - Septembre 2026 - (H/F)",
+        "localisation": "Steenvoorde",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-animateur-s%C3%A9curit%C3%A9-septembre-2026-h-f-at-danone-4382961259?position=41&pageNum=0&refId=HtxY8Emr1D5KlszZCTgWog%3D%3D&trackingId=sX4l94HOP%2FkRI9d54BqUKg%3D%3D"
+    },
+    {
+        "entreprise": "Hermès",
+        "titre": "ALTERNANCE - Chargé(e) de projets RH/SIRH (H/F)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-e-de-projets-rh-sirh-h-f-at-herm%C3%A8s-4376089735?position=9&pageNum=2&refId=d4Z%2BFxMrgv7b6M6YfTeYmw%3D%3D&trackingId=gFDLj3MUmk8vwx4rVUb0og%3D%3D"
+    },
+    {
+        "entreprise": "Hermès",
+        "titre": "ALTERNANCE - Assistant(e) Coordination Commerciale et E-commerce Prêt à Porter Femme H/F",
+        "localisation": "Pantin",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-coordination-commerciale-et-e-commerce-pr%C3%AAt-%C3%A0-porter-femme-h-f-at-herm%C3%A8s-4375709954?position=10&pageNum=2&refId=d4Z%2BFxMrgv7b6M6YfTeYmw%3D%3D&trackingId=evyLD%2FfqhshxodSDuDTfNw%3D%3D"
+    },
+    {
+        "entreprise": "Kering",
+        "titre": "KERING Chargé(e) de projets innovation durable (alternance)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/kering-charg%C3%A9-e-de-projets-innovation-durable-alternance-at-kering-4381484321?position=21&pageNum=0&refId=PeUNYqVzTi59syNjp0YW7A%3D%3D&trackingId=v1yG55BuofwPBBQfgpyRuA%3D%3D"
+    },
+    {
+        "entreprise": "L'Oréal",
+        "titre": "ALTERNANCE 24 MOIS - À partir de septembre 2026 – Apprentie développement des Ressources Humaines – Caudry - MASTER",
+        "localisation": "Cambrai",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-24-mois-%C3%A0-partir-de-septembre-2026-%E2%80%93-apprentie-d%C3%A9veloppement-des-ressources-humaines-%E2%80%93-caudry-master-at-l-or%C3%A9al-4377928186?position=9&pageNum=2&refId=60tFvObQhOfcswR9pA4o0w%3D%3D&trackingId=6xu14iEVr2dEtGp4BnHnRA%3D%3D"
+    },
+    {
+        "entreprise": "Legrand France",
+        "titre": "Chargé(e) de projets Finance H/F",
+        "localisation": "Limoges",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-projets-finance-h-f-at-legrand-france-4382029820?position=1&pageNum=0&refId=dssX07vimrjeAbdy%2BjGZqw%3D%3D&trackingId=u19CUXfR37367CPj0B2JrA%3D%3D"
+    },
+    {
+        "entreprise": "Michelin",
+        "titre": "Alternance Déploiement d’outils digitaux pour suivre les variations Procédés (H/F) - Clermont-Fd",
+        "localisation": "Clermont-Ferrand",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-d%C3%A9ploiement-d%E2%80%99outils-digitaux-pour-suivre-les-variations-proc%C3%A9d%C3%A9s-h-f-clermont-fd-at-michelin-4382105635?position=29&pageNum=0&refId=ruiVxJkadRz0UZ4MtTcAXw%3D%3D&trackingId=yb7z%2Fh6C8wsj%2FohVCUQEwg%3D%3D"
+    },
+    {
+        "entreprise": "Orange",
+        "titre": "CDD - Assistant de Service Social du Travail IDF F/H",
+        "localisation": "Issy-les-Moulineaux",
+        "lien": "https://fr.linkedin.com/jobs/view/cdd-assistant-de-service-social-du-travail-idf-f-h-at-orange-4378167213?position=11&pageNum=0&refId=iEvO7YQMqB6UlhI8h8XLOA%3D%3D&trackingId=hDyiGEG6RP0eKbCJpKo5Qw%3D%3D"
+    },
+    {
+        "entreprise": "Orange",
+        "titre": "Technicien maintenance industrielle électrotechniq",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/technicien-maintenance-industrielle-%C3%A9lectrotechniq-at-orange-4372407242?position=12&pageNum=0&refId=iEvO7YQMqB6UlhI8h8XLOA%3D%3D&trackingId=ijXYJtxqAdVvXVj7thZxEg%3D%3D"
+    },
+    {
+        "entreprise": "Pernod Ricard",
+        "titre": "Stage - HRBP Commercial - Pernod Ricard France - Marseille",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/stage-hrbp-commercial-pernod-ricard-france-marseille-at-pernod-ricard-4375980848?position=3&pageNum=0&refId=kLbtlsO0u9Fhnwqh8hsFtQ%3D%3D&trackingId=dz6XZ5CHs7GtQZYREWxV4A%3D%3D"
+    },
+    {
+        "entreprise": "Retail Renault Group",
+        "titre": "Ecole de Vente Renault Group - Vendeur Automobile F/H",
+        "localisation": "Châtellerault",
+        "lien": "https://fr.linkedin.com/jobs/view/ecole-de-vente-renault-group-vendeur-automobile-f-h-at-retail-renault-group-4374069182?position=6&pageNum=2&refId=8UxeNFOQW1D0rKhLscpBlA%3D%3D&trackingId=xjD1hfgD%2BdffYweK53YcOA%3D%3D"
+    },
+    {
+        "entreprise": "Retail Renault Group",
+        "titre": "Ecole de Vente Renault Group - Vendeur Automobile F/H",
+        "localisation": "Le Passage",
+        "lien": "https://fr.linkedin.com/jobs/view/ecole-de-vente-renault-group-vendeur-automobile-f-h-at-retail-renault-group-4379684649?position=7&pageNum=2&refId=8UxeNFOQW1D0rKhLscpBlA%3D%3D&trackingId=mi%2BhauHsPB3IkclisTg8oQ%3D%3D"
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "A la recherche d’une alternance dans le domaine de l’assurance qualité ? Contactez-nous !",
+        "localisation": "Val-de-Reuil",
+        "lien": "https://fr.linkedin.com/jobs/view/a-la-recherche-d%E2%80%99une-alternance-dans-le-domaine-de-l%E2%80%99assurance-qualit%C3%A9-%3F-contactez-nous-%21-at-sanofi-4370969103?position=9&pageNum=2&refId=AC2VgqiKhqPYMMYEICi1ng%3D%3D&trackingId=uwEHCgm9x0BqulcCtJ4vFA%3D%3D"
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "A la recherche d’une alternance dans le domaine de l’assurance qualité ? Contactez-nous !",
+        "localisation": "Le Trait",
+        "lien": "https://fr.linkedin.com/jobs/view/a-la-recherche-d%E2%80%99une-alternance-dans-le-domaine-de-l%E2%80%99assurance-qualit%C3%A9-%3F-contactez-nous-%21-at-sanofi-4370968133?position=10&pageNum=2&refId=AC2VgqiKhqPYMMYEICi1ng%3D%3D&trackingId=bK1P4xYoLj9oRE2F%2F5GlAQ%3D%3D"
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - HR Business Partner Junior - H/F",
+        "localisation": "Fontanil-Cornillon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-hr-business-partner-junior-h-f-at-schneider-electric-4376099773?position=8&pageNum=2&refId=qQjjJoUxBSFfHc5Iem92yQ%3D%3D&trackingId=9TwusN99uNV3RHz9KvPi8Q%3D%3D"
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - HR Business Partner Junior - H/F",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-hr-business-partner-junior-h-f-at-schneider-electric-4376412312?position=9&pageNum=2&refId=qQjjJoUxBSFfHc5Iem92yQ%3D%3D&trackingId=7RkM0WbM%2BhZoVCUbk%2FaL7Q%3D%3D"
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Sustainability Analyst - F/H",
+        "localisation": "Rueil-Malmaison",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-sustainability-analyst-f-h-at-schneider-electric-4381868187?position=10&pageNum=2&refId=qQjjJoUxBSFfHc5Iem92yQ%3D%3D&trackingId=N56XsoQ79T8ezlZ3esO0jg%3D%3D"
+    },
+    {
+        "entreprise": "Societe Generale Corporate and Investment Banking - SGCIB",
+        "titre": "Chef de projet / HR Business Partner",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-hr-business-partner-at-societe-generale-corporate-and-investment-banking-sgcib-4378950700?position=9&pageNum=2&refId=EhSsDF5Tn%2BVDmjJW%2B3NlkQ%3D%3D&trackingId=VtYlayodrazFam5wY%2FNCfQ%3D%3D"
+    },
+    {
+        "entreprise": "Stellantis",
+        "titre": "Apprentissage IFP School : Création d'outils pour générer/évaluer des systèmes de propulsion hybrides",
+        "localisation": "Poissy",
+        "lien": "https://fr.linkedin.com/jobs/view/apprentissage-ifp-school-cr%C3%A9ation-d-outils-pour-g%C3%A9n%C3%A9rer-%C3%A9valuer-des-syst%C3%A8mes-de-propulsion-hybrides-at-stellantis-4379846164?position=17&pageNum=0&refId=NplSppCa0fiaXJdDhYHslw%3D%3D&trackingId=J25IgqpBUrk%2FlH0tPtTbyg%3D%3D"
+    },
+    {
+        "entreprise": "STMicroelectronics France",
+        "titre": "ALTERNANCE - Cybersécurité pour le manufacturing F/H",
+        "localisation": "Tours",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-cybers%C3%A9curit%C3%A9-pour-le-manufacturing-f-h-at-stmicroelectronics-france-4378362097?position=1&pageNum=0&refId=iTZlKDyPiQZITPyXyleDOg%3D%3D&trackingId=VqW7RpMxr9z7UmHsfzE76w%3D%3D"
     },
     {
         "entreprise": "Thales",
-        "titre": "ALTERNANCE - Responsable Commercial Etudes France et Européennes - F/H",
-        "localisation": "Rungis",
-        "lien": "https://fr.linkedin.com/jobs/view/alternance-responsable-commercial-etudes-france-et-europ%C3%A9ennes-f-h-at-thales-4381492070?position=1&pageNum=0&refId=WG6On%2FaEDwGEpuA73k4YVg%3D%3D&trackingId=%2B01%2FDuh2%2BBi8Q7Lv5TH0zA%3D%3D"
+        "titre": "Technicien Production contrôleur sur machine tridimensionnelle-F/H",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/technicien-production-contr%C3%B4leur-sur-machine-tridimensionnelle-f-h-at-thales-4366184361?position=49&pageNum=0&refId=EvdYd2RHvwYMeIKEEzezyA%3D%3D&trackingId=RtajgU3hDW4yrW%2BCFFTrXA%3D%3D"
+    },
+    {
+        "entreprise": "Thales",
+        "titre": "Technicien Production Fraiseur CN 5 axes-F/H",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/technicien-production-fraiseur-cn-5-axes-f-h-at-thales-4344484863?position=50&pageNum=0&refId=EvdYd2RHvwYMeIKEEzezyA%3D%3D&trackingId=4COhtfMU6chVtOAjWFa9zg%3D%3D"
+    },
+    {
+        "entreprise": "TotalEnergies",
+        "titre": "ALTERNANCE - Accompagnement de la transformation digitale du site",
+        "localisation": "Feyzin",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-accompagnement-de-la-transformation-digitale-du-site-at-totalenergies-4371023163?position=9&pageNum=2&refId=oazV5tYSqSWM853GztOVFA%3D%3D&trackingId=l2GcnWPQKMg311OgNbksgQ%3D%3D"
+    },
+    {
+        "entreprise": "Veolia",
+        "titre": "Alternance Électrotechnicien / Automaticien Eau Potable et Assainissement (H/F)",
+        "localisation": "Auneau",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%C3%A9lectrotechnicien-automaticien-eau-potable-et-assainissement-h-f-at-veolia-4381101943?position=26&pageNum=0&refId=RlBX5eew8YMZBf6x00yIqw%3D%3D&trackingId=scvaXj80O74S0HY1Fz4s8g%3D%3D"
+    },
+    {
+        "entreprise": "Veolia",
+        "titre": "Stage en électricité (type BAC Pro MELEC) H/F",
+        "localisation": "Coudekerque-Branche",
+        "lien": "https://fr.linkedin.com/jobs/view/stage-en-%C3%A9lectricit%C3%A9-type-bac-pro-melec-h-f-at-veolia-4382116030?position=27&pageNum=0&refId=RlBX5eew8YMZBf6x00yIqw%3D%3D&trackingId=3NvUFYkQMxXASmu2EXXEhA%3D%3D"
     },
     {
         "entreprise": "VINCI Energies",
-        "titre": "Responsable d'affaires logistique F/H",
-        "localisation": "Ille-et-Vilaine",
-        "lien": "https://fr.linkedin.com/jobs/view/responsable-d-affaires-logistique-f-h-at-vinci-energies-4378689238?position=2&pageNum=0&refId=81IejRTgrFC2lvp7qr5uPA%3D%3D&trackingId=PhZRv7xJXS9%2FiZ%2B%2BFyQVZQ%3D%3D"
-    },
-    {
-        "entreprise": "VINCI Energies",
-        "titre": "Responsable d'Affaires - Facility/Hospitality Management Gif sur Yvette F/H F/H",
-        "localisation": "Gif-sur-Yvette",
-        "lien": "https://fr.linkedin.com/jobs/view/responsable-d-affaires-facility-hospitality-management-gif-sur-yvette-f-h-f-h-at-vinci-energies-4380591265?position=3&pageNum=0&refId=81IejRTgrFC2lvp7qr5uPA%3D%3D&trackingId=%2FAJvZzzCMfM38Qk0l4sDWQ%3D%3D"
+        "titre": "Alternance - Développeur TypeScript / Java F/H",
+        "localisation": "Le Mans",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-d%C3%A9veloppeur-typescript-java-f-h-at-vinci-energies-4383423234?position=9&pageNum=2&refId=Db9AZy7q6%2BXcW8hA4PZJ9Q%3D%3D&trackingId=aolGZNPgWKHmYSXyfZjweA%3D%3D"
     }
 ]
