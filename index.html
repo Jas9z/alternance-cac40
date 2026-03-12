@@ -5,74 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radar Alternance - Ingénierie d'Affaires & Tech</title>
     <style>
-        :root {
-            --primary: #1a365d;
-            --secondary: #2b6cb0;
-            --bg: #f7fafc;
-            --text: #2d3748;
-            --card-bg: #ffffff;
-            --badge-bg: #edf2f7;
-            --border: #e2e8f0;
-        }
-        [data-theme="dark"] {
-            --primary: #63b3ed;
-            --secondary: #4299e1;
-            --bg: #1a202c;
-            --text: #e2e8f0;
-            --card-bg: #2d3748;
-            --badge-bg: #4a5568;
-            --border: #4a5568;
-        }
+        :root { --primary: #1a365d; --secondary: #2b6cb0; --bg: #f7fafc; --text: #2d3748; --card-bg: #ffffff; --badge-bg: #edf2f7; --border: #e2e8f0; }
+        [data-theme="dark"] { --primary: #63b3ed; --secondary: #4299e1; --bg: #1a202c; --text: #e2e8f0; --card-bg: #2d3748; --badge-bg: #4a5568; --border: #4a5568; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; transition: all 0.3s ease; }
         header { background-color: #1a365d; color: white; padding: 2rem; text-align: center; position: relative; }
         header h1 { margin: 0; font-size: 2.2rem; }
-        header p { margin-top: 10px; font-size: 1.1rem; opacity: 0.9; }
-        
-        .theme-toggle { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; transition: 0.3s; }
-        .theme-toggle:hover { background: rgba(255,255,255,0.4); }
-
+        .theme-toggle { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px; border-radius: 50%; cursor: pointer; transition: 0.3s; }
         .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-        
-        /* Contrôles (Recherche + Filtre) */
         .controls { display: flex; gap: 15px; margin-bottom: 2rem; flex-wrap: wrap; }
-        .search-bar { flex: 2; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); outline: none; transition: 0.3s;}
-        .search-bar:focus { border-color: var(--secondary); }
-        .filter-select { flex: 1; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); outline: none; cursor: pointer; min-width: 200px;}
-        
+        .search-bar { flex: 3; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); outline: none; transition: 0.3s; }
+        .filter-select { flex: 1; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); cursor: pointer; }
         #compteur { font-weight: bold; margin-bottom: 15px; font-size: 1.1rem; }
-
-        /* Grille d'offres */
         .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
-        
-        .job-card { background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border); box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s; }
+        .job-card { background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s; }
         .job-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
-        
-        .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;}
+        .job-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
         .job-date { font-size: 0.8rem; background: #c6f6d5; color: #22543d; padding: 4px 8px; border-radius: 12px; font-weight: bold; }
         [data-theme="dark"] .job-date { background: #22543d; color: #c6f6d5; }
-        
-        .job-info h2 { margin: 0 0 15px 0; color: var(--primary); font-size: 1.25rem; line-height: 1.4; }
-        .job-details { display: flex; flex-wrap: wrap; gap: 8px; color: var(--text); font-size: 0.9rem; margin-bottom: 20px;}
+        .job-info h2 { margin: 0 0 15px 0; color: var(--primary); font-size: 1.25rem; }
+        .job-details { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.9rem; margin-bottom: 20px; }
         .job-details span { background: var(--badge-bg); padding: 6px 12px; border-radius: 15px; }
-        
-        .apply-btn { background-color: var(--secondary); color: white; text-align: center; text-decoration: none; padding: 12px; border-radius: 6px; font-weight: bold; transition: background 0.2s; width: 100%; box-sizing: border-box; display: block;}
-        .apply-btn:hover { background-color: var(--primary); }
+        .apply-btn { background-color: var(--secondary); color: white; text-align: center; text-decoration: none; padding: 12px; border-radius: 6px; font-weight: bold; display: block; }
     </style>
 </head>
 <body>
-
     <header>
-        <button class="theme-toggle" onclick="toggleTheme()" title="Activer le mode sombre">🌙</button>
-        <h1>Radar Alternance - Double Compétence</h1>
-        <p>Tech, Business & Stratégie | Géants Mondiaux</p>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <h1>Radar Alternance - Ingénierie d'Affaires</h1>
+        <p>Mobilité : Toute la France 🇫🇷</p>
     </header>
 
     <div class="container">
         <div class="controls">
-            <input type="text" id="searchInput" class="search-bar" placeholder="Mot-clé (ex: Data, Commercial, Paris)..." onkeyup="filterJobs()">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher par mot-clé (ex: Data, Commercial)..." onkeyup="filterJobs()">
             <select id="companyFilter" class="filter-select" onchange="filterJobs()">
-                <option value="">Toutes les entreprises</option>
-                </select>
+                <option value="">🏢 Toutes Entreprises</option>
+            </select>
         </div>
         
         <div id="compteur">⏳ Chargement des offres...</div>
@@ -82,64 +50,41 @@
     <script>
         let jobs = [];
 
-        // Gestion du Mode Sombre
         function toggleTheme() {
             const html = document.documentElement;
             const btn = document.querySelector('.theme-toggle');
-            if (html.getAttribute('data-theme') === 'light') {
-                html.setAttribute('data-theme', 'dark');
-                btn.innerText = '☀️';
-            } else {
-                html.setAttribute('data-theme', 'light');
-                btn.innerText = '🌙';
-            }
+            html.setAttribute('data-theme', html.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+            btn.innerText = html.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
         }
 
         async function loadJobs() {
             try {
                 const response = await fetch('offres_cac40.json?' + new Date().getTime());
                 jobs = await response.json();
-                
-                populateCompanyFilter(jobs);
+                populateFilters(jobs);
                 renderJobs(jobs);
             } catch (error) {
-                document.getElementById('compteur').innerHTML = '<span style="color:red;">Erreur : Le fichier des offres n\'est pas encore prêt.</span>';
+                document.getElementById('compteur').innerHTML = '<span style="color:red;">Erreur de chargement.</span>';
             }
         }
 
-        // Remplir dynamiquement le menu déroulant avec les entreprises qui recrutent
-        function populateCompanyFilter(jobArray) {
-            const select = document.getElementById('companyFilter');
-            // Récupérer les noms uniques, les trier par ordre alphabétique
+        function populateFilters(jobArray) {
+            const compSelect = document.getElementById('companyFilter');
             const companies = [...new Set(jobArray.map(job => job.entreprise))].sort();
-            
-            companies.forEach(company => {
-                const option = document.createElement('option');
-                option.value = company.toLowerCase();
-                option.innerText = company;
-                select.appendChild(option);
-            });
+            companies.forEach(c => compSelect.innerHTML += `<option value="${c.toLowerCase()}">${c}</option>`);
         }
 
         function renderJobs(jobArray) {
             const jobList = document.getElementById('jobList');
-            const compteur = document.getElementById('compteur');
             jobList.innerHTML = '';
-            
-            compteur.innerText = `🎯 ${jobArray.length} offre(s) trouvée(s)`;
+            document.getElementById('compteur').innerText = `🎯 ${jobArray.length} offre(s) trouvée(s) en France`;
 
             jobArray.forEach(job => {
                 const card = document.createElement('div');
                 card.className = 'job-card';
-                
-                // On vérifie si la date d'ajout existe, sinon on met "Récent"
-                const dateAjout = job.date_ajout ? job.date_ajout : "Aujourd'hui";
-
                 card.innerHTML = `
                     <div>
-                        <div class="job-header">
-                            <span class="job-date">📅 ${dateAjout}</span>
-                        </div>
+                        <div class="job-header"><span class="job-date">📅 ${job.date_ajout || "Récent"}</span></div>
                         <div class="job-info">
                             <h2>${job.titre}</h2>
                             <div class="job-details">
@@ -154,136 +99,17 @@
             });
         }
 
-        // Double filtre : Texte + Menu déroulant
         function filterJobs() {
             const query = document.getElementById('searchInput').value.toLowerCase();
-            const selectedCompany = document.getElementById('companyFilter').value;
+            const comp = document.getElementById('companyFilter').value;
 
             const filtered = jobs.filter(job => {
-                const matchText = job.titre.toLowerCase().includes(query) || 
-                                  job.entreprise.toLowerCase().includes(query) ||
-                                  job.localisation.toLowerCase().includes(query);
-                
-                const matchCompany = selectedCompany === "" || job.entreprise.toLowerCase() === selectedCompany;
-
-                return matchText && matchCompany;
+                return (job.titre.toLowerCase().includes(query) || job.entreprise.toLowerCase().includes(query) || job.localisation.toLowerCase().includes(query)) &&
+                       (comp === "" || job.entreprise.toLowerCase() === comp);
             });
-
             renderJobs(filtered);
         }
 
-        loadJobs();
-    </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alternances CAC40 - Ingénierie d'Affaires & IT</title>
-    <style>
-        :root {
-            --primary: #1a365d;
-            --secondary: #2b6cb0;
-            --bg: #f7fafc;
-            --text: #2d3748;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
-        header { background-color: var(--primary); color: white; padding: 2rem; text-align: center; }
-        header h1 { margin: 0; font-size: 2.2rem; }
-        header p { margin-top: 10px; font-size: 1.1rem; opacity: 0.9; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
-        .search-bar { width: 100%; padding: 1rem; font-size: 1.1rem; border: 2px solid #e2e8f0; border-radius: 8px; margin-bottom: 2rem; box-sizing: border-box; outline: none;}
-        .search-bar:focus { border-color: var(--secondary); }
-        .job-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; transition: transform 0.2s; }
-        .job-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        .job-info h2 { margin: 0 0 10px 0; color: var(--primary); font-size: 1.3rem; }
-        .job-details { display: flex; flex-wrap: wrap; gap: 10px; color: #718096; font-size: 0.95rem; }
-        .job-details span { background: #edf2f7; padding: 5px 12px; border-radius: 15px; }
-        .apply-btn { background-color: var(--secondary); color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: background 0.2s; white-space: nowrap; margin-left: 15px;}
-        .apply-btn:hover { background-color: var(--primary); }
-        #compteur { text-align: right; color: #718096; margin-bottom: 10px; font-weight: bold; }
-        
-        @media (max-width: 768px) {
-            .job-card { flex-direction: column; align-items: flex-start; gap: 15px;}
-            .apply-btn { width: 100%; text-align: center; margin-left: 0; box-sizing: border-box;}
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Alternances CAC40 - Ingénierie d'Affaires & Tech</h1>
-        <p>Mise à jour automatique tous les jours via notre robot LinkedIn.</p>
-    </header>
-
-    <div class="container">
-        <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher un mot-clé (ex: Data, Commercial, Paris, L'Oréal)..." onkeyup="filterJobs()">
-        
-        <div id="compteur"></div>
-        <div id="jobList">
-            <p style="text-align:center; color:#718096; font-size: 1.2rem; margin-top: 50px;">⏳ Chargement des offres en cours...</p>
-        </div>
-    </div>
-
-    <script>
-        let jobs = [];
-
-        // Fonction pour aller lire ton fichier JSON
-        async function loadJobs() {
-            try {
-                // On ajoute un faux paramètre à la fin pour éviter que le navigateur garde l'ancienne version en mémoire
-                const response = await fetch('offres_cac40.json?' + new Date().getTime());
-                jobs = await response.json();
-                renderJobs(jobs);
-            } catch (error) {
-                console.error("Erreur de chargement:", error);
-                document.getElementById('jobList').innerHTML = '<p style="text-align:center; color:red;">Erreur : Le fichier des offres n\'est pas encore prêt. Laisse le robot finir son travail !</p>';
-            }
-        }
-
-        // Fonction pour dessiner les cartes HTML pour chaque offre
-        function renderJobs(jobArray) {
-            const jobList = document.getElementById('jobList');
-            const compteur = document.getElementById('compteur');
-            jobList.innerHTML = '';
-            
-            compteur.innerText = `${jobArray.length} offre(s) trouvée(s)`;
-
-            if (jobArray.length === 0) {
-                jobList.innerHTML = '<p style="text-align:center; color:#718096; margin-top: 50px;">Aucune offre correspondante avec ces critères.</p>';
-                return;
-            }
-
-            jobArray.forEach(job => {
-                const card = document.createElement('div');
-                card.className = 'job-card';
-                card.innerHTML = `
-                    <div class="job-info">
-                        <h2>${job.titre}</h2>
-                        <div class="job-details">
-                            <span>🏢 <strong>${job.entreprise}</strong></span>
-                            <span>📍 ${job.localisation}</span>
-                        </div>
-                    </div>
-                    <a href="${job.lien}" class="apply-btn" target="_blank">Voir l'offre</a>
-                `;
-                jobList.appendChild(card);
-            });
-        }
-
-        // Fonction pour la barre de recherche
-        function filterJobs() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = jobs.filter(job => 
-                job.titre.toLowerCase().includes(query) || 
-                job.entreprise.toLowerCase().includes(query) ||
-                job.localisation.toLowerCase().includes(query)
-            );
-            renderJobs(filtered);
-        }
-
-        // On lance le chargement dès l'ouverture de la page
         loadJobs();
     </script>
 </body>
