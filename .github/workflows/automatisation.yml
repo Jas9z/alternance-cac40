@@ -2,7 +2,7 @@ name: Scraper CAC40 Quotidien
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 6h du matin UTC = 7h ou 8h France
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 env:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
 
     steps:
       - name: Récupérer le code
@@ -26,17 +26,18 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Installer les dépendances
+      - name: Installer les dépendances Python
         run: |
           pip install --upgrade pip
           pip install selenium webdriver-manager requests
 
-      - name: Installer Chrome
+      - name: Installer Google Chrome (méthode moderne)
         run: |
-          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
           sudo apt-get update -q
-          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y wget gnupg ca-certificates
+          wget -qO /tmp/google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y /tmp/google-chrome.deb || sudo apt-get -f install -y
+          google-chrome --version
 
       - name: Lancer le scraper (tentative 1)
         id: run1
@@ -65,5 +66,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add offres_cac40.json
-          git diff --cached --quiet && echo "Aucun changement." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique des offres"
+          git diff --cached --quiet && echo "Rien à commiter." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique des offres"
           git push
