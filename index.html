@@ -1,49 +1,235 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radar Alternance - Ingénierie d'Affaires & Tech</title>
+    <title>Jasim Bouchekoua | Portfolio & Radar B2B</title>
     <style>
-        :root { --primary: #1a365d; --secondary: #2b6cb0; --bg: #f7fafc; --text: #2d3748; --card-bg: #ffffff; --badge-bg: #edf2f7; --border: #e2e8f0; }
-        [data-theme="dark"] { --primary: #63b3ed; --secondary: #4299e1; --bg: #1a202c; --text: #e2e8f0; --card-bg: #2d3748; --badge-bg: #4a5568; --border: #4a5568; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; transition: all 0.3s ease; }
-        header { background-color: #1a365d; color: white; padding: 2rem; text-align: center; position: relative; }
-        header h1 { margin: 0; font-size: 2.2rem; }
-        .theme-toggle { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px; border-radius: 50%; cursor: pointer; transition: 0.3s; }
-        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-        .controls { display: flex; gap: 15px; margin-bottom: 2rem; flex-wrap: wrap; }
-        .search-bar { flex: 3; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); outline: none; transition: 0.3s; }
-        .filter-select { flex: 1; padding: 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); cursor: pointer; }
-        #compteur { font-weight: bold; margin-bottom: 15px; font-size: 1.1rem; }
-        .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
-        .job-card { background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s; }
-        .job-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
-        .job-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
-        .job-date { font-size: 0.8rem; background: #c6f6d5; color: #22543d; padding: 4px 8px; border-radius: 12px; font-weight: bold; }
-        [data-theme="dark"] .job-date { background: #22543d; color: #c6f6d5; }
-        .job-info h2 { margin: 0 0 15px 0; color: var(--primary); font-size: 1.25rem; }
-        .job-details { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.9rem; margin-bottom: 20px; }
-        .job-details span { background: var(--badge-bg); padding: 6px 12px; border-radius: 15px; }
-        .apply-btn { background-color: var(--secondary); color: white; text-align: center; text-decoration: none; padding: 12px; border-radius: 6px; font-weight: bold; display: block; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --secondary: #f97316; /* Orange, clin d'oeil à ton alternance */
+            --border: #e2e8f0;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --card-bg: #1e293b;
+            --primary: #3b82f6;
+            --secondary: #f97316;
+            --border: #334155;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+        }
+
+        /* Hero Section (Ton Profil) */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #06b6d4 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==');
+            pointer-events: none;
+        }
+
+        .hero h1 { font-size: 3rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .hero h2 { font-size: 1.5rem; font-weight: 300; margin-top: 10px; opacity: 0.9; }
+        
+        .pitch {
+            max-width: 800px;
+            margin: 1.5rem auto 0;
+            font-size: 1.1rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skills-badges {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Boutons Actions */
+        .action-buttons {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary { background: var(--secondary); color: white; box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6); }
+        
+        .btn-outline { background: transparent; color: white; border: 2px solid white; }
+        .btn-outline:hover { background: white; color: var(--primary); }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px; right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none; color: white;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            cursor: pointer; font-size: 1.2rem;
+            z-index: 20;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Dashboard Section */
+        .container { max-width: 1200px; margin: -2rem auto 2rem; padding: 0 1rem; position: relative; z-index: 5; }
+        
+        .dashboard-header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .controls { display: flex; gap: 15px; flex-wrap: wrap; }
+        .search-bar { flex: 3; padding: 1rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-color); color: var(--text-color); outline: none; transition: 0.3s; font-family: 'Inter', sans-serif;}
+        .search-bar:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); }
+        
+        .filter-select { flex: 1; padding: 1rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-color); color: var(--text-color); cursor: pointer; min-width: 200px;}
+        
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Grid des offres */
+        .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+        
+        .job-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .job-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary);
+            transform: scaleY(0); transition: transform 0.3s ease; transform-origin: bottom;
+        }
+        
+        .job-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .job-card:hover::before { transform: scaleY(1); }
+        
+        .job-header { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;}
+        .job-date { font-size: 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--primary); padding: 5px 10px; border-radius: 20px; font-weight: 800; text-transform: uppercase;}
+        
+        .job-info h2 { margin: 0 0 10px 0; font-size: 1.2rem; color: var(--text-color); line-height: 1.4; font-weight: 800;}
+        .job-details { display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.9rem; margin-bottom: 25px; color: #64748b;}
+        .job-details span { display: flex; align-items: center; gap: 5px; }
+        
+        .apply-btn {
+            background-color: var(--bg-color); color: var(--text-color); border: 1px solid var(--border);
+            text-align: center; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 600; transition: all 0.2s; display: block;
+        }
+        .apply-btn:hover { background-color: var(--primary); color: white; border-color: var(--primary); }
     </style>
 </head>
 <body>
-    <header>
-        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-        <h1>Radar Alternance - Ingénierie d'Affaires</h1>
-        <p>Mobilité : Toute la France 🇫🇷</p>
+    <header class="hero">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Changer le thème">☀️</button>
+        <h1>Jasim Bouchekoua</h1>
+        <h2>Ingénieur d'Affaires & IT | Chargé d'Affaires FTTH</h2>
+        
+        <div class="skills-badges">
+            <span class="badge">🚀 Développement Commercial</span>
+            <span class="badge">💻 Gestion de Projet IT</span>
+            <span class="badge">🐍 Python & Automatisation</span>
+            <span class="badge">🌐 Cisco CCNA</span>
+        </div>
+
+        <div class="pitch">
+            <strong>Ma double compétence en action :</strong> Je ne me contente pas de chercher une alternance, j'ai codé ce robot (Python/Selenium) hébergé sur le Cloud pour automatiser ma veille B2B en temps réel auprès de 60 géants mondiaux. 
+            <em>Tech + Business = Impact.</em>
+        </div>
+
+        <div class="action-buttons">
+            <a href="https://www.linkedin.com/in/jasim-bouchekoua-766612346" target="_blank" class="btn btn-primary">Mon Profil LinkedIn</a>
+            <a href="#" class="btn btn-outline" onclick="alert('Tu dois uploader ton CV en PDF sur GitHub pour que ce bouton fonctionne !')">Télécharger mon CV</a>
+        </div>
     </header>
 
     <div class="container">
-        <div class="controls">
-            <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher par mot-clé (ex: Data, Commercial)..." onkeyup="filterJobs()">
-            <select id="companyFilter" class="filter-select" onchange="filterJobs()">
-                <option value="">🏢 Toutes Entreprises</option>
-            </select>
+        <div class="dashboard-header">
+            <div class="controls">
+                <input type="text" id="searchInput" class="search-bar" placeholder="🔍 Rechercher une offre (ex: Data, Commercial, Alternance)..." onkeyup="filterJobs()">
+                <select id="companyFilter" class="filter-select" onchange="filterJobs()">
+                    <option value="">🏢 Toutes les entreprises</option>
+                </select>
+            </div>
+            <div class="stats-bar">
+                <span id="compteur">⏳ Chargement de la base de données...</span>
+                <span>Mise à jour automatique : Quotidienne ⚡</span>
+            </div>
         </div>
         
-        <div id="compteur">⏳ Chargement des offres...</div>
         <div id="jobList" class="job-grid"></div>
     </div>
 
@@ -53,8 +239,13 @@
         function toggleTheme() {
             const html = document.documentElement;
             const btn = document.querySelector('.theme-toggle');
-            html.setAttribute('data-theme', html.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
-            btn.innerText = html.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                btn.innerText = '☀️';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.innerText = '🌙';
+            }
         }
 
         async function loadJobs() {
@@ -64,7 +255,7 @@
                 populateFilters(jobs);
                 renderJobs(jobs);
             } catch (error) {
-                document.getElementById('compteur').innerHTML = '<span style="color:red;">Erreur de chargement.</span>';
+                document.getElementById('compteur').innerHTML = '<span style="color:#ef4444;">Erreur : La base de données est en cours de création.</span>';
             }
         }
 
@@ -77,14 +268,16 @@
         function renderJobs(jobArray) {
             const jobList = document.getElementById('jobList');
             jobList.innerHTML = '';
-            document.getElementById('compteur').innerText = `🎯 ${jobArray.length} offre(s) trouvée(s) en France`;
+            document.getElementById('compteur').innerText = `🎯 ${jobArray.length} opportunités détectées sur toute la France`;
 
             jobArray.forEach(job => {
                 const card = document.createElement('div');
                 card.className = 'job-card';
                 card.innerHTML = `
                     <div>
-                        <div class="job-header"><span class="job-date">📅 ${job.date_ajout || "Récent"}</span></div>
+                        <div class="job-header">
+                            <span class="job-date">Nouveau</span>
+                        </div>
                         <div class="job-info">
                             <h2>${job.titre}</h2>
                             <div class="job-details">
@@ -93,7 +286,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="${job.lien}" class="apply-btn" target="_blank">Postuler sur LinkedIn</a>
+                    <a href="${job.lien}" class="apply-btn" target="_blank">Voir l'offre sur LinkedIn →</a>
                 `;
                 jobList.appendChild(card);
             });
