@@ -2,35 +2,68 @@ name: Scraper CAC40 Quotidien
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 6 * * *'   # 6h du matin UTC = 7h ou 8h France
   workflow_dispatch:
 
-# C'est cette ligne qui donne l'autorisation au robot de sauvegarder !
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+
     steps:
       - name: Récupérer le code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Installer Python
-        uses: actions/setup-python@v5
+      - name: Installer Python 3.12
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.12'
+          cache: 'pip'
 
-      - name: Installer les bibliothèques
-        run: pip install selenium webdriver-manager
+      - name: Installer les dépendances
+        run: |
+          pip install --upgrade pip
+          pip install selenium webdriver-manager requests
 
-      - name: Lancer le script Python
+      - name: Installer Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update -q
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Lancer le scraper (tentative 1)
+        id: run1
+        continue-on-error: true
         run: python scraper_ultime.py
 
-      - name: Sauvegarder les nouvelles offres
+      - name: Lancer le scraper (tentative 2 si échec)
+        if: steps.run1.outcome == 'failure'
+        run: |
+          echo "⚠️ Tentative 1 échouée, retry dans 30s..."
+          sleep 30
+          python scraper_ultime.py
+
+      - name: Vérifier le fichier JSON produit
+        run: |
+          if [ -f offres_cac40.json ]; then
+            COUNT=$(python -c "import json; data=json.load(open('offres_cac40.json')); print(len(data))")
+            echo "✅ $COUNT offres dans offres_cac40.json"
+          else
+            echo "❌ Fichier JSON introuvable"
+            exit 1
+          fi
+
+      - name: Commit et push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add offres_cac40.json
-          git commit -m "🤖 Mise à jour automatique des offres" || exit 0
+          git diff --cached --quiet && echo "Aucun changement." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique des offres"
           git push
