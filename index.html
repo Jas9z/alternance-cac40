@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasim Bouchekoua | Portfolio & Radar B2B</title>
+    <meta name="description" content="Portfolio de Jasim Bouchekoua – Ingénieur d'Affaires IT. Radar B2B automatisé sur les offres d'alternance des entreprises du CAC 40.">
+    <title>Jasim Bouchekoua | Portfolio & Radar B2B CAC 40</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        
+
         :root {
             --bg-color: #f8fafc;
             --text-color: #0f172a;
             --card-bg: #ffffff;
             --primary: #2563eb;
-            --secondary: #f97316; /* Orange, clin d'oeil à ton alternance */
+            --secondary: #f97316;
             --border: #e2e8f0;
             --glass-bg: rgba(255, 255, 255, 0.7);
+            --muted: #64748b;
+            --success: #10b981;
         }
 
         [data-theme="dark"] {
@@ -24,8 +28,12 @@
             --primary: #3b82f6;
             --secondary: #f97316;
             --border: #334155;
-            --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-bg: rgba(30, 41, 59, 0.8);
+            --muted: #94a3b8;
+            --success: #34d399;
         }
+
+        *, *::before, *::after { box-sizing: border-box; }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -37,11 +45,11 @@
             line-height: 1.6;
         }
 
-        /* Hero Section (Ton Profil) */
+        /* ── HERO ── */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #06b6d4 100%);
             color: white;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem 6rem;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -50,23 +58,50 @@
         .hero::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            inset: 0;
             background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==');
             pointer-events: none;
         }
 
-        .hero h1 { font-size: 3rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
-        .hero h2 { font-size: 1.5rem; font-weight: 300; margin-top: 10px; opacity: 0.9; }
-        
+        .theme-toggle {
+            position: absolute;
+            top: 20px; right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none; color: white;
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            cursor: pointer; font-size: 1.2rem;
+            z-index: 20;
+            backdrop-filter: blur(5px);
+            transition: background 0.2s;
+        }
+        .theme-toggle:hover { background: rgba(255,255,255,0.35); }
+
+        .avatar {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.25);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; font-weight: 800;
+            margin: 0 auto 1.2rem;
+            border: 3px solid rgba(255,255,255,0.5);
+            position: relative; z-index: 5;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0; font-weight: 800; letter-spacing: -1px; position: relative; z-index: 5; }
+        .hero h2 { font-size: clamp(1rem, 2.5vw, 1.4rem); font-weight: 300; margin-top: 8px; opacity: 0.9; position: relative; z-index: 5; }
+
         .pitch {
-            max-width: 800px;
+            max-width: 760px;
             margin: 1.5rem auto 0;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             background: rgba(0, 0, 0, 0.2);
             padding: 1.5rem;
             border-radius: 12px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative; z-index: 5;
         }
 
         .skills-badges {
@@ -75,232 +110,443 @@
             justify-content: center;
             gap: 10px;
             flex-wrap: wrap;
+            position: relative; z-index: 5;
         }
 
         .badge {
             background: rgba(255, 255, 255, 0.2);
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.15);
         }
 
-        /* Boutons Actions */
         .action-buttons {
             margin-top: 2rem;
             display: flex;
             justify-content: center;
             gap: 15px;
-            position: relative;
-            z-index: 10;
+            flex-wrap: wrap;
+            position: relative; z-index: 10;
         }
 
         .btn {
-            padding: 12px 24px;
+            padding: 12px 26px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.2s;
             cursor: pointer;
             border: none;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .btn-primary { background: var(--secondary); color: white; box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6); }
-        
         .btn-outline { background: transparent; color: white; border: 2px solid white; }
         .btn-outline:hover { background: white; color: var(--primary); }
 
-        .theme-toggle {
-            position: absolute;
-            top: 20px; right: 20px;
-            background: rgba(255,255,255,0.2);
-            border: none; color: white;
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            cursor: pointer; font-size: 1.2rem;
-            z-index: 20;
-            backdrop-filter: blur(5px);
+        /* ── ABOUT STRIP ── */
+        .about-strip {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
         }
+        .about-strip p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .about-strip strong { color: var(--text-color); }
 
-        /* Dashboard Section */
+        /* ── CONTAINER ── */
         .container { max-width: 1200px; margin: -2rem auto 2rem; padding: 0 1rem; position: relative; z-index: 5; }
-        
+
         .dashboard-header {
             background: var(--glass-bg);
             backdrop-filter: blur(16px);
             padding: 2rem;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             border: 1px solid var(--border);
             margin-bottom: 2rem;
         }
 
-        .controls { display: flex; gap: 15px; flex-wrap: wrap; }
-        .search-bar { flex: 3; padding: 1rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-color); color: var(--text-color); outline: none; transition: 0.3s; font-family: 'Inter', sans-serif;}
-        .search-bar:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); }
-        
-        .filter-select { flex: 1; padding: 1rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-color); color: var(--text-color); cursor: pointer; min-width: 200px;}
-        
+        .controls { display: flex; gap: 12px; flex-wrap: wrap; }
+        .search-bar {
+            flex: 3; padding: 0.9rem 1rem; font-size: 1rem;
+            border: 1.5px solid var(--border); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color);
+            outline: none; transition: 0.3s; font-family: 'Inter', sans-serif;
+            min-width: 200px;
+        }
+        .search-bar:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(59,130,246,0.15); }
+
+        .filter-select {
+            flex: 1; padding: 0.9rem 1rem; font-size: 1rem;
+            border: 1.5px solid var(--border); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color);
+            cursor: pointer; min-width: 180px;
+            outline: none;
+        }
+        .filter-select:focus { border-color: var(--primary); }
+
+        .sort-select {
+            flex: 1; padding: 0.9rem 1rem; font-size: 1rem;
+            border: 1.5px solid var(--border); border-radius: 8px;
+            background: var(--bg-color); color: var(--text-color);
+            cursor: pointer; min-width: 160px;
+            outline: none;
+        }
+
         .stats-bar {
             display: flex;
             justify-content: space-between;
             margin-top: 1rem;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--primary);
             font-weight: 600;
+            flex-wrap: wrap;
+            gap: 6px;
         }
 
-        /* Grid des offres */
-        .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
-        
+        .pulse-dot {
+            display: inline-block;
+            width: 8px; height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+
+        /* ── JOB GRID ── */
+        .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+
         .job-card {
             background: var(--card-bg);
             padding: 1.5rem;
             border-radius: 12px;
             border: 1px solid var(--border);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: all 0.3s ease;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
             position: relative;
             overflow: hidden;
         }
-        
         .job-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary);
-            transform: scaleY(0); transition: transform 0.3s ease; transform-origin: bottom;
+            content: ''; position: absolute; top: 0; left: 0;
+            width: 4px; height: 100%; background: var(--primary);
+            transform: scaleY(0); transition: transform 0.25s ease;
+            transform-origin: bottom;
         }
-        
-        .job-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .job-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); border-color: var(--primary); }
         .job-card:hover::before { transform: scaleY(1); }
-        
-        .job-header { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;}
-        .job-date { font-size: 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--primary); padding: 5px 10px; border-radius: 20px; font-weight: 800; text-transform: uppercase;}
-        
-        .job-info h2 { margin: 0 0 10px 0; font-size: 1.2rem; color: var(--text-color); line-height: 1.4; font-weight: 800;}
-        .job-details { display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.9rem; margin-bottom: 25px; color: #64748b;}
-        .job-details span { display: flex; align-items: center; gap: 5px; }
-        
+
+        .job-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .job-date { font-size: 0.72rem; background: rgba(59,130,246,0.1); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+        .job-type { font-size: 0.72rem; background: rgba(249,115,22,0.1); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-weight: 700; }
+
+        .job-info h2 { margin: 0 0 10px; font-size: 1.1rem; color: var(--text-color); line-height: 1.4; font-weight: 700; }
+        .job-details { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85rem; margin-bottom: 20px; color: var(--muted); }
+        .job-details span { display: flex; align-items: center; gap: 4px; }
+
         .apply-btn {
-            background-color: var(--bg-color); color: var(--text-color); border: 1px solid var(--border);
-            text-align: center; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 600; transition: all 0.2s; display: block;
+            background-color: transparent; color: var(--primary);
+            border: 1.5px solid var(--primary);
+            text-align: center; text-decoration: none;
+            padding: 10px; border-radius: 8px;
+            font-weight: 600; transition: all 0.2s; display: block;
+            font-size: 0.9rem;
         }
-        .apply-btn:hover { background-color: var(--primary); color: white; border-color: var(--primary); }
+        .apply-btn:hover { background-color: var(--primary); color: white; }
+
+        /* ── SKELETON LOADER ── */
+        .skeleton-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .skeleton-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            display: flex; flex-direction: column; gap: 12px;
+        }
+        .skeleton-line {
+            height: 14px; border-radius: 6px;
+            background: linear-gradient(90deg, var(--border) 25%, rgba(255,255,255,0.05) 50%, var(--border) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s infinite;
+        }
+        .skeleton-line.short { width: 45%; }
+        .skeleton-line.medium { width: 70%; }
+        .skeleton-line.tall { height: 40px; }
+        @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+        /* ── NO RESULTS ── */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--muted);
+        }
+        .no-results .emoji { font-size: 3rem; display: block; margin-bottom: 1rem; }
+
+        /* ── SCROLL TO TOP ── */
+        #scrollTop {
+            position: fixed;
+            bottom: 30px; right: 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(37,99,235,0.4);
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 100;
+        }
+        #scrollTop.visible { opacity: 1; pointer-events: auto; }
+        #scrollTop:hover { transform: scale(1.1); }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+        .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-links a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; }
+        .footer-copy { margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 600px) {
+            .controls { flex-direction: column; }
+            .action-buttons { flex-direction: column; align-items: center; }
+            .stats-bar { flex-direction: column; align-items: flex-start; }
+        }
     </style>
 </head>
 <body>
-    <header class="hero">
-        <button class="theme-toggle" onclick="toggleTheme()" title="Changer le thème">☀️</button>
+    <header class="hero" role="banner">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer le thème clair/sombre">☀️</button>
+        <div class="avatar" aria-hidden="true">JB</div>
         <h1>Jasim Bouchekoua</h1>
-        <h2>Ingénieur d'Affaires & IT | Chargé d'Affaires FTTH</h2>
-        
-        <div class="skills-badges">
+        <h2>Ingénieur d'Affaires & IT · Chargé d'Affaires FTTH</h2>
+
+        <div class="skills-badges" aria-label="Compétences clés">
             <span class="badge">🚀 Développement Commercial</span>
             <span class="badge">💻 Gestion de Projet IT</span>
             <span class="badge">🐍 Python & Automatisation</span>
             <span class="badge">🌐 Cisco CCNA</span>
+            <span class="badge">☁️ Cloud & DevOps</span>
         </div>
 
         <div class="pitch">
-            <strong>Ma double compétence en action :</strong> Je ne me contente pas de chercher une alternance, j'ai codé ce robot (Python/Selenium) hébergé sur le Cloud pour automatiser ma veille B2B en temps réel auprès de 60 géants mondiaux. 
-            <em>Tech + Business = Impact.</em>
+            <strong>Ma double compétence en action :</strong> Je ne me contente pas de chercher une alternance — j'ai codé ce robot
+            <strong>(Python / Selenium)</strong> hébergé sur le Cloud pour automatiser ma veille B2B en temps réel auprès de
+            <strong>60 géants mondiaux</strong>. <em>Tech + Business = Impact.</em>
         </div>
 
         <div class="action-buttons">
-            <a href="https://www.linkedin.com/in/jasim-bouchekoua-766612346" target="_blank" class="btn btn-primary">Mon Profil LinkedIn</a>
-            <a href="#" class="btn btn-outline" onclick="alert('Tu dois uploader ton CV en PDF sur GitHub pour que ce bouton fonctionne !')">Télécharger mon CV</a>
+            <a href="https://www.linkedin.com/in/jasim-bouchekoua-766612346" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Voir mon profil LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                Mon Profil LinkedIn
+            </a>
+            <a href="CV_Jasim_Bouchekoua.pdf" download class="btn btn-outline" aria-label="Télécharger mon CV en PDF">
+                📄 Télécharger mon CV
+            </a>
         </div>
     </header>
 
-    <div class="container">
+    <section class="about-strip" aria-label="À propos du projet">
+        <p>
+            <strong>Radar B2B CAC 40</strong> — Ce dashboard agrège automatiquement les offres d'alternance publiées par les 40 plus grandes entreprises françaises.
+            Les données sont collectées chaque jour via un script Python/Selenium et déployées en continu sur GitHub Actions.
+            <strong>Aucune intervention manuelle requise.</strong>
+        </p>
+    </section>
+
+    <main class="container" id="main-content">
         <div class="dashboard-header">
             <div class="controls">
-                <input type="text" id="searchInput" class="search-bar" placeholder="🔍 Rechercher une offre (ex: Data, Commercial, Alternance)..." onkeyup="filterJobs()">
-                <select id="companyFilter" class="filter-select" onchange="filterJobs()">
+                <input
+                    type="search"
+                    id="searchInput"
+                    class="search-bar"
+                    placeholder="🔍 Rechercher (poste, entreprise, ville…)"
+                    oninput="filterJobs()"
+                    aria-label="Rechercher une offre"
+                    autocomplete="off"
+                >
+                <select id="companyFilter" class="filter-select" onchange="filterJobs()" aria-label="Filtrer par entreprise">
                     <option value="">🏢 Toutes les entreprises</option>
+                </select>
+                <select id="sortSelect" class="sort-select" onchange="filterJobs()" aria-label="Trier les offres">
+                    <option value="default">📅 Tri par défaut</option>
+                    <option value="az">🔤 Entreprise A → Z</option>
+                    <option value="za">🔤 Entreprise Z → A</option>
+                    <option value="title">📝 Titre A → Z</option>
                 </select>
             </div>
             <div class="stats-bar">
-                <span id="compteur">⏳ Chargement de la base de données...</span>
-                <span>Mise à jour automatique : Quotidienne ⚡</span>
+                <span id="compteur">⏳ Chargement des offres…</span>
+                <span><span class="pulse-dot"></span>Mise à jour automatique · Quotidienne</span>
             </div>
         </div>
-        
-        <div id="jobList" class="job-grid"></div>
-    </div>
+
+        <div id="jobList" class="job-grid" role="list" aria-live="polite" aria-label="Liste des offres d'alternance">
+            <!-- Skeleton loader -->
+            <div class="skeleton-grid" id="skeletonLoader" style="display:contents">
+                ${Array(6).fill('').map(() => `
+                <div class="skeleton-card" aria-hidden="true">
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line medium"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line tall" style="margin-top:10px;border-radius:8px;"></div>
+                </div>`).join('')}
+            </div>
+        </div>
+    </main>
+
+    <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut de page" title="Retour en haut">↑</button>
+
+    <footer role="contentinfo">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/jasim-bouchekoua-766612346" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Jas9z/alternance-cac40" target="_blank" rel="noopener noreferrer">GitHub du projet</a>
+            <a href="CV_Jasim_Bouchekoua.pdf" download>Télécharger mon CV</a>
+        </div>
+        <div>Jasim Bouchekoua · Ingénieur d'Affaires & IT · Paris, France</div>
+        <div class="footer-copy">© <span id="currentYear"></span> — Projet open-source. Données issues de LinkedIn via scraping automatisé.</div>
+    </footer>
 
     <script>
-        let jobs = [];
+        // ── Année dynamique ──
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+        // ── Scroll to top ──
+        const scrollBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+
+        // ── Thème ──
         function toggleTheme() {
             const html = document.documentElement;
-            const btn = document.querySelector('.theme-toggle');
-            if (html.getAttribute('data-theme') === 'light') {
-                html.setAttribute('data-theme', 'dark');
-                btn.innerText = '☀️';
-            } else {
-                html.setAttribute('data-theme', 'light');
-                btn.innerText = '🌙';
-            }
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            document.querySelector('.theme-toggle').textContent = isDark ? '🌙' : '☀️';
         }
+
+        // ── Données ──
+        let jobs = [];
 
         async function loadJobs() {
             try {
-                const response = await fetch('offres_cac40.json?' + new Date().getTime());
-                jobs = await response.json();
+                const res = await fetch('offres_cac40.json?' + Date.now());
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                jobs = await res.json();
                 populateFilters(jobs);
                 renderJobs(jobs);
-            } catch (error) {
-                document.getElementById('compteur').innerHTML = '<span style="color:#ef4444;">Erreur : La base de données est en cours de création.</span>';
+            } catch (err) {
+                document.getElementById('skeletonLoader')?.remove();
+                document.getElementById('compteur').innerHTML =
+                    '<span style="color:#ef4444;">⚠️ Base de données en cours de création — revenez bientôt !</span>';
             }
         }
 
         function populateFilters(jobArray) {
-            const compSelect = document.getElementById('companyFilter');
-            const companies = [...new Set(jobArray.map(job => job.entreprise))].sort();
-            companies.forEach(c => compSelect.innerHTML += `<option value="${c.toLowerCase()}">${c}</option>`);
+            const sel = document.getElementById('companyFilter');
+            [...new Set(jobArray.map(j => j.entreprise))].sort()
+                .forEach(c => sel.insertAdjacentHTML('beforeend', `<option value="${c.toLowerCase()}">${c}</option>`));
         }
 
         function renderJobs(jobArray) {
-            const jobList = document.getElementById('jobList');
-            jobList.innerHTML = '';
-            document.getElementById('compteur').innerText = `🎯 ${jobArray.length} opportunités détectées sur toute la France`;
+            const list = document.getElementById('jobList');
+            document.getElementById('skeletonLoader')?.remove();
+            list.innerHTML = '';
+
+            if (jobArray.length === 0) {
+                list.innerHTML = `
+                    <div class="no-results" role="status">
+                        <span class="emoji">🔎</span>
+                        <strong>Aucune offre ne correspond à vos critères.</strong>
+                        <p>Essayez de modifier votre recherche ou de réinitialiser les filtres.</p>
+                    </div>`;
+                document.getElementById('compteur').textContent = '0 résultat trouvé';
+                return;
+            }
+
+            document.getElementById('compteur').textContent =
+                `🎯 ${jobArray.length} opportunité${jobArray.length > 1 ? 's' : ''} détectée${jobArray.length > 1 ? 's' : ''} sur toute la France`;
 
             jobArray.forEach(job => {
-                const card = document.createElement('div');
+                const card = document.createElement('article');
                 card.className = 'job-card';
+                card.setAttribute('role', 'listitem');
                 card.innerHTML = `
                     <div>
                         <div class="job-header">
                             <span class="job-date">Nouveau</span>
+                            <span class="job-type">Alternance</span>
                         </div>
                         <div class="job-info">
-                            <h2>${job.titre}</h2>
+                            <h2>${escapeHtml(job.titre)}</h2>
                             <div class="job-details">
-                                <span>🏢 <strong>${job.entreprise}</strong></span>
-                                <span>📍 ${job.localisation}</span>
+                                <span>🏢 <strong>${escapeHtml(job.entreprise)}</strong></span>
+                                <span>📍 ${escapeHtml(job.localisation)}</span>
                             </div>
                         </div>
                     </div>
-                    <a href="${job.lien}" class="apply-btn" target="_blank">Voir l'offre sur LinkedIn →</a>
-                `;
-                jobList.appendChild(card);
+                    <a href="${escapeHtml(job.lien)}" class="apply-btn" target="_blank" rel="noopener noreferrer"
+                       aria-label="Voir l'offre de ${escapeHtml(job.entreprise)} sur LinkedIn">
+                        Voir l'offre sur LinkedIn →
+                    </a>`;
+                list.appendChild(card);
             });
         }
 
         function filterJobs() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
+            const q = document.getElementById('searchInput').value.toLowerCase().trim();
             const comp = document.getElementById('companyFilter').value;
+            const sort = document.getElementById('sortSelect').value;
 
-            const filtered = jobs.filter(job => {
-                return (job.titre.toLowerCase().includes(query) || job.entreprise.toLowerCase().includes(query) || job.localisation.toLowerCase().includes(query)) &&
-                       (comp === "" || job.entreprise.toLowerCase() === comp);
-            });
+            let filtered = jobs.filter(job =>
+                (!q || job.titre.toLowerCase().includes(q) ||
+                       job.entreprise.toLowerCase().includes(q) ||
+                       job.localisation.toLowerCase().includes(q)) &&
+                (!comp || job.entreprise.toLowerCase() === comp)
+            );
+
+            if (sort === 'az') filtered.sort((a, b) => a.entreprise.localeCompare(b.entreprise));
+            else if (sort === 'za') filtered.sort((a, b) => b.entreprise.localeCompare(a.entreprise));
+            else if (sort === 'title') filtered.sort((a, b) => a.titre.localeCompare(b.titre));
+
             renderJobs(filtered);
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
         }
 
         loadJobs();
