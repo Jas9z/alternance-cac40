@@ -27,14 +27,11 @@ jobs:
           cache: 'pip'
 
       - name: Installer les dépendances Python
-        run: |
-          pip install --upgrade pip
-          pip install selenium webdriver-manager requests
+        run: pip install -r requirements.txt
 
-      - name: Installer Google Chrome (méthode moderne)
+      - name: Installer Google Chrome
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y wget gnupg ca-certificates
           wget -qO /tmp/google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/google-chrome.deb || sudo apt-get -f install -y
           google-chrome --version
