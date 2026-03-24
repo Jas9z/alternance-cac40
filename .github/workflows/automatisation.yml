@@ -16,6 +16,7 @@ jobs:
   scrape-A:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -31,6 +32,7 @@ jobs:
           google-chrome --version
       - run: python scraper_ultime.py --batch A
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: offres-batch-A
           path: offres_batch_A.json
@@ -39,6 +41,7 @@ jobs:
   scrape-B:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -54,6 +57,7 @@ jobs:
           google-chrome --version
       - run: python scraper_ultime.py --batch B
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: offres-batch-B
           path: offres_batch_B.json
@@ -62,6 +66,7 @@ jobs:
   scrape-C:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -77,6 +82,7 @@ jobs:
           google-chrome --version
       - run: python scraper_ultime.py --batch C
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: offres-batch-C
           path: offres_batch_C.json
@@ -85,6 +91,7 @@ jobs:
   scrape-D:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -100,6 +107,7 @@ jobs:
           google-chrome --version
       - run: python scraper_ultime.py --batch D
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: offres-batch-D
           path: offres_batch_D.json
@@ -108,6 +116,7 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     needs: [scrape-A, scrape-B, scrape-C, scrape-D]
+    if: always()
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
@@ -115,12 +124,16 @@ jobs:
         with:
           python-version: '3.12'
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with: { name: offres-batch-A }
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with: { name: offres-batch-B }
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with: { name: offres-batch-C }
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with: { name: offres-batch-D }
       - name: Fusionner
         run: |
@@ -136,12 +149,12 @@ jobs:
               index[o['lien']] = o
           toutes = sorted(index.values(), key=lambda x: (not x.get('is_priority', False), -x.get('score', 0)))
           json.dump(toutes, open('offres_cac40.json','w',encoding='utf-8'), ensure_ascii=False, indent=4)
-          print(f'Fusion : {len(offres)} nouvelles + existant = {len(toutes)} offres totales')
+          print(f'Batchs : {len(offres)} nouvelles | Existant : {len(existant)} | Total : {len(toutes)}')
           EOF
       - name: Commit
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add offres_cac40.json
-          git diff --cached --quiet && echo "Rien." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique"
+          git diff --cached --quiet && echo "Rien de nouveau." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique"
           git push
