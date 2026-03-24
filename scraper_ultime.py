@@ -125,6 +125,7 @@ MOTS_POSITIFS = {
 
 SCORE_MIN = 3
 
+# Variable globale unique — utilisee par scorer() ET main()
 METIERS_PRIORITAIRES = [
     "avant-vente", "avant vente", "pre-sales", "presales",
     "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
@@ -191,7 +192,7 @@ def scorer(titre):
         if mot in t:
             score += poids
             matches.append(mot)
-    for p in METIERSPRIORITAIRES:
+    for p in METIERSPRIORITAIRES:  # utilise la variable globale
         if p in t:
             score += 3
             break
@@ -219,7 +220,6 @@ def scroll(driver, nb=4):
 # ═══ EXTRACTION LINKEDIN ═══
 
 def get_text(card, selectors):
-    """Essaie plusieurs sélecteurs CSS et retourne le premier texte trouvé."""
     for s in selectors:
         try:
             val = card.find_element(By.CSS_SELECTOR, s).text.strip()
@@ -230,7 +230,6 @@ def get_text(card, selectors):
     return ""
 
 def get_href(card, selectors, keyword):
-    """Essaie plusieurs sélecteurs et retourne le premier href contenant keyword."""
     for s in selectors:
         try:
             href = card.find_element(By.CSS_SELECTOR, s).get_attribute("href") or ""
@@ -285,13 +284,6 @@ def extraire_apec(driver, mots, aliases_toutes):
     return offres
 
 # ═══ MAIN ═══
-
-METIERS_PRIORITAIRES = [
-    "avant-vente", "avant vente", "pre-sales", "presales",
-    "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
-    "charge affaires", "charge de deploiement", "solution engineer",
-    "business manager", "ppo",
-]
 
 def main():
     batch = "A"
@@ -376,18 +368,22 @@ def main():
                         "is_priority": any(p in norm(r["titre"]) for p in METIERSPRIORITAIRES),
                     })
                 time.sleep(random.uniform(2.0, 3.0))
+
+    except Exception as e:
+        print(f"\n❌ Erreur fatale batch {batch}: {e}")
+
     finally:
         driver.quit()
-
-    offres.sort(key=lambda x: (not x.get("is_priority", False), -x["score"]))
-    print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
-    if offres:
-        print("🏆 Top 5 :")
-        for o in offres[:5]:
-            flag = "⭐" if o.get("is_priority") else "  "
-            print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
-
-    json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+        # Sauvegarde toujours, meme si erreur partielle
+        offres.sort(key=lambda x: (not x.get("is_priority", False), -x.get("score", 0)))
+        print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
+        if offres:
+            print("🏆 Top 5 :")
+            for o in offres[:5]:
+                flag = "⭐" if o.get("is_priority") else "  "
+                print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
+        json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+        print(f"💾 {fichier} écrit ({len(offres)} offres)")
 
 if __name__ == "__main__":
     main()
