@@ -75,7 +75,6 @@ ENTREPRISES = [
     ("Unilever",           ["unilever"]),
 ]
 
-# 4 batchs de ~16 entreprises chacun
 N = len(ENTREPRISES)
 BATCHS = {
     "A": ENTREPRISES[:N//4],
@@ -84,8 +83,7 @@ BATCHS = {
     "D": ENTREPRISES[3*N//4:],
 }
 
-# ═══ ANGLES (6 au lieu de 15 — les plus efficaces) ═══
-# Calcul : 16 entreprises × 6 angles × 2.5s moy = ~4 min par batch ✔️
+# ═══ ANGLES ═══
 
 ANGLES = [
     "Alternance ingenieur affaires",
@@ -178,23 +176,29 @@ def init_driver():
 
 # ═══ UTILITAIRES ═══
 
-def n(t):
-    if not t: return ""
-    return unicodedata.normalize('NFD', t).encode('ascii','ignore').decode('utf-8').lower().strip()
+def norm(t):
+    if not t:
+        return ""
+    return unicodedata.normalize('NFD', t).encode('ascii', 'ignore').decode('utf-8').lower().strip()
 
 def scorer(titre):
-    t = n(titre)
+    t = norm(titre)
     for m in MOTS_INTERDITS:
-        if m in t: return 0, []
+        if m in t:
+            return 0, []
     score, matches = 0, []
     for mot, poids in MOTS_POSITIFS.items():
-        if mot in t: score += poids; matches.append(mot)
+        if mot in t:
+            score += poids
+            matches.append(mot)
     for p in METIERSPRIORITAIRES:
-        if p in t: score += 3; break
+        if p in t:
+            score += 3
+            break
     return score, matches
 
 def cle(titre, ent, loc):
-    return n(titre)[:55]+"|"+re.sub(r'\s+','',n(ent))[:15]+"|"+n(loc)[:10]
+    return norm(titre)[:55] + "|" + re.sub(r'\s+', '', norm(ent))[:15] + "|" + norm(loc)[:10]
 
 # ═══ SCROLL ═══
 
@@ -205,64 +209,79 @@ def scroll(driver, nb=4):
         for sel in ["button.infinite-scroller__show-more-button", "button.see-more-jobs"]:
             try:
                 btn = driver.find_element(By.CSS_SELECTOR, sel)
-                if btn.is_displayed() and btn.is_enabled(): btn.click(); time.sleep(0.8); break
-            except: pass
+                if btn.is_displayed() and btn.is_enabled():
+                    btn.click()
+                    time.sleep(0.8)
+                    break
+            except:
+                pass
 
-# ═══ EXTRACTION ═══
+# ═══ EXTRACTION LINKEDIN ═══
+
+def get_text(card, selectors):
+    """Essaie plusieurs sélecteurs CSS et retourne le premier texte trouvé."""
+    for s in selectors:
+        try:
+            val = card.find_element(By.CSS_SELECTOR, s).text.strip()
+            if val:
+                return val
+        except:
+            pass
+    return ""
+
+def get_href(card, selectors, keyword):
+    """Essaie plusieurs sélecteurs et retourne le premier href contenant keyword."""
+    for s in selectors:
+        try:
+            href = card.find_element(By.CSS_SELECTOR, s).get_attribute("href") or ""
+            if keyword in href:
+                return href.split("?")[0]
+        except:
+            pass
+    return ""
 
 def extraire(driver):
     offres = []
     cards = []
     for sel in [".base-card", ".job-search-card"]:
         cards = driver.find_elements(By.CSS_SELECTOR, sel)
-        if cards: break
+        if cards:
+            break
     for card in cards:
         try:
-            titre = ent = loc = lien = ""
-            for s in [".base-search-card__title", "h3.base-search-card__title"]:
-                try: titre = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if titre else None
-                except: pass
-            for s in [".base-search-card__subtitle", "h4.base-search-card__subtitle"]:
-                try: ent = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if ent else None
-                except: pass
-            for s in [".job-search-card__location", ".base-search-card__metadata"]:
-                try: loc = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0].strip(); break if loc else None
-                except: pass
-            for s in ["a.base-card__full-link", "a"]:
-                try:
-                    href = card.find_element(By.CSS_SELECTOR, s).get_attribute("href") or ""
-                    if "linkedin.com/jobs" in href: lien = href.split("?")[0]; break
-                except: pass
-            if titre and ent and lien: offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
-        except StaleElementReferenceException: continue
-        except: continue
+            titre = get_text(card, [".base-search-card__title", "h3.base-search-card__title"])
+            ent   = get_text(card, [".base-search-card__subtitle", "h4.base-search-card__subtitle"])
+            loc   = get_text(card, [".job-search-card__location", ".base-search-card__metadata"]).split(',')[0].strip()
+            lien  = get_href(card, ["a.base-card__full-link", "a"], "linkedin.com/jobs")
+            if titre and ent and lien:
+                offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
+        except StaleElementReferenceException:
+            continue
+        except:
+            continue
     return offres
+
+# ═══ EXTRACTION APEC ═══
 
 def extraire_apec(driver, mots, aliases_toutes):
     offres = []
     url = f"https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles={quote_plus(mots)}&typeContrat=148990&nbResultats=50"
     try:
-        driver.get(url); time.sleep(random.uniform(2.5, 4.0)); scroll(driver, nb=2)
+        driver.get(url)
+        time.sleep(random.uniform(2.5, 4.0))
+        scroll(driver, nb=2)
         for card in driver.find_elements(By.CSS_SELECTOR, ".card-offer, article.job"):
             try:
-                titre = ent = loc = lien = ""
-                for s in ["h2.card-title", ".card-offer__title", "h2"]:
-                    try: titre = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if titre else None
-                    except: pass
-                for s in [".card-offer__company", ".company-name"]:
-                    try: ent = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if ent else None
-                    except: pass
-                for s in [".card-offer__location", ".location"]:
-                    try: loc = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0]; break if loc else None
-                    except: pass
-                try:
-                    href = card.find_element(By.CSS_SELECTOR, "a").get_attribute("href") or ""
-                    if "apec.fr" in href: lien = href.split("?")[0]
-                except: pass
-                if titre and lien and any(a in n(ent) for a in aliases_toutes):
+                titre = get_text(card, ["h2.card-title", ".card-offer__title", "h2"])
+                ent   = get_text(card, [".card-offer__company", ".company-name"])
+                loc   = get_text(card, [".card-offer__location", ".location"]).split(',')[0]
+                lien  = get_href(card, ["a"], "apec.fr")
+                if titre and lien and any(a in norm(ent) for a in aliases_toutes):
                     offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
-            except: continue
-    except Exception as e: print(f"  ⚠️ APEC: {e}")
+            except:
+                continue
+    except Exception as e:
+        print(f"  ⚠️ APEC: {e}")
     return offres
 
 # ═══ MAIN ═══
@@ -278,15 +297,14 @@ def main():
     batch = "A"
     if "--batch" in sys.argv:
         i = sys.argv.index("--batch")
-        batch = sys.argv[i+1].upper() if i+1 < len(sys.argv) else "A"
+        batch = sys.argv[i + 1].upper() if i + 1 < len(sys.argv) else "A"
 
     entreprises = BATCHS.get(batch, BATCHS["A"])
     fichier = f"offres_batch_{batch}.json"
     aliases_toutes = [a for _, als in ENTREPRISES for a in als]
     date = datetime.now().strftime("%d/%m/%Y")
 
-    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises × {len(ANGLES)} angles = {len(entreprises)*len(ANGLES)} requêtes")
-    print(f"   Durée estimée : ~{len(entreprises)*len(ANGLES)*2//60} min")
+    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises × {len(ANGLES)} angles = {len(entreprises) * len(ANGLES)} requêtes")
 
     offres = []
     vues = set()
@@ -296,49 +314,66 @@ def main():
         for nom, aliases in entreprises:
             print(f"  → {nom}")
             for angle in ANGLES:
-                url = (f"https://fr.linkedin.com/jobs/search"
-                       f"?keywords={quote_plus(angle+' '+nom)}"
-                       f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD")
+                url = (
+                    f"https://fr.linkedin.com/jobs/search"
+                    f"?keywords={quote_plus(angle + ' ' + nom)}"
+                    f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD"
+                )
                 try:
                     driver.get(url)
                     time.sleep(random.uniform(1.5, 2.5))
                     scroll(driver)
                     for r in extraire(driver):
-                        en = n(r["entreprise"])
-                        if not any(a in en for a in aliases): continue
+                        en = norm(r["entreprise"])
+                        if not any(a in en for a in aliases):
+                            continue
                         score, matches = scorer(r["titre"])
-                        if score == 0 or score < SCORE_MIN: continue
+                        if score == 0 or score < SCORE_MIN:
+                            continue
                         k = cle(r["titre"], r["entreprise"], r["localisation"])
-                        if k in vues: continue
+                        if k in vues:
+                            continue
                         vues.add(k)
                         offres.append({
-                            "entreprise": r["entreprise"], "titre": r["titre"],
-                            "localisation": r["localisation"], "lien": r["lien"],
-                            "score": score, "mots_cles_matches": matches,
-                            "source": "LinkedIn", "first_seen": date, "last_seen": date,
-                            "is_priority": any(p in n(r["titre"]) for p in METIERSPRIORITAIRES),
+                            "entreprise": r["entreprise"],
+                            "titre": r["titre"],
+                            "localisation": r["localisation"],
+                            "lien": r["lien"],
+                            "score": score,
+                            "mots_cles_matches": matches,
+                            "source": "LinkedIn",
+                            "first_seen": date,
+                            "last_seen": date,
+                            "is_priority": any(p in norm(r["titre"]) for p in METIERSPRIORITAIRES),
                         })
-                except Exception as e: print(f"    ⚠️ {e}")
+                except Exception as e:
+                    print(f"    ⚠️ {e}")
                 time.sleep(random.uniform(1.0, 2.0))
             time.sleep(random.uniform(1.0, 2.0))
 
-        # APEC uniquement dans le batch A
         if batch == "A":
             print(f"\n🟡 APEC ({len(ANGLES_APEC)} requêtes)")
             for mots in ANGLES_APEC:
                 print(f"  → {mots}")
                 for r in extraire_apec(driver, mots, aliases_toutes):
                     score, matches = scorer(r["titre"])
-                    if score == 0 or score < SCORE_MIN: continue
+                    if score == 0 or score < SCORE_MIN:
+                        continue
                     k = cle(r["titre"], r["entreprise"], r["localisation"])
-                    if k in vues: continue
+                    if k in vues:
+                        continue
                     vues.add(k)
                     offres.append({
-                        "entreprise": r["entreprise"], "titre": r["titre"],
-                        "localisation": r["localisation"], "lien": r["lien"],
-                        "score": score, "mots_cles_matches": matches,
-                        "source": "APEC", "first_seen": date, "last_seen": date,
-                        "is_priority": any(p in n(r["titre"]) for p in METIERSPRIORITAIRES),
+                        "entreprise": r["entreprise"],
+                        "titre": r["titre"],
+                        "localisation": r["localisation"],
+                        "lien": r["lien"],
+                        "score": score,
+                        "mots_cles_matches": matches,
+                        "source": "APEC",
+                        "first_seen": date,
+                        "last_seen": date,
+                        "is_priority": any(p in norm(r["titre"]) for p in METIERSPRIORITAIRES),
                     })
                 time.sleep(random.uniform(2.0, 3.0))
     finally:
@@ -349,8 +384,10 @@ def main():
     if offres:
         print("🏆 Top 5 :")
         for o in offres[:5]:
-            print(f"  [{'S' if o.get('is_priority') else ' '}][{o['score']}pts] {o['titre']} — {o['entreprise']}")
-    json.dump(offres, open(fichier,'w',encoding='utf-8'), ensure_ascii=False, indent=4)
+            flag = "⭐" if o.get("is_priority") else "  "
+            print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
+
+    json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     main()
