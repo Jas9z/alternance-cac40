@@ -13,134 +13,135 @@ permissions:
 
 jobs:
 
-  # ─────────────────────────────────
-  # JOB A — Entreprises 1à 32 + APEC
-  # ─────────────────────────────────
   scrape-A:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v5
-
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: 'pip'
-
-      - name: Installer les dépendances
-        run: pip install -r requirements.txt
-
-      - name: Installer Google Chrome
+      - run: pip install -r requirements.txt
+      - name: Chrome
         run: |
           sudo apt-get update -q
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
-
-      - name: Lancer scraper batch A (entreprises 0→31 + APEC)
-        run: python scraper_ultime.py --batch A
-
-      - name: Upload artifact batch A
-        uses: actions/upload-artifact@v4
+      - run: python scraper_ultime.py --batch A
+      - uses: actions/upload-artifact@v4
         with:
           name: offres-batch-A
           path: offres_batch_A.json
           retention-days: 1
 
-  # ─────────────────────────────────
-  # JOB B — Entreprises 33à 64
-  # ─────────────────────────────────
   scrape-B:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v5
-
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: 'pip'
-
-      - name: Installer les dépendances
-        run: pip install -r requirements.txt
-
-      - name: Installer Google Chrome
+      - run: pip install -r requirements.txt
+      - name: Chrome
         run: |
           sudo apt-get update -q
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
-
-      - name: Lancer scraper batch B (entreprises 32→63)
-        run: python scraper_ultime.py --batch B
-
-      - name: Upload artifact batch B
-        uses: actions/upload-artifact@v4
+      - run: python scraper_ultime.py --batch B
+      - uses: actions/upload-artifact@v4
         with:
           name: offres-batch-B
           path: offres_batch_B.json
           retention-days: 1
 
-  # ─────────────────────────────────
-  # JOB MERGE — attend A+B, fusionne et commit
-  # ─────────────────────────────────
-  merge:
+  scrape-C:
     runs-on: ubuntu-latest
-    needs: [scrape-A, scrape-B]
-    timeout-minutes: 10
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v5
-
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-
-      - name: Télécharger artifact A
-        uses: actions/download-artifact@v4
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Chrome
+        run: |
+          sudo apt-get update -q
+          wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
+          google-chrome --version
+      - run: python scraper_ultime.py --batch C
+      - uses: actions/upload-artifact@v4
         with:
-          name: offres-batch-A
+          name: offres-batch-C
+          path: offres_batch_C.json
+          retention-days: 1
 
-      - name: Télécharger artifact B
-        uses: actions/download-artifact@v4
+  scrape-D:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
-          name: offres-batch-B
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Chrome
+        run: |
+          sudo apt-get update -q
+          wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
+          google-chrome --version
+      - run: python scraper_ultime.py --batch D
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offres-batch-D
+          path: offres_batch_D.json
+          retention-days: 1
 
-      - name: Fusionner les deux fichiers JSON
+  merge:
+    runs-on: ubuntu-latest
+    needs: [scrape-A, scrape-B, scrape-C, scrape-D]
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with: { name: offres-batch-A }
+      - uses: actions/download-artifact@v4
+        with: { name: offres-batch-B }
+      - uses: actions/download-artifact@v4
+        with: { name: offres-batch-C }
+      - uses: actions/download-artifact@v4
+        with: { name: offres-batch-D }
+      - name: Fusionner
         run: |
           python - <<'EOF'
           import json, os
-          from datetime import datetime
-
-          def charger(chemin):
-              if os.path.exists(chemin):
-                  try:
-                      return json.load(open(chemin, encoding='utf-8'))
-                  except Exception:
-                      pass
-              return []
-
-          a = charger('offres_batch_A.json')
-          b = charger('offres_batch_B.json')
+          def charger(p):
+              try: return json.load(open(p, encoding='utf-8')) if os.path.exists(p) else []
+              except: return []
+          offres = charger('offres_batch_A.json') + charger('offres_batch_B.json') + charger('offres_batch_C.json') + charger('offres_batch_D.json')
           existant = charger('offres_cac40.json')
-
-          # Dédup par clé lien
           index = {o['lien']: o for o in existant}
-          for o in a + b:
+          for o in offres:
               index[o['lien']] = o
-
-          toutes = list(index.values())
-          toutes.sort(key=lambda x: (not x.get('is_priority', False), -x.get('score', 0)))
-
-          with open('offres_cac40.json', 'w', encoding='utf-8') as f:
-              json.dump(toutes, f, ensure_ascii=False, indent=4)
-
-          print(f'✅ Fusion : {len(a)} (A) + {len(b)} (B) + existant = {len(toutes)} offres totales')
+          toutes = sorted(index.values(), key=lambda x: (not x.get('is_priority', False), -x.get('score', 0)))
+          json.dump(toutes, open('offres_cac40.json','w',encoding='utf-8'), ensure_ascii=False, indent=4)
+          print(f'Fusion : {len(offres)} nouvelles + existant = {len(toutes)} offres totales')
           EOF
-
-      - name: Commit et push
+      - name: Commit
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add offres_cac40.json
-          git diff --cached --quiet && echo "Rien à commiter." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique des offres"
+          git diff --cached --quiet && echo "Rien." || git commit -m "🤖 $(date '+%d/%m/%Y %H:%M') — Mise à jour automatique"
           git push

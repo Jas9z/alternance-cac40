@@ -1,10 +1,4 @@
-import json
-import time
-import random
-import unicodedata
-import os
-import re
-import sys
+import json, time, random, unicodedata, os, re, sys
 from datetime import datetime
 from urllib.parse import quote_plus
 from selenium import webdriver
@@ -14,115 +8,104 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import StaleElementReferenceException
 
-# ═══════════════════════════════════════════════
-# ENTREPRISES + ALIASES
-# ═══════════════════════════════════════════════
+# ═══ ENTREPRISES + ALIASES ═══
 
 ENTREPRISES = [
-    ("Air Liquide",         ["air liquide"]),
-    ("Airbus",              ["airbus", "airbus group", "airbus defence", "airbus helicopters"]),
-    ("Alstom",              ["alstom"]),
-    ("ArcelorMittal",       ["arcelormittal"]),
-    ("AXA",                 ["axa", "axa france", "axa assurances", "axa partners"]),
-    ("BNP Paribas",         ["bnp", "bnp paribas", "bnp paribas cardif"]),
-    ("Bouygues",            ["bouygues", "bouygues telecom", "bouygues construction"]),
-    ("Capgemini",           ["capgemini", "capgemini invent", "capgemini engineering", "sogeti"]),
-    ("Carrefour",           ["carrefour"]),
-    ("Crédit Agricole",     ["credit agricole", "lcl", "amundi", "indosuez"]),
-    ("Danone",              ["danone", "evian", "volvic"]),
-    ("Dassault Systèmes",   ["dassault", "dassault systemes", "3ds"]),
-    ("Edenred",             ["edenred"]),
-    ("Engie",               ["engie", "engie solutions", "tractebel"]),
-    ("EssilorLuxottica",    ["essilor", "luxottica", "essilorluxottica"]),
-    ("Hermès",              ["hermes"]),
-    ("Kering",              ["kering", "gucci", "saint laurent", "balenciaga"]),
-    ("L'Oréal",             ["loreal", "l oreal", "lancome", "maybelline", "garnier"]),
-    ("Legrand",             ["legrand"]),
-    ("LVMH",                ["lvmh", "louis vuitton", "dior", "sephora", "tag heuer"]),
-    ("Michelin",            ["michelin"]),
-    ("Orange",              ["orange", "orange business", "orange cyberdefense"]),
-    ("Pernod Ricard",       ["pernod", "pernod ricard"]),
-    ("Publicis",            ["publicis", "publicis sapient", "leo burnett"]),
-    ("Renault",             ["renault", "renault group", "ampere"]),
-    ("Safran",              ["safran", "safran aircraft", "safran electronics"]),
-    ("Sanofi",              ["sanofi"]),
-    ("Schneider Electric",  ["schneider", "schneider electric"]),
-    ("Société Générale",   ["societe generale", "sg", "boursorama", "ayvens"]),
-    ("Stellantis",          ["stellantis", "peugeot", "citroen", "fiat"]),
-    ("STMicroelectronics",  ["st", "stmicroelectronics"]),
-    ("Teleperformance",     ["teleperformance"]),
-    # ─ BATCH B ─
-    ("Thales",              ["thales", "thales six", "thales alenia"]),
-    ("TotalEnergies",       ["totalenergies", "total"]),
-    ("Unibail-Rodamco",     ["unibail", "westfield"]),
-    ("Veolia",              ["veolia", "veolia water"]),
-    ("Vinci",               ["vinci", "vinci construction", "vinci energies"]),
-    ("Vivendi",             ["vivendi", "canal+", "canal plus", "havas"]),
-    ("Microsoft",           ["microsoft", "microsoft france"]),
-    ("Amazon",              ["amazon", "aws", "amazon web services"]),
-    ("Google",              ["google", "google france", "alphabet"]),
-    ("Salesforce",          ["salesforce", "tableau", "slack"]),
-    ("SAP",                 ["sap", "sap france"]),
-    ("Oracle",              ["oracle", "oracle france"]),
-    ("IBM",                 ["ibm", "ibm france"]),
-    ("Cisco",               ["cisco"]),
-    ("Accenture",           ["accenture"]),
-    ("Deloitte",            ["deloitte"]),
-    ("EY",                  ["ey", "ernst young", "ernst & young"]),
-    ("PwC",                 ["pwc", "pricewaterhousecoopers"]),
-    ("KPMG",                ["kpmg"]),
-    ("Sopra Steria",        ["sopra", "sopra steria", "sopra banking"]),
-    ("CGI",                 ["cgi", "cgi france"]),
-    ("Wavestone",           ["wavestone"]),
-    ("EDF",                 ["edf", "edf renouvelables"]),
-    ("Groupe SNCF",         ["sncf", "keolis", "ouigo", "eurostar"]),
-    ("CMA CGM",             ["cma cgm", "cma"]),
-    ("La Poste Groupe",     ["la poste", "docaposte", "chronopost"]),
-    ("Naval Group",         ["naval group"]),
-    ("Siemens",             ["siemens", "siemens energy"]),
-    ("Nestlé",              ["nestle", "nespresso"]),
-    ("Unilever",            ["unilever"]),
+    ("Air Liquide",        ["air liquide"]),
+    ("Airbus",             ["airbus", "airbus group", "airbus defence", "airbus helicopters"]),
+    ("Alstom",             ["alstom"]),
+    ("ArcelorMittal",      ["arcelormittal"]),
+    ("AXA",                ["axa", "axa france", "axa assurances", "axa partners"]),
+    ("BNP Paribas",        ["bnp", "bnp paribas", "bnp paribas cardif"]),
+    ("Bouygues",           ["bouygues", "bouygues telecom", "bouygues construction"]),
+    ("Capgemini",          ["capgemini", "capgemini invent", "capgemini engineering", "sogeti"]),
+    ("Carrefour",          ["carrefour"]),
+    ("Credit Agricole",    ["credit agricole", "lcl", "amundi", "indosuez"]),
+    ("Danone",             ["danone", "evian", "volvic"]),
+    ("Dassault Systemes",  ["dassault", "dassault systemes", "3ds"]),
+    ("Edenred",            ["edenred"]),
+    ("Engie",              ["engie", "engie solutions", "tractebel"]),
+    ("EssilorLuxottica",   ["essilor", "luxottica", "essilorluxottica"]),
+    ("Hermes",             ["hermes"]),
+    ("Kering",             ["kering", "gucci", "saint laurent", "balenciaga"]),
+    ("LOreal",             ["loreal", "l oreal", "lancome", "maybelline", "garnier"]),
+    ("Legrand",            ["legrand"]),
+    ("LVMH",               ["lvmh", "louis vuitton", "dior", "sephora"]),
+    ("Michelin",           ["michelin"]),
+    ("Orange",             ["orange", "orange business", "orange cyberdefense"]),
+    ("Pernod Ricard",      ["pernod", "pernod ricard"]),
+    ("Publicis",           ["publicis", "publicis sapient", "leo burnett"]),
+    ("Renault",            ["renault", "renault group", "ampere"]),
+    ("Safran",             ["safran", "safran aircraft", "safran electronics"]),
+    ("Sanofi",             ["sanofi"]),
+    ("Schneider Electric", ["schneider", "schneider electric"]),
+    ("Societe Generale",   ["societe generale", "sg", "boursorama", "ayvens"]),
+    ("Stellantis",         ["stellantis", "peugeot", "citroen", "fiat"]),
+    ("STMicro",            ["st", "stmicroelectronics"]),
+    ("Teleperformance",    ["teleperformance"]),
+    ("Thales",             ["thales", "thales six", "thales alenia"]),
+    ("TotalEnergies",      ["totalenergies", "total"]),
+    ("Unibail",            ["unibail", "westfield"]),
+    ("Veolia",             ["veolia", "veolia water"]),
+    ("Vinci",              ["vinci", "vinci construction", "vinci energies"]),
+    ("Vivendi",            ["vivendi", "canal+", "canal plus", "havas"]),
+    ("Microsoft",          ["microsoft", "microsoft france"]),
+    ("Amazon",             ["amazon", "aws", "amazon web services"]),
+    ("Google",             ["google", "google france", "alphabet"]),
+    ("Salesforce",         ["salesforce", "tableau", "slack"]),
+    ("SAP",                ["sap", "sap france"]),
+    ("Oracle",             ["oracle", "oracle france"]),
+    ("IBM",                ["ibm", "ibm france"]),
+    ("Cisco",              ["cisco"]),
+    ("Accenture",          ["accenture"]),
+    ("Deloitte",           ["deloitte"]),
+    ("EY",                 ["ey", "ernst young", "ernst & young"]),
+    ("PwC",                ["pwc", "pricewaterhousecoopers"]),
+    ("KPMG",               ["kpmg"]),
+    ("Sopra Steria",       ["sopra", "sopra steria", "sopra banking"]),
+    ("CGI",                ["cgi", "cgi france"]),
+    ("Wavestone",          ["wavestone"]),
+    ("EDF",                ["edf", "edf renouvelables"]),
+    ("SNCF",               ["sncf", "keolis", "ouigo", "eurostar"]),
+    ("CMA CGM",            ["cma cgm", "cma"]),
+    ("La Poste",           ["la poste", "docaposte", "chronopost"]),
+    ("Naval Group",        ["naval group"]),
+    ("Siemens",            ["siemens", "siemens energy"]),
+    ("Nestle",             ["nestle", "nespresso"]),
+    ("Unilever",           ["unilever"]),
 ]
 
-BATCH_SIZE = len(ENTREPRISES) // 2  # ~32 entreprises par batch
-ENTREPRISES_A = ENTREPRISES[:BATCH_SIZE]
-ENTREPRISES_B = ENTREPRISES[BATCH_SIZE:]
+# 4 batchs de ~16 entreprises chacun
+N = len(ENTREPRISES)
+BATCHS = {
+    "A": ENTREPRISES[:N//4],
+    "B": ENTREPRISES[N//4:N//2],
+    "C": ENTREPRISES[N//2:3*N//4],
+    "D": ENTREPRISES[3*N//4:],
+}
 
-# ═══════════════════════════════════════════════
-# ANGLES
-# ═══════════════════════════════════════════════
+# ═══ ANGLES (6 au lieu de 15 — les plus efficaces) ═══
+# Calcul : 16 entreprises × 6 angles × 2.5s moy = ~4 min par batch ✔️
 
-ANGLES_LINKEDIN = [
-    "Alternance ingénieur affaires",
-    "Alternance chargé affaires",
-    "Alternance business developer",
-    "Alternance commercial IT",
-    "Alternance technico-commercial",
-    "Alternance account manager",
-    "Alternance key account manager",
+ANGLES = [
+    "Alternance ingenieur affaires",
     "Alternance avant-vente",
-    "Alternance pre-sales",
-    "Alternance solution engineer",
-    "Alternance chef de projet digital",
-    "Alternance chargé de déploiement",
-    "Alternance business manager",
-    "Alternance consultant digital",
+    "Alternance technico-commercial",
+    "Alternance business developer",
     "Alternance chef de projet IT",
+    "Alternance account manager",
 ]
 
 ANGLES_APEC = [
-    "ingénieur d'affaires alternance",
+    "ingenieur affaires alternance",
     "avant-vente alternance",
-    "pre-sales alternance",
     "technico-commercial alternance",
-    "chargé de déploiement alternance",
+    "pre-sales alternance",
+    "charge deploiement alternance",
     "business developer alternance",
-    "chef de projet IT alternance",
 ]
 
-# ═══════════════════════════════════════════════
-# SCORING
-# ═══════════════════════════════════════════════
+# ═══ SCORING ═══
 
 MOTS_POSITIFS = {
     "avant-vente": 8, "avant vente": 8, "pre-sales": 8, "presales": 8,
@@ -135,24 +118,20 @@ MOTS_POSITIFS = {
     "business developer": 6, "business development": 6,
     "key account": 6, "account manager": 6, "kam": 6,
     "commercial": 5, "business": 5, "sales": 5, "vente": 5, "b2b": 5,
-    "developpement commercial": 6,
-    "chef de projet": 5, "project manager": 5,
-    "deploiement": 6, "delivery": 4, "pilotage": 4,
-    "consultant": 4, "strategy": 4, "strategie": 4,
-    "transformation": 3, "partenariat": 3, "digital": 2,
-    "cloud": 2, "data": 2, "ia": 2, "saas": 2, "erp": 2, "crm": 2,
+    "chef de projet": 5, "project manager": 5, "deploiement": 6,
+    "consultant": 4, "strategy": 4, "strategie": 4, "transformation": 3,
+    "cloud": 2, "data": 2, "saas": 2, "erp": 2, "crm": 2,
     "telecom": 2, "si": 2, "it": 2, "tech": 2, "cyber": 2,
-    "manager": 2, "management": 2, "responsable": 1, "ingenieur": 1, "charge": 1,
+    "manager": 2, "management": 2, "ingenieur": 1, "charge": 1,
 }
 
 SCORE_MIN = 3
 
 METIERS_PRIORITAIRES = [
     "avant-vente", "avant vente", "pre-sales", "presales",
-    "technico-commercial", "technico commercial",
-    "ingenieur affaires", "ingenieur d affaires",
-    "charge affaires", "charge de deploiement",
-    "solution engineer", "business manager", "ppo",
+    "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
+    "charge affaires", "charge de deploiement", "solution engineer",
+    "business manager", "ppo",
 ]
 
 MOTS_INTERDITS = [
@@ -163,7 +142,7 @@ MOTS_INTERDITS = [
     "electrotechni", "production", "operateur",
     "logistique", "supply chain", "acheteur", "approvisionnement",
     "graphiste", "motion design", "ux design", "ui design",
-    "communication externe", "relations presse", "redacteur",
+    "communication externe", "relations presse",
     "juridique", "droit", "paralegal",
     "qualite", "qhse", "hse",
     "stage ",
@@ -176,9 +155,7 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
 ]
 
-# ═══════════════════════════════════════════════
-# DRIVER
-# ═══════════════════════════════════════════════
+# ═══ DRIVER ═══
 
 def init_driver():
     opts = Options()
@@ -196,138 +173,99 @@ def init_driver():
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
     })
-    driver.set_page_load_timeout(30)
+    driver.set_page_load_timeout(20)
     return driver
 
-# ═══════════════════════════════════════════════
-# UTILITAIRES
-# ═══════════════════════════════════════════════
+# ═══ UTILITAIRES ═══
 
-def normaliser(texte):
-    if not texte: return ""
-    return unicodedata.normalize('NFD', texte).encode('ascii', 'ignore').decode('utf-8').lower().strip()
+def n(t):
+    if not t: return ""
+    return unicodedata.normalize('NFD', t).encode('ascii','ignore').decode('utf-8').lower().strip()
 
-def scorer_offre(titre):
-    t = normaliser(titre)
-    for mot in MOTS_INTERDITS:
-        if mot in t: return 0, []
+def scorer(titre):
+    t = n(titre)
+    for m in MOTS_INTERDITS:
+        if m in t: return 0, []
     score, matches = 0, []
     for mot, poids in MOTS_POSITIFS.items():
-        if mot in t:
-            score += poids
-            matches.append(mot)
+        if mot in t: score += poids; matches.append(mot)
     for p in METIERSPRIORITAIRES:
-        if p in t:
-            score += 3
-            break
+        if p in t: score += 3; break
     return score, matches
 
-def cle_dedup(titre, entreprise, localisation):
-    return normaliser(titre)[:55] + "|" + re.sub(r'\s+','',normaliser(entreprise))[:15] + "|" + normaliser(localisation)[:10]
+def cle(titre, ent, loc):
+    return n(titre)[:55]+"|"+re.sub(r'\s+','',n(ent))[:15]+"|"+n(loc)[:10]
 
-def charger_json(chemin):
-    if os.path.exists(chemin):
-        try:
-            return json.load(open(chemin, encoding='utf-8'))
-        except: pass
-    return []
+# ═══ SCROLL ═══
 
-# ═══════════════════════════════════════════════
-# SCROLL & EXTRACTION
-# ═══════════════════════════════════════════════
-
-def scroll_et_charger(driver, nb=5):
+def scroll(driver, nb=4):
     for _ in range(nb):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(random.uniform(1.0, 1.8))
+        time.sleep(random.uniform(0.8, 1.5))
         for sel in ["button.infinite-scroller__show-more-button", "button.see-more-jobs"]:
             try:
                 btn = driver.find_element(By.CSS_SELECTOR, sel)
-                if btn.is_displayed() and btn.is_enabled():
-                    btn.click()
-                    time.sleep(random.uniform(0.7, 1.2))
-                    break
+                if btn.is_displayed() and btn.is_enabled(): btn.click(); time.sleep(0.8); break
             except: pass
 
-def extraire_cards(driver, source="LinkedIn"):
+# ═══ EXTRACTION ═══
+
+def extraire(driver):
     offres = []
     cards = []
-    for sel in [".base-card", ".job-search-card", "li.jobs-search-results__list-item"]:
+    for sel in [".base-card", ".job-search-card"]:
         cards = driver.find_elements(By.CSS_SELECTOR, sel)
         if cards: break
     for card in cards:
         try:
-            titre = entreprise = localisation = lien = ""
+            titre = ent = loc = lien = ""
             for s in [".base-search-card__title", "h3.base-search-card__title"]:
-                try:
-                    titre = card.find_element(By.CSS_SELECTOR, s).text.strip()
-                    if titre: break
+                try: titre = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if titre else None
                 except: pass
             for s in [".base-search-card__subtitle", "h4.base-search-card__subtitle"]:
-                try:
-                    entreprise = card.find_element(By.CSS_SELECTOR, s).text.strip()
-                    if entreprise: break
+                try: ent = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if ent else None
                 except: pass
             for s in [".job-search-card__location", ".base-search-card__metadata"]:
-                try:
-                    localisation = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0].strip()
-                    if localisation: break
+                try: loc = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0].strip(); break if loc else None
                 except: pass
             for s in ["a.base-card__full-link", "a"]:
                 try:
                     href = card.find_element(By.CSS_SELECTOR, s).get_attribute("href") or ""
-                    if "linkedin.com/jobs" in href:
-                        lien = href.split("?")[0]
-                        break
+                    if "linkedin.com/jobs" in href: lien = href.split("?")[0]; break
                 except: pass
-            if titre and entreprise and lien:
-                offres.append({"titre": titre, "entreprise": entreprise,
-                               "localisation": localisation, "lien": lien})
+            if titre and ent and lien: offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
         except StaleElementReferenceException: continue
         except: continue
     return offres
 
-def scraper_apec(driver, mots_cles, aliases_toutes):
+def extraire_apec(driver, mots, aliases_toutes):
     offres = []
-    url = f"https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles={quote_plus(mots_cles)}&typeContrat=148990&nbResultats=50"
+    url = f"https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles={quote_plus(mots)}&typeContrat=148990&nbResultats=50"
     try:
-        driver.get(url)
-        time.sleep(random.uniform(3.0, 5.0))
-        scroll_et_charger(driver, nb=3)
-        cards = driver.find_elements(By.CSS_SELECTOR, ".card-offer, article.job, .result-item")
-        for card in cards:
+        driver.get(url); time.sleep(random.uniform(2.5, 4.0)); scroll(driver, nb=2)
+        for card in driver.find_elements(By.CSS_SELECTOR, ".card-offer, article.job"):
             try:
-                titre = entreprise = localisation = lien = ""
-                for s in ["h2.card-title", ".card-offer__title", "h2", "h3"]:
-                    try:
-                        titre = card.find_element(By.CSS_SELECTOR, s).text.strip()
-                        if titre: break
+                titre = ent = loc = lien = ""
+                for s in ["h2.card-title", ".card-offer__title", "h2"]:
+                    try: titre = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if titre else None
                     except: pass
                 for s in [".card-offer__company", ".company-name"]:
-                    try:
-                        entreprise = card.find_element(By.CSS_SELECTOR, s).text.strip()
-                        if entreprise: break
+                    try: ent = card.find_element(By.CSS_SELECTOR, s).text.strip(); break if ent else None
                     except: pass
                 for s in [".card-offer__location", ".location"]:
-                    try:
-                        localisation = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0]
-                        if localisation: break
+                    try: loc = card.find_element(By.CSS_SELECTOR, s).text.strip().split(',')[0]; break if loc else None
                     except: pass
                 try:
                     href = card.find_element(By.CSS_SELECTOR, "a").get_attribute("href") or ""
                     if "apec.fr" in href: lien = href.split("?")[0]
                 except: pass
-                if titre and lien and any(a in normaliser(entreprise) for a in aliases_toutes):
-                    offres.append({"titre": titre, "entreprise": entreprise,
-                                   "localisation": localisation, "lien": lien})
+                if titre and lien and any(a in n(ent) for a in aliases_toutes):
+                    offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
             except: continue
-    except Exception as e:
-        print(f"    ⚠️ APEC '{mots_cles}': {e}")
+    except Exception as e: print(f"  ⚠️ APEC: {e}")
     return offres
 
-# ═══════════════════════════════════════════════
-# MAIN
-# ═══════════════════════════════════════════════
+# ═══ MAIN ═══
 
 METIERS_PRIORITAIRES = [
     "avant-vente", "avant vente", "pre-sales", "presales",
@@ -336,94 +274,83 @@ METIERS_PRIORITAIRES = [
     "business manager", "ppo",
 ]
 
-def traiter_offres(resultats, aliases, cles_vues, date_du_jour, source):
-    nouvelles = []
-    stats = {"interdit": 0, "score_bas": 0, "dedup": 0, "ok": 0}
-    for r in resultats:
-        ent_norm = normaliser(r["entreprise"])
-        if not any(a in ent_norm for a in aliases): continue
-        score, matches = scorer_offre(r["titre"])
-        if score == 0: stats["interdit"] += 1; continue
-        if score < SCORE_MIN: stats["score_bas"] += 1; continue
-        cle = cle_dedup(r["titre"], r["entreprise"], r["localisation"])
-        if cle in cles_vues: stats["dedup"] += 1; continue
-        cles_vues.add(cle)
-        stats["ok"] += 1
-        nouvelles.append({
-            "entreprise": r["entreprise"], "titre": r["titre"],
-            "localisation": r["localisation"], "lien": r["lien"],
-            "score": score, "mots_cles_matches": matches, "source": source,
-            "first_seen": date_du_jour, "last_seen": date_du_jour,
-            "is_priority": any(p in normaliser(r["titre"]) for p in METIERSPRIORITAIRES),
-        })
-    return nouvelles, stats
-
 def main():
-    # Déterminer le batch depuis l'argument CLI
     batch = "A"
     if "--batch" in sys.argv:
-        idx = sys.argv.index("--batch")
-        batch = sys.argv[idx + 1].upper() if idx + 1 < len(sys.argv) else "A"
+        i = sys.argv.index("--batch")
+        batch = sys.argv[i+1].upper() if i+1 < len(sys.argv) else "A"
 
-    entreprises = ENTREPRISES_A if batch == "A" else ENTREPRISES_B
-    fichier_sortie = f"offres_batch_{batch}.json"
-    aliases_toutes = [a for _, aliases in ENTREPRISES for a in aliases]
+    entreprises = BATCHS.get(batch, BATCHS["A"])
+    fichier = f"offres_batch_{batch}.json"
+    aliases_toutes = [a for _, als in ENTREPRISES for a in als]
+    date = datetime.now().strftime("%d/%m/%Y")
 
-    date_du_jour = datetime.now().strftime("%d/%m/%Y")
-    print(f"🚀 Scraper V13 — Batch {batch} ({len(entreprises)} entreprises × {len(ANGLES_LINKEDIN)} angles)")
-    if batch == "A":
-        print(f"   + APEC : {len(ANGLES_APEC)} requêtes métier")
+    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises × {len(ANGLES)} angles = {len(entreprises)*len(ANGLES)} requêtes")
+    print(f"   Durée estimée : ~{len(entreprises)*len(ANGLES)*2//60} min")
 
-    toutes_offres = []
-    cles_vues = set()
+    offres = []
+    vues = set()
     driver = init_driver()
 
     try:
-        # LinkedIn
         for nom, aliases in entreprises:
             print(f"  → {nom}")
-            for angle in ANGLES_LINKEDIN:
-                url = (
-                    f"https://fr.linkedin.com/jobs/search"
-                    f"?keywords={quote_plus(angle + ' ' + nom)}"
-                    f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD"
-                )
+            for angle in ANGLES:
+                url = (f"https://fr.linkedin.com/jobs/search"
+                       f"?keywords={quote_plus(angle+' '+nom)}"
+                       f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD")
                 try:
                     driver.get(url)
-                    time.sleep(random.uniform(1.8, 3.0))
-                    scroll_et_charger(driver)
-                    resultats = extraire_cards(driver)
-                    nouvelles, _ = traiter_offres(resultats, aliases, cles_vues, date_du_jour, "LinkedIn")
-                    toutes_offres.extend(nouvelles)
-                except Exception as e:
-                    print(f"    ⚠️ {e}")
-                time.sleep(random.uniform(1.2, 2.5))
-            time.sleep(random.uniform(1.5, 3.0))
+                    time.sleep(random.uniform(1.5, 2.5))
+                    scroll(driver)
+                    for r in extraire(driver):
+                        en = n(r["entreprise"])
+                        if not any(a in en for a in aliases): continue
+                        score, matches = scorer(r["titre"])
+                        if score == 0 or score < SCORE_MIN: continue
+                        k = cle(r["titre"], r["entreprise"], r["localisation"])
+                        if k in vues: continue
+                        vues.add(k)
+                        offres.append({
+                            "entreprise": r["entreprise"], "titre": r["titre"],
+                            "localisation": r["localisation"], "lien": r["lien"],
+                            "score": score, "mots_cles_matches": matches,
+                            "source": "LinkedIn", "first_seen": date, "last_seen": date,
+                            "is_priority": any(p in n(r["titre"]) for p in METIERSPRIORITAIRES),
+                        })
+                except Exception as e: print(f"    ⚠️ {e}")
+                time.sleep(random.uniform(1.0, 2.0))
+            time.sleep(random.uniform(1.0, 2.0))
 
-        # APEC (seulement dans le batch A pour éviter les doublons)
+        # APEC uniquement dans le batch A
         if batch == "A":
             print(f"\n🟡 APEC ({len(ANGLES_APEC)} requêtes)")
             for mots in ANGLES_APEC:
                 print(f"  → {mots}")
-                resultats_apec = scraper_apec(driver, mots, aliases_toutes)
-                nouvelles, _ = traiter_offres(resultats_apec, aliases_toutes, cles_vues, date_du_jour, "APEC")
-                toutes_offres.extend(nouvelles)
-                time.sleep(random.uniform(2.0, 3.5))
-
+                for r in extraire_apec(driver, mots, aliases_toutes):
+                    score, matches = scorer(r["titre"])
+                    if score == 0 or score < SCORE_MIN: continue
+                    k = cle(r["titre"], r["entreprise"], r["localisation"])
+                    if k in vues: continue
+                    vues.add(k)
+                    offres.append({
+                        "entreprise": r["entreprise"], "titre": r["titre"],
+                        "localisation": r["localisation"], "lien": r["lien"],
+                        "score": score, "mots_cles_matches": matches,
+                        "source": "APEC", "first_seen": date, "last_seen": date,
+                        "is_priority": any(p in n(r["titre"]) for p in METIERSPRIORITAIRES),
+                    })
+                time.sleep(random.uniform(2.0, 3.0))
     finally:
         driver.quit()
 
-    toutes_offres.sort(key=lambda x: (not x.get("is_priority", False), -x["score"]))
-
-    print(f"\n✅ Batch {batch} : {len(toutes_offres)} offres → {fichier_sortie}")
-    if toutes_offres:
+    offres.sort(key=lambda x: (not x.get("is_priority", False), -x["score"]))
+    print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
+    if offres:
         print("🏆 Top 5 :")
-        for o in toutes_offres[:5]:
-            prio = "⭐" if o.get("is_priority") else "  "
-            print(f"   {prio}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
-
-    with open(fichier_sortie, 'w', encoding='utf-8') as f:
-        json.dump(toutes_offres, f, ensure_ascii=False, indent=4)
+        for o in offres[:5]:
+            print(f"  [{'S' if o.get('is_priority') else ' '}][{o['score']}pts] {o['titre']} — {o['entreprise']}")
+    json.dump(offres, open(fichier,'w',encoding='utf-8'), ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     main()
