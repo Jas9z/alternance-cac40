@@ -183,31 +183,80 @@ def make_session():
     })
     return s
 
-# ═══ SOURCE 1 : LINKEDIN (requests) ═══
+# ═══ DRIVER undetected-chromedriver ═══
 
-def scrape_linkedin(session, angle, nom, aliases, vues, date):
+def make_uc_driver():
+    """
+    Crée un driver Chrome via undetected-chromedriver.
+    Contourne la détection bot de LinkedIn (Cloudflare / DataDome).
+    """
+    import undetected_chromedriver as uc
+    options = uc.ChromeOptions()
+    options.add_argument("--headless=new")          # Mode headless non détectable
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument(f"--user-agent={random.choice(USER_AGENTS)}")
+    options.add_argument("--lang=fr-FR")
+    # Masquer les indicateurs d'automatisation
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    driver = uc.Chrome(options=options, use_subprocess=True)
+    # Injecter du JS pour masquer webdriver=true
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": """
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+            Object.defineProperty(navigator, 'languages', { get: () => ['fr-FR', 'fr', 'en-US'] });
+        """
+    })
+    return driver
+
+def quit_driver(driver):
+    try:
+        driver.quit()
+    except Exception:
+        pass
+
+# ═══ SOURCE 1 : LINKEDIN (undetected-chromedriver) ═══
+
+def scrape_linkedin(driver, angle, nom, aliases, vues, date):
+    """
+    Scrape LinkedIn Jobs via undetected-chromedriver.
+    Utilise l'URL guest publique pour éviter le wall d'authentification.
+    """
     offres = []
     for start in [0, 25]:
         url = (
-            f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+            f"https://www.linkedin.com/jobs/search/"
             f"?keywords={quote_plus(angle + ' ' + nom)}"
             f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD&start={start}"
         )
         try:
-            r = session.get(url, timeout=15)
-            if r.status_code != 200:
-                print(f"    LinkedIn {r.status_code} pour {nom}")
-                break
-            soup = BeautifulSoup(r.text, "html.parser")
-            cards = soup.find_all("li")
+            driver.get(url)
+            # Attendre que les cards soient chargées (max 12s)
+            time.sleep(random.uniform(4.0, 7.0))
+            soup = BeautifulSoup(driver.page_source, "html.parser")
+
+            # Détecter si LinkedIn redirige vers login
+            if "authwall" in driver.current_url or "login" in driver.current_url:
+                print(f"    ⚠️ LinkedIn authwall détecté pour {nom}, arrêt du batch LinkedIn.")
+                return offres
+
+            cards = soup.find_all("div", class_=lambda c: c and "job-search-card" in c)
             if not cards:
+                # Fallback : chercher les <li> avec base-card
+                cards = soup.find_all("li", class_=lambda c: c and "result-card" in (c or ""))
+            if not cards:
+                print(f"    ℹ️ Aucune card LinkedIn pour {nom} (start={start})")
                 break
+
             for card in cards:
                 try:
-                    titre_el = card.find("h3", class_="base-search-card__title") or card.find("h3")
-                    ent_el   = card.find("h4", class_="base-search-card__subtitle") or card.find("h4")
-                    loc_el   = card.find("span", class_="job-search-card__location")
-                    lien_el  = card.find("a", class_="base-card__full-link") or card.find("a")
+                    titre_el = card.find("h3", class_=lambda c: c and "base-search-card__title" in c) or card.find("h3")
+                    ent_el   = card.find("h4", class_=lambda c: c and "base-search-card__subtitle" in c) or card.find("h4")
+                    loc_el   = card.find("span", class_=lambda c: c and "job-search-card__location" in c)
+                    lien_el  = card.find("a", class_=lambda c: c and "base-card__full-link" in c) or card.find("a")
 
                     titre = titre_el.get_text(strip=True) if titre_el else ""
                     ent   = ent_el.get_text(strip=True) if ent_el else ""
@@ -236,9 +285,10 @@ def scrape_linkedin(session, angle, nom, aliases, vues, date):
                     })
                 except Exception:
                     continue
-            time.sleep(random.uniform(1.5, 2.5))
+
+            time.sleep(random.uniform(3.0, 5.0))
         except Exception as e:
-            print(f"    ⚠️ LinkedIn requests: {e}")
+            print(f"    ⚠️ LinkedIn UC: {e}")
             break
     return offres
 
@@ -250,17 +300,19 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
     try:
         r = session.get(url, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
-        for card in soup.select(".card-offer, article.job"):
+        for card in soup.select(".card-offer, article.job, div[data-content='offer']"):
             try:
-                titre_el = card.select_one("h2.card-title, .card-offer__title, h2")
-                ent_el   = card.select_one(".card-offer__company, .company-name")
-                loc_el   = card.select_one(".card-offer__location, .location")
-                lien_el  = card.select_one("a[href*='apec.fr']")
+                titre_el = card.select_one("h2.card-title, .card-offer__title, h2, .title")
+                ent_el   = card.select_one(".card-offer__company, .company-name, .company")
+                loc_el   = card.select_one(".card-offer__location, .location, .lieu")
+                lien_el  = card.select_one("a[href*='apec.fr'], a[href*='/offre-'], a")
 
                 titre = titre_el.get_text(strip=True) if titre_el else ""
                 ent   = ent_el.get_text(strip=True) if ent_el else ""
                 loc   = loc_el.get_text(strip=True).split(',')[0] if loc_el else ""
                 lien  = lien_el.get("href", "").split("?")[0] if lien_el else ""
+                if lien and not lien.startswith("http"):
+                    lien = "https://www.apec.fr" + lien
 
                 if not (titre and lien and any(a in norm(ent) for a in aliases_toutes)):
                     continue
@@ -323,8 +375,8 @@ def scrape_france_travail(session, mot_cle, aliases, vues, date):
         r = session.get(FT_SEARCH_URL, headers={"Authorization": f"Bearer {token}"},
             params={
                 "motsCles": mot_cle,
-                "typeContrat": "AL",  # Alternance
-                "lieux": "75,77,78,91,92,93,94,95",  # Ile-de-France
+                "typeContrat": "AL",
+                "lieux": "75,77,78,91,92,93,94,95",
                 "range": "0-49",
                 "sort": "1",
             }, timeout=15)
@@ -380,16 +432,24 @@ def main():
     vues = set()
     session = make_session()
 
-    # ——— LinkedIn (requests) ———
-    print(f"\n🔵 LinkedIn ({len(ANGLES)} angles × {len(entreprises)} entreprises)")
-    for nom, aliases in entreprises:
-        print(f"  → {nom}")
-        for angle in ANGLES:
-            nouveaux = scrape_linkedin(session, angle, nom, aliases, vues, date)
-            offres.extend(nouveaux)
-            time.sleep(random.uniform(1.0, 2.0))
-        time.sleep(random.uniform(1.0, 2.0))
-    print(f"  ✓ LinkedIn : {len(offres)} offres")
+    # ——— LinkedIn (undetected-chromedriver) ———
+    print(f"\n🔵 LinkedIn UC ({len(ANGLES)} angles × {len(entreprises)} entreprises)")
+    driver = None
+    try:
+        driver = make_uc_driver()
+        for nom, aliases in entreprises:
+            print(f"  → {nom}")
+            for angle in ANGLES:
+                nouveaux = scrape_linkedin(driver, angle, nom, aliases, vues, date)
+                offres.extend(nouveaux)
+                time.sleep(random.uniform(2.0, 4.0))
+            time.sleep(random.uniform(2.0, 4.0))
+        print(f"  ✓ LinkedIn UC : {len(offres)} offres")
+    except Exception as e:
+        print(f"  ⚠️ LinkedIn UC init échoué : {e}")
+    finally:
+        if driver:
+            quit_driver(driver)
 
     # ——— APEC (batch A seulement) ———
     if batch == "A":
