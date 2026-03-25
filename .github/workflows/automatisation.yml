@@ -18,8 +18,8 @@ jobs:
     timeout-minutes: 360
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -31,7 +31,10 @@ jobs:
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
       - run: python scraper_ultime.py --batch A
-      - uses: actions/upload-artifact@v4
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: offres-batch-A
@@ -43,8 +46,8 @@ jobs:
     timeout-minutes: 360
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -56,7 +59,10 @@ jobs:
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
       - run: python scraper_ultime.py --batch B
-      - uses: actions/upload-artifact@v4
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: offres-batch-B
@@ -68,8 +74,8 @@ jobs:
     timeout-minutes: 360
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -81,7 +87,10 @@ jobs:
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
       - run: python scraper_ultime.py --batch C
-      - uses: actions/upload-artifact@v4
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: offres-batch-C
@@ -93,8 +102,8 @@ jobs:
     timeout-minutes: 360
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -106,7 +115,10 @@ jobs:
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
       - run: python scraper_ultime.py --batch D
-      - uses: actions/upload-artifact@v4
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: offres-batch-D
@@ -119,20 +131,20 @@ jobs:
     if: always()
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         continue-on-error: true
         with: { name: offres-batch-A }
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         continue-on-error: true
         with: { name: offres-batch-B }
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         continue-on-error: true
         with: { name: offres-batch-C }
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         continue-on-error: true
         with: { name: offres-batch-D }
       - name: Fusionner
