@@ -1,12 +1,8 @@
 import json, time, random, unicodedata, os, re, sys
 from datetime import datetime
 from urllib.parse import quote_plus
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import StaleElementReferenceException
+import requests
+from bs4 import BeautifulSoup
 
 # ═══ ENTREPRISES + ALIASES ═══
 
@@ -83,8 +79,6 @@ BATCHS = {
     "D": ENTREPRISES[3*N//4:],
 }
 
-# ═══ ANGLES ═══
-
 ANGLES = [
     "Alternance ingenieur affaires",
     "Alternance avant-vente",
@@ -102,8 +96,6 @@ ANGLES_APEC = [
     "charge deploiement alternance",
     "business developer alternance",
 ]
-
-# ═══ SCORING ═══
 
 MOTS_POSITIFS = {
     "avant-vente": 8, "avant vente": 8, "pre-sales": 8, "presales": 8,
@@ -125,7 +117,6 @@ MOTS_POSITIFS = {
 
 SCORE_MIN = 3
 
-# Variable globale unique — utilisee par scorer() ET main()
 METIERS_PRIORITAIRES = [
     "avant-vente", "avant vente", "pre-sales", "presales",
     "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
@@ -148,32 +139,11 @@ MOTS_INTERDITS = [
 ]
 
 USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
 ]
-
-# ═══ DRIVER ═══
-
-def init_driver():
-    opts = Options()
-    opts.add_argument("--headless=new")
-    opts.add_argument("--disable-gpu")
-    opts.add_argument("--no-sandbox")
-    opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--window-size=1920,1080")
-    opts.add_argument("--disable-blink-features=AutomationControlled")
-    opts.add_experimental_option("excludeSwitches", ["enable-automation"])
-    opts.add_experimental_option("useAutomationExtension", False)
-    opts.add_argument(f"user-agent={random.choice(USER_AGENTS)}")
-    opts.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opts)
-    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
-        "source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
-    })
-    driver.set_page_load_timeout(20)
-    return driver
 
 # ═══ UTILITAIRES ═══
 
@@ -192,7 +162,7 @@ def scorer(titre):
         if mot in t:
             score += poids
             matches.append(mot)
-    for p in METIERSPRIORITAIRES:  # utilise la variable globale
+    for p in METIERSPRIORITAIRES:
         if p in t:
             score += 3
             break
@@ -201,86 +171,194 @@ def scorer(titre):
 def cle(titre, ent, loc):
     return norm(titre)[:55] + "|" + re.sub(r'\s+', '', norm(ent))[:15] + "|" + norm(loc)[:10]
 
-# ═══ SCROLL ═══
+def make_session():
+    s = requests.Session()
+    s.headers.update({
+        "User-Agent": random.choice(USER_AGENTS),
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Referer": "https://www.linkedin.com/",
+    })
+    return s
 
-def scroll(driver, nb=4):
-    for _ in range(nb):
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(random.uniform(0.8, 1.5))
-        for sel in ["button.infinite-scroller__show-more-button", "button.see-more-jobs"]:
-            try:
-                btn = driver.find_element(By.CSS_SELECTOR, sel)
-                if btn.is_displayed() and btn.is_enabled():
-                    btn.click()
-                    time.sleep(0.8)
-                    break
-            except:
-                pass
+# ═══ SOURCE 1 : LINKEDIN (requests) ═══
 
-# ═══ EXTRACTION LINKEDIN ═══
-
-def get_text(card, selectors):
-    for s in selectors:
-        try:
-            val = card.find_element(By.CSS_SELECTOR, s).text.strip()
-            if val:
-                return val
-        except:
-            pass
-    return ""
-
-def get_href(card, selectors, keyword):
-    for s in selectors:
-        try:
-            href = card.find_element(By.CSS_SELECTOR, s).get_attribute("href") or ""
-            if keyword in href:
-                return href.split("?")[0]
-        except:
-            pass
-    return ""
-
-def extraire(driver):
+def scrape_linkedin(session, angle, nom, aliases, vues, date):
     offres = []
-    cards = []
-    for sel in [".base-card", ".job-search-card"]:
-        cards = driver.find_elements(By.CSS_SELECTOR, sel)
-        if cards:
-            break
-    for card in cards:
+    for start in [0, 25]:
+        url = (
+            f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+            f"?keywords={quote_plus(angle + ' ' + nom)}"
+            f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD&start={start}"
+        )
         try:
-            titre = get_text(card, [".base-search-card__title", "h3.base-search-card__title"])
-            ent   = get_text(card, [".base-search-card__subtitle", "h4.base-search-card__subtitle"])
-            loc   = get_text(card, [".job-search-card__location", ".base-search-card__metadata"]).split(',')[0].strip()
-            lien  = get_href(card, ["a.base-card__full-link", "a"], "linkedin.com/jobs")
-            if titre and ent and lien:
-                offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
-        except StaleElementReferenceException:
-            continue
-        except:
-            continue
+            r = session.get(url, timeout=15)
+            if r.status_code != 200:
+                print(f"    LinkedIn {r.status_code} pour {nom}")
+                break
+            soup = BeautifulSoup(r.text, "html.parser")
+            cards = soup.find_all("li")
+            if not cards:
+                break
+            for card in cards:
+                try:
+                    titre_el = card.find("h3", class_="base-search-card__title") or card.find("h3")
+                    ent_el   = card.find("h4", class_="base-search-card__subtitle") or card.find("h4")
+                    loc_el   = card.find("span", class_="job-search-card__location")
+                    lien_el  = card.find("a", class_="base-card__full-link") or card.find("a")
+
+                    titre = titre_el.get_text(strip=True) if titre_el else ""
+                    ent   = ent_el.get_text(strip=True) if ent_el else ""
+                    loc   = loc_el.get_text(strip=True).split(',')[0] if loc_el else ""
+                    lien  = (lien_el.get("href") or "").split("?")[0] if lien_el else ""
+
+                    if not (titre and ent and "linkedin.com/jobs" in lien):
+                        continue
+                    if not any(a in norm(ent) for a in aliases):
+                        continue
+
+                    score, matches = scorer(titre)
+                    if score < SCORE_MIN:
+                        continue
+
+                    k = cle(titre, ent, loc)
+                    if k in vues:
+                        continue
+                    vues.add(k)
+                    offres.append({
+                        "entreprise": ent, "titre": titre,
+                        "localisation": loc, "lien": lien,
+                        "score": score, "mots_cles_matches": matches,
+                        "source": "LinkedIn", "first_seen": date, "last_seen": date,
+                        "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
+                    })
+                except Exception:
+                    continue
+            time.sleep(random.uniform(1.5, 2.5))
+        except Exception as e:
+            print(f"    ⚠️ LinkedIn requests: {e}")
+            break
     return offres
 
-# ═══ EXTRACTION APEC ═══
+# ═══ SOURCE 2 : APEC ═══
 
-def extraire_apec(driver, mots, aliases_toutes):
+def scrape_apec(session, mots, aliases_toutes, vues, date):
     offres = []
     url = f"https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles={quote_plus(mots)}&typeContrat=148990&nbResultats=50"
     try:
-        driver.get(url)
-        time.sleep(random.uniform(2.5, 4.0))
-        scroll(driver, nb=2)
-        for card in driver.find_elements(By.CSS_SELECTOR, ".card-offer, article.job"):
+        r = session.get(url, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+        for card in soup.select(".card-offer, article.job"):
             try:
-                titre = get_text(card, ["h2.card-title", ".card-offer__title", "h2"])
-                ent   = get_text(card, [".card-offer__company", ".company-name"])
-                loc   = get_text(card, [".card-offer__location", ".location"]).split(',')[0]
-                lien  = get_href(card, ["a"], "apec.fr")
-                if titre and lien and any(a in norm(ent) for a in aliases_toutes):
-                    offres.append({"titre": titre, "entreprise": ent, "localisation": loc, "lien": lien})
-            except:
+                titre_el = card.select_one("h2.card-title, .card-offer__title, h2")
+                ent_el   = card.select_one(".card-offer__company, .company-name")
+                loc_el   = card.select_one(".card-offer__location, .location")
+                lien_el  = card.select_one("a[href*='apec.fr']")
+
+                titre = titre_el.get_text(strip=True) if titre_el else ""
+                ent   = ent_el.get_text(strip=True) if ent_el else ""
+                loc   = loc_el.get_text(strip=True).split(',')[0] if loc_el else ""
+                lien  = lien_el.get("href", "").split("?")[0] if lien_el else ""
+
+                if not (titre and lien and any(a in norm(ent) for a in aliases_toutes)):
+                    continue
+
+                score, matches = scorer(titre)
+                if score < SCORE_MIN:
+                    continue
+
+                k = cle(titre, ent, loc)
+                if k in vues:
+                    continue
+                vues.add(k)
+                offres.append({
+                    "entreprise": ent, "titre": titre,
+                    "localisation": loc, "lien": lien,
+                    "score": score, "mots_cles_matches": matches,
+                    "source": "APEC", "first_seen": date, "last_seen": date,
+                    "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
+                })
+            except Exception:
                 continue
     except Exception as e:
         print(f"  ⚠️ APEC: {e}")
+    return offres
+
+# ═══ SOURCE 3 : FRANCE TRAVAIL (API officielle) ═══
+
+FT_TOKEN_URL = "https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=%2Fpartenaire"
+FT_SEARCH_URL = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
+FT_CLIENT_ID  = os.environ.get("FT_CLIENT_ID", "")
+FT_CLIENT_SECRET = os.environ.get("FT_CLIENT_SECRET", "")
+
+_ft_token = None
+
+def get_ft_token(session):
+    global _ft_token
+    if _ft_token:
+        return _ft_token
+    if not FT_CLIENT_ID or not FT_CLIENT_SECRET:
+        return None
+    try:
+        r = session.post(FT_TOKEN_URL, data={
+            "grant_type": "client_credentials",
+            "client_id": FT_CLIENT_ID,
+            "client_secret": FT_CLIENT_SECRET,
+            "scope": "api_offresdemploiv2 o2dsoffre",
+        }, timeout=10)
+        _ft_token = r.json().get("access_token")
+        return _ft_token
+    except Exception as e:
+        print(f"  ⚠️ France Travail token: {e}")
+        return None
+
+def scrape_france_travail(session, mot_cle, aliases, vues, date):
+    offres = []
+    token = get_ft_token(session)
+    if not token:
+        return offres
+    try:
+        r = session.get(FT_SEARCH_URL, headers={"Authorization": f"Bearer {token}"},
+            params={
+                "motsCles": mot_cle,
+                "typeContrat": "AL",  # Alternance
+                "lieux": "75,77,78,91,92,93,94,95",  # Ile-de-France
+                "range": "0-49",
+                "sort": "1",
+            }, timeout=15)
+        data = r.json()
+        for item in data.get("resultats", []):
+            try:
+                titre = item.get("intitule", "")
+                ent   = item.get("entreprise", {}).get("nom", "")
+                loc   = item.get("lieuTravail", {}).get("libelle", "").split("-")[0].strip()
+                lien  = item.get("origineOffre", {}).get("urlOrigine") or \
+                        f"https://candidat.francetravail.fr/offres/recherche/detail/{item.get('id','')}"
+
+                if not any(a in norm(ent) for a in aliases):
+                    continue
+
+                score, matches = scorer(titre)
+                if score < SCORE_MIN:
+                    continue
+
+                k = cle(titre, ent, loc)
+                if k in vues:
+                    continue
+                vues.add(k)
+                offres.append({
+                    "entreprise": ent, "titre": titre,
+                    "localisation": loc, "lien": lien,
+                    "score": score, "mots_cles_matches": matches,
+                    "source": "France Travail", "first_seen": date, "last_seen": date,
+                    "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
+                })
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"  ⚠️ France Travail search: {e}")
     return offres
 
 # ═══ MAIN ═══
@@ -296,94 +374,56 @@ def main():
     aliases_toutes = [a for _, als in ENTREPRISES for a in als]
     date = datetime.now().strftime("%d/%m/%Y")
 
-    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises × {len(ANGLES)} angles = {len(entreprises) * len(ANGLES)} requêtes")
+    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises")
 
     offres = []
     vues = set()
-    driver = init_driver()
+    session = make_session()
 
-    try:
-        for nom, aliases in entreprises:
-            print(f"  → {nom}")
-            for angle in ANGLES:
-                url = (
-                    f"https://fr.linkedin.com/jobs/search"
-                    f"?keywords={quote_plus(angle + ' ' + nom)}"
-                    f"&location=France&f_TPR=r2592000&f_JT=I&sortBy=DD"
-                )
-                try:
-                    driver.get(url)
-                    time.sleep(random.uniform(1.5, 2.5))
-                    scroll(driver)
-                    for r in extraire(driver):
-                        en = norm(r["entreprise"])
-                        if not any(a in en for a in aliases):
-                            continue
-                        score, matches = scorer(r["titre"])
-                        if score == 0 or score < SCORE_MIN:
-                            continue
-                        k = cle(r["titre"], r["entreprise"], r["localisation"])
-                        if k in vues:
-                            continue
-                        vues.add(k)
-                        offres.append({
-                            "entreprise": r["entreprise"],
-                            "titre": r["titre"],
-                            "localisation": r["localisation"],
-                            "lien": r["lien"],
-                            "score": score,
-                            "mots_cles_matches": matches,
-                            "source": "LinkedIn",
-                            "first_seen": date,
-                            "last_seen": date,
-                            "is_priority": any(p in norm(r["titre"]) for p in METIERSPRIORITAIRES),
-                        })
-                except Exception as e:
-                    print(f"    ⚠️ {e}")
-                time.sleep(random.uniform(1.0, 2.0))
+    # ——— LinkedIn (requests) ———
+    print(f"\n🔵 LinkedIn ({len(ANGLES)} angles × {len(entreprises)} entreprises)")
+    for nom, aliases in entreprises:
+        print(f"  → {nom}")
+        for angle in ANGLES:
+            nouveaux = scrape_linkedin(session, angle, nom, aliases, vues, date)
+            offres.extend(nouveaux)
             time.sleep(random.uniform(1.0, 2.0))
+        time.sleep(random.uniform(1.0, 2.0))
+    print(f"  ✓ LinkedIn : {len(offres)} offres")
 
-        if batch == "A":
-            print(f"\n🟡 APEC ({len(ANGLES_APEC)} requêtes)")
-            for mots in ANGLES_APEC:
-                print(f"  → {mots}")
-                for r in extraire_apec(driver, mots, aliases_toutes):
-                    score, matches = scorer(r["titre"])
-                    if score == 0 or score < SCORE_MIN:
-                        continue
-                    k = cle(r["titre"], r["entreprise"], r["localisation"])
-                    if k in vues:
-                        continue
-                    vues.add(k)
-                    offres.append({
-                        "entreprise": r["entreprise"],
-                        "titre": r["titre"],
-                        "localisation": r["localisation"],
-                        "lien": r["lien"],
-                        "score": score,
-                        "mots_cles_matches": matches,
-                        "source": "APEC",
-                        "first_seen": date,
-                        "last_seen": date,
-                        "is_priority": any(p in norm(r["titre"]) for p in METIERSPRIORITAIRES),
-                    })
-                time.sleep(random.uniform(2.0, 3.0))
+    # ——— APEC (batch A seulement) ———
+    if batch == "A":
+        print(f"\n🟡 APEC ({len(ANGLES_APEC)} requêtes)")
+        n_avant = len(offres)
+        for mots in ANGLES_APEC:
+            print(f"  → {mots}")
+            offres.extend(scrape_apec(session, mots, aliases_toutes, vues, date))
+            time.sleep(random.uniform(1.5, 2.5))
+        print(f"  ✓ APEC : +{len(offres) - n_avant} offres")
 
-    except Exception as e:
-        print(f"\n❌ Erreur fatale batch {batch}: {e}")
+    # ——— France Travail (si credentials dispos) ———
+    if FT_CLIENT_ID and FT_CLIENT_SECRET:
+        print(f"\n🟢 France Travail")
+        n_avant = len(offres)
+        for nom, aliases in entreprises:
+            for angle in ["alternance ingenieur affaires", "alternance avant-vente", "alternance technico-commercial"]:
+                offres.extend(scrape_france_travail(session, f"{angle} {nom}", aliases, vues, date))
+                time.sleep(random.uniform(0.5, 1.0))
+        print(f"  ✓ France Travail : +{len(offres) - n_avant} offres")
+    else:
+        print("\n⚠️ France Travail ignoré (FT_CLIENT_ID / FT_CLIENT_SECRET non définis)")
 
-    finally:
-        driver.quit()
-        # Sauvegarde toujours, meme si erreur partielle
-        offres.sort(key=lambda x: (not x.get("is_priority", False), -x.get("score", 0)))
-        print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
-        if offres:
-            print("🏆 Top 5 :")
-            for o in offres[:5]:
-                flag = "⭐" if o.get("is_priority") else "  "
-                print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
-        json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
-        print(f"💾 {fichier} écrit ({len(offres)} offres)")
+    offres.sort(key=lambda x: (not x.get("is_priority", False), -x.get("score", 0)))
+
+    print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
+    if offres:
+        print("🏆 Top 5 :")
+        for o in offres[:5]:
+            flag = "⭐" if o.get("is_priority") else "  "
+            print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
+
+    json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+    print(f"💾 {fichier} écrit.")
 
 if __name__ == "__main__":
     main()
