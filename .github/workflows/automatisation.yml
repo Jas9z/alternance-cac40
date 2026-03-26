@@ -24,14 +24,18 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Chrome
+      - name: Chrome + Xvfb
         run: |
           sudo apt-get update -q
+          sudo apt-get install -y xvfb
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - run: python scraper_ultime.py --batch A
         env:
+          DISPLAY: ":99"
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
       - uses: actions/upload-artifact@v5
@@ -52,14 +56,18 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Chrome
+      - name: Chrome + Xvfb
         run: |
           sudo apt-get update -q
+          sudo apt-get install -y xvfb
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - run: python scraper_ultime.py --batch B
         env:
+          DISPLAY: ":99"
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
       - uses: actions/upload-artifact@v5
@@ -80,14 +88,18 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Chrome
+      - name: Chrome + Xvfb
         run: |
           sudo apt-get update -q
+          sudo apt-get install -y xvfb
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - run: python scraper_ultime.py --batch C
         env:
+          DISPLAY: ":99"
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
       - uses: actions/upload-artifact@v5
@@ -108,14 +120,18 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Chrome
+      - name: Chrome + Xvfb
         run: |
           sudo apt-get update -q
+          sudo apt-get install -y xvfb
           wget -qO /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb || sudo apt-get -f install -y
           google-chrome --version
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - run: python scraper_ultime.py --batch D
         env:
+          DISPLAY: ":99"
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
       - uses: actions/upload-artifact@v5

@@ -190,8 +190,7 @@ def get_chrome_major_version():
             ["google-chrome", "--version"],
             capture_output=True, text=True, timeout=10
         )
-        # Ex: "Google Chrome 145.0.7632.0" → 145
-        version_str = result.stdout.strip().split()[-1]  # "145.0.7632.0"
+        version_str = result.stdout.strip().split()[-1]
         major = int(version_str.split(".")[0])
         print(f"  ℹ️ Chrome détecté : version majeure {major}")
         return major
@@ -204,32 +203,98 @@ def get_chrome_major_version():
 def make_uc_driver():
     """
     Crée un driver Chrome via undetected-chromedriver.
-    Détecte dynamiquement la version de Chrome pour éviter le mismatch ChromeDriver/Chrome.
+    Utilise Xvfb (display virtuel) au lieu de --headless pour éviter la détection LinkedIn.
     """
     import undetected_chromedriver as uc
 
     chrome_version = get_chrome_major_version()
 
     options = uc.ChromeOptions()
-    options.add_argument("--headless=new")
+    # PAS de --headless : on utilise Xvfb dans le workflow à la place
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
+    options.add_argument("--start-maximized")
     options.add_argument(f"--user-agent={random.choice(USER_AGENTS)}")
-    options.add_argument("--lang=fr-FR")
+    options.add_argument("--lang=fr-FR,fr")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-features=IsolateOrigins,site-per-process")
 
-    # version_main force UC à télécharger le ChromeDriver correspondant à Chrome installé
-    driver = uc.Chrome(options=options, use_subprocess=True, version_main=chrome_version)
+    driver = uc.Chrome(
+        options=options,
+        use_subprocess=True,
+        version_main=chrome_version,
+        headless=False,
+    )
 
+    # Patch JS anti-détection complet
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": """
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
-            Object.defineProperty(navigator, 'languages', { get: () => ['fr-FR', 'fr', 'en-US'] });
+            delete navigator.__proto__.webdriver;
+
+            Object.defineProperty(navigator, 'plugins', {
+                get: () => {
+                    const arr = [
+                        { name: 'Chrome PDF Plugin', filename: 'internal-pdf-viewer' },
+                        { name: 'Chrome PDF Viewer', filename: 'mhjfbmdgcfjbbpaeojofohoefgiehjai' },
+                        { name: 'Native Client', filename: 'internal-nacl-plugin' },
+                    ];
+                    arr.__proto__ = PluginArray.prototype;
+                    return arr;
+                }
+            });
+
+            Object.defineProperty(navigator, 'languages', { get: () => ['fr-FR', 'fr', 'en-US', 'en'] });
+
+            Object.defineProperty(screen, 'width',       { get: () => 1920 });
+            Object.defineProperty(screen, 'height',      { get: () => 1080 });
+            Object.defineProperty(screen, 'availWidth',  { get: () => 1920 });
+            Object.defineProperty(screen, 'availHeight', { get: () => 1040 });
+            Object.defineProperty(screen, 'colorDepth',  { get: () => 24 });
+
+            window.chrome = {
+                app: {
+                    isInstalled: false,
+                    InstallState: { DISABLED: 'disabled', INSTALLED: 'installed', NOT_INSTALLED: 'not_installed' },
+                    RunningState: { CANNOT_RUN: 'cannot_run', READY_TO_RUN: 'ready_to_run', RUNNING: 'running' }
+                },
+                runtime: {
+                    OnInstalledReason: {}, OnRestartRequiredReason: {},
+                    PlatformArch: {}, PlatformNaclArch: {},
+                    PlatformOs: {}, RequestUpdateCheckStatus: {}
+                }
+            };
+
+            const originalQuery = window.navigator.permissions.query;
+            window.navigator.permissions.query = (parameters) => (
+                parameters.name === 'notifications' ?
+                    Promise.resolve({ state: Notification.permission }) :
+                    originalQuery(parameters)
+            );
         """
     })
+
+    # Headers HTTP réalistes
+    driver.execute_cdp_cmd("Network.enable", {})
+    driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {
+        "headers": {
+            "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Sec-Ch-Ua": '"Not(A:Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"',
+            "Sec-Ch-Ua-Mobile": "?0",
+            "Sec-Ch-Ua-Platform": '"Windows"',
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
+            "Upgrade-Insecure-Requests": "1",
+        }
+    })
+
     return driver
 
 def quit_driver(driver):
@@ -250,35 +315,135 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
         )
         try:
             driver.get(url)
-            time.sleep(random.uniform(4.0, 7.0))
-            soup = BeautifulSoup(driver.page_source, "html.parser")
+            # Attente longue + scroll progressif pour simuler comportement humain
+            time.sleep(random.uniform(6.0, 10.0))
+            for scroll_pos in [300, 600, 900, 1200]:
+                driver.execute_script(f"window.scrollTo(0, {scroll_pos});")
+                time.sleep(random.uniform(0.5, 1.2))
 
-            if "authwall" in driver.current_url or "login" in driver.current_url:
-                print(f"    ⚠️ LinkedIn authwall détecté pour {nom}")
+            current_url = driver.current_url
+            if any(kw in current_url for kw in ["authwall", "login", "uas/authenticate"]):
+                print(f"    ⚠️ LinkedIn authwall pour {nom}")
                 return offres
 
-            cards = soup.find_all("div", class_=lambda c: c and "job-search-card" in c)
+            html = driver.page_source
+            soup = BeautifulSoup(html, "html.parser")
+
+            # Diagnostic IP bloquée : page quasi-vide
+            page_text_len = len(soup.get_text(strip=True))
+            if page_text_len < 500:
+                print(f"    ⚠️ Page quasi-vide pour {nom} (start={start}, {page_text_len} chars) — IP probablement bloquée")
+                debug_snippet = html[:2000].replace('\n', ' ')
+                print(f"    🔍 HTML début: {debug_snippet}")
+                break
+
+            # ── Sélecteurs CSS 2026 : 4 couches de fallback ──
+
+            # Couche 1 : structure actuelle LinkedIn Jobs public
+            cards = soup.select("ul.jobs-search__results-list > li")
+
+            # Couche 2 : ancienne structure data-entity-urn
             if not cards:
-                cards = soup.find_all("li", class_=lambda c: c and "result-card" in (c or ""))
+                cards = soup.select("li[data-occlude-height]")
+
+            # Couche 3 : div/li contenant un lien /jobs/view/
+            if not cards:
+                cards = soup.find_all(
+                    lambda tag: tag.name in ["div", "li"] and
+                    tag.get("class") and
+                    any("job" in c.lower() for c in tag.get("class", [])) and
+                    tag.find("a", href=lambda h: h and "/jobs/view/" in (h or ""))
+                )
+
+            # Couche 4 : extraction directe par liens /jobs/view/
+            if not cards:
+                liens_directs = soup.find_all("a", href=lambda h: h and "/jobs/view/" in (h or ""))
+                if liens_directs:
+                    print(f"    ℹ️ Fallback liens directs : {len(liens_directs)} trouvés pour {nom}")
+                    for a_tag in liens_directs:
+                        try:
+                            parent = a_tag.find_parent(["li", "div"])
+                            if not parent:
+                                continue
+                            titre = a_tag.get_text(strip=True)
+                            if not titre:
+                                continue
+                            ent_el = parent.find(["h4", "span"], class_=lambda c: c and any(
+                                k in (c or "").lower() for k in ["company", "subtitle", "employer"]
+                            ))
+                            ent = ent_el.get_text(strip=True) if ent_el else ""
+                            loc_el = parent.find("span", class_=lambda c: c and "location" in (c or "").lower())
+                            loc = loc_el.get_text(strip=True).split(',')[0] if loc_el else ""
+                            lien = a_tag.get("href", "").split("?")[0]
+                            if not lien.startswith("http"):
+                                lien = "https://www.linkedin.com" + lien
+
+                            if not (titre and "linkedin.com/jobs" in lien):
+                                continue
+                            if ent and not any(a in norm(ent) for a in aliases):
+                                continue
+
+                            score, matches = scorer(titre)
+                            if score < SCORE_MIN:
+                                continue
+                            k = cle(titre, ent, loc)
+                            if k in vues:
+                                continue
+                            vues.add(k)
+                            offres.append({
+                                "entreprise": ent or nom, "titre": titre,
+                                "localisation": loc, "lien": lien,
+                                "score": score, "mots_cles_matches": matches,
+                                "source": "LinkedIn", "first_seen": date, "last_seen": date,
+                                "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
+                            })
+                        except Exception:
+                            continue
+                    time.sleep(random.uniform(3.0, 5.0))
+                    continue
+
             if not cards:
                 print(f"    ℹ️ Aucune card LinkedIn pour {nom} (start={start})")
+                debug_snippet = html[:2000].replace('\n', ' ')
+                print(f"    🔍 HTML début: {debug_snippet}")
                 break
+
+            print(f"    ✓ {len(cards)} cards trouvées pour {nom} (start={start})")
 
             for card in cards:
                 try:
-                    titre_el = card.find("h3", class_=lambda c: c and "base-search-card__title" in c) or card.find("h3")
-                    ent_el   = card.find("h4", class_=lambda c: c and "base-search-card__subtitle" in c) or card.find("h4")
-                    loc_el   = card.find("span", class_=lambda c: c and "job-search-card__location" in c)
-                    lien_el  = card.find("a", class_=lambda c: c and "base-card__full-link" in c) or card.find("a")
+                    titre_el = (
+                        card.select_one("h3.base-search-card__title") or
+                        card.select_one("span[aria-hidden='true']") or
+                        card.select_one("h3") or
+                        card.find("a", href=lambda h: h and "/jobs/view/" in (h or ""))
+                    )
+                    ent_el = (
+                        card.select_one("h4.base-search-card__subtitle") or
+                        card.select_one(".job-search-card__company-name") or
+                        card.select_one("h4")
+                    )
+                    loc_el = (
+                        card.select_one(".job-search-card__location") or
+                        card.select_one("span[class*='location']") or
+                        card.select_one(".job-card-container__metadata-item")
+                    )
+                    lien_el = (
+                        card.select_one("a.base-card__full-link") or
+                        card.select_one("a[href*='/jobs/view/']") or
+                        card.select_one("a[data-tracking-control-name]")
+                    )
 
                     titre = titre_el.get_text(strip=True) if titre_el else ""
                     ent   = ent_el.get_text(strip=True) if ent_el else ""
                     loc   = loc_el.get_text(strip=True).split(',')[0] if loc_el else ""
                     lien  = (lien_el.get("href") or "").split("?")[0] if lien_el else ""
+                    if lien and not lien.startswith("http"):
+                        lien = "https://www.linkedin.com" + lien
 
-                    if not (titre and ent and "linkedin.com/jobs" in lien):
+                    if not (titre and "linkedin.com/jobs" in lien):
                         continue
-                    if not any(a in norm(ent) for a in aliases):
+                    if ent and not any(a in norm(ent) for a in aliases):
                         continue
 
                     score, matches = scorer(titre)
@@ -290,7 +455,7 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                         continue
                     vues.add(k)
                     offres.append({
-                        "entreprise": ent, "titre": titre,
+                        "entreprise": ent or nom, "titre": titre,
                         "localisation": loc, "lien": lien,
                         "score": score, "mots_cles_matches": matches,
                         "source": "LinkedIn", "first_seen": date, "last_seen": date,
@@ -299,7 +464,8 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                 except Exception:
                     continue
 
-            time.sleep(random.uniform(3.0, 5.0))
+            time.sleep(random.uniform(4.0, 7.0))
+
         except Exception as e:
             print(f"    ⚠️ LinkedIn UC: {e}")
             break
