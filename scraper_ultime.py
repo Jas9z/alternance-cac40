@@ -1,4 +1,4 @@
-import json, time, random, unicodedata, os, re, sys
+import json, time, random, unicodedata, os, re, sys, subprocess
 from datetime import datetime
 from urllib.parse import quote_plus
 import requests
@@ -183,26 +183,46 @@ def make_session():
     })
     return s
 
+def get_chrome_major_version():
+    """Détecte dynamiquement la version majeure de Chrome installée sur le runner."""
+    try:
+        result = subprocess.run(
+            ["google-chrome", "--version"],
+            capture_output=True, text=True, timeout=10
+        )
+        # Ex: "Google Chrome 145.0.7632.0" → 145
+        version_str = result.stdout.strip().split()[-1]  # "145.0.7632.0"
+        major = int(version_str.split(".")[0])
+        print(f"  ℹ️ Chrome détecté : version majeure {major}")
+        return major
+    except Exception as e:
+        print(f"  ⚠️ Impossible de détecter la version Chrome : {e} → fallback 145")
+        return 145
+
 # ═══ DRIVER undetected-chromedriver ═══
 
 def make_uc_driver():
     """
     Crée un driver Chrome via undetected-chromedriver.
-    Contourne la détection bot de LinkedIn (Cloudflare / DataDome).
+    Détecte dynamiquement la version de Chrome pour éviter le mismatch ChromeDriver/Chrome.
     """
     import undetected_chromedriver as uc
+
+    chrome_version = get_chrome_major_version()
+
     options = uc.ChromeOptions()
-    options.add_argument("--headless=new")          # Mode headless non détectable
+    options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
     options.add_argument(f"--user-agent={random.choice(USER_AGENTS)}")
     options.add_argument("--lang=fr-FR")
-    # Masquer les indicateurs d'automatisation
     options.add_argument("--disable-blink-features=AutomationControlled")
-    driver = uc.Chrome(options=options, use_subprocess=True)
-    # Injecter du JS pour masquer webdriver=true
+
+    # version_main force UC à télécharger le ChromeDriver correspondant à Chrome installé
+    driver = uc.Chrome(options=options, use_subprocess=True, version_main=chrome_version)
+
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": """
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
@@ -221,10 +241,6 @@ def quit_driver(driver):
 # ═══ SOURCE 1 : LINKEDIN (undetected-chromedriver) ═══
 
 def scrape_linkedin(driver, angle, nom, aliases, vues, date):
-    """
-    Scrape LinkedIn Jobs via undetected-chromedriver.
-    Utilise l'URL guest publique pour éviter le wall d'authentification.
-    """
     offres = []
     for start in [0, 25]:
         url = (
@@ -234,18 +250,15 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
         )
         try:
             driver.get(url)
-            # Attendre que les cards soient chargées (max 12s)
             time.sleep(random.uniform(4.0, 7.0))
             soup = BeautifulSoup(driver.page_source, "html.parser")
 
-            # Détecter si LinkedIn redirige vers login
             if "authwall" in driver.current_url or "login" in driver.current_url:
-                print(f"    ⚠️ LinkedIn authwall détecté pour {nom}, arrêt du batch LinkedIn.")
+                print(f"    ⚠️ LinkedIn authwall détecté pour {nom}")
                 return offres
 
             cards = soup.find_all("div", class_=lambda c: c and "job-search-card" in c)
             if not cards:
-                # Fallback : chercher les <li> avec base-card
                 cards = soup.find_all("li", class_=lambda c: c and "result-card" in (c or ""))
             if not cards:
                 print(f"    ℹ️ Aucune card LinkedIn pour {nom} (start={start})")
