@@ -3,6 +3,10 @@ from datetime import datetime
 from urllib.parse import quote_plus
 import requests
 from bs4 import BeautifulSoup
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 
 # ═══ ENTREPRISES + ALIASES ═══
 
@@ -117,7 +121,7 @@ MOTS_POSITIFS = {
 
 SCORE_MIN = 3
 
-METIERS_PRIORITAIRES = [
+METIERSPRIORITAIRES = [
     "avant-vente", "avant vente", "pre-sales", "presales",
     "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
     "charge affaires", "charge de deploiement", "solution engineer",
@@ -184,7 +188,6 @@ def make_session():
     return s
 
 def get_chrome_major_version():
-    """Détecte dynamiquement la version majeure de Chrome installée sur le runner."""
     try:
         result = subprocess.run(
             ["google-chrome", "--version"],
@@ -201,16 +204,11 @@ def get_chrome_major_version():
 # ═══ DRIVER undetected-chromedriver ═══
 
 def make_uc_driver():
-    """
-    Crée un driver Chrome via undetected-chromedriver.
-    Utilise Xvfb (display virtuel) au lieu de --headless pour éviter la détection LinkedIn.
-    """
     import undetected_chromedriver as uc
 
     chrome_version = get_chrome_major_version()
 
     options = uc.ChromeOptions()
-    # PAS de --headless : on utilise Xvfb dans le workflow à la place
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
@@ -230,7 +228,6 @@ def make_uc_driver():
         headless=False,
     )
 
-    # Patch JS anti-détection complet
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": """
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
@@ -278,14 +275,13 @@ def make_uc_driver():
         """
     })
 
-    # Headers HTTP réalistes
     driver.execute_cdp_cmd("Network.enable", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {
         "headers": {
             "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
             "Accept-Encoding": "gzip, deflate, br",
-            "Sec-Ch-Ua": '"Not(A:Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"',
+            "Sec-Ch-Ua": '"Not(A:Brand";v="99", "Google Chrome";v="146", "Chromium";v="146"',
             "Sec-Ch-Ua-Mobile": "?0",
             "Sec-Ch-Ua-Platform": '"Windows"',
             "Sec-Fetch-Dest": "document",
@@ -307,6 +303,16 @@ def quit_driver(driver):
 
 def scrape_linkedin(driver, angle, nom, aliases, vues, date):
     offres = []
+
+    # Sélecteurs à attendre pour confirmer que le JS a injecté les offres
+    SELECTORS_WAIT = [
+        "ul.jobs-search__results-list",
+        "div.jobs-search-results-list",
+        "section.two-pane-serp-page__results-list",
+        "ul[class*='jobs-search']",
+        "li[data-occlude-height]",
+    ]
+
     for start in [0, 25]:
         url = (
             f"https://www.linkedin.com/jobs/search/"
@@ -315,38 +321,58 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
         )
         try:
             driver.get(url)
-            # Attente longue + scroll progressif pour simuler comportement humain
-            time.sleep(random.uniform(6.0, 10.0))
+
+            # Attendre que le JS injecte les offres dans le DOM
+            loaded = False
+            for sel in SELECTORS_WAIT:
+                try:
+                    WebDriverWait(driver, 15).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, sel))
+                    )
+                    loaded = True
+                    print(f"    ✓ Conteneur JS chargé : {sel}")
+                    break
+                except TimeoutException:
+                    continue
+
+            # Fallback : attendre au moins un lien /jobs/view/
+            if not loaded:
+                try:
+                    WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located(
+                            (By.XPATH, "//a[contains(@href, '/jobs/view/')]")
+                        )
+                    )
+                    loaded = True
+                    print(f"    ✓ Lien /jobs/view/ détecté pour {nom}")
+                except TimeoutException:
+                    pass
+
+            if not loaded:
+                print(f"    ℹ️ Timeout JS pour {nom} (start={start}) — page non rendue")
+                html = driver.page_source
+                print(f"    🔍 HTML début: {html[:1000].replace(chr(10), ' ')}")
+                break
+
+            # Scroll progressif pour déclencher le lazy-load
             for scroll_pos in [300, 600, 900, 1200]:
                 driver.execute_script(f"window.scrollTo(0, {scroll_pos});")
-                time.sleep(random.uniform(0.5, 1.2))
+                time.sleep(random.uniform(0.4, 0.8))
 
-            current_url = driver.current_url
-            if any(kw in current_url for kw in ["authwall", "login", "uas/authenticate"]):
+            # Courte pause de stabilisation après scroll
+            time.sleep(random.uniform(2.0, 3.5))
+
+            if any(kw in driver.current_url for kw in ["authwall", "login", "uas/authenticate"]):
                 print(f"    ⚠️ LinkedIn authwall pour {nom}")
                 return offres
 
             html = driver.page_source
             soup = BeautifulSoup(html, "html.parser")
 
-            # Diagnostic IP bloquée : page quasi-vide
-            page_text_len = len(soup.get_text(strip=True))
-            if page_text_len < 500:
-                print(f"    ⚠️ Page quasi-vide pour {nom} (start={start}, {page_text_len} chars) — IP probablement bloquée")
-                debug_snippet = html[:2000].replace('\n', ' ')
-                print(f"    🔍 HTML début: {debug_snippet}")
-                break
-
-            # ── Sélecteurs CSS 2026 : 4 couches de fallback ──
-
-            # Couche 1 : structure actuelle LinkedIn Jobs public
+            # 4 couches de sélecteurs CSS
             cards = soup.select("ul.jobs-search__results-list > li")
-
-            # Couche 2 : ancienne structure data-entity-urn
             if not cards:
                 cards = soup.select("li[data-occlude-height]")
-
-            # Couche 3 : div/li contenant un lien /jobs/view/
             if not cards:
                 cards = soup.find_all(
                     lambda tag: tag.name in ["div", "li"] and
@@ -355,7 +381,7 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     tag.find("a", href=lambda h: h and "/jobs/view/" in (h or ""))
                 )
 
-            # Couche 4 : extraction directe par liens /jobs/view/
+            # Couche 4 : fallback extraction directe par liens /jobs/view/
             if not cards:
                 liens_directs = soup.find_all("a", href=lambda h: h and "/jobs/view/" in (h or ""))
                 if liens_directs:
@@ -377,12 +403,10 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                             lien = a_tag.get("href", "").split("?")[0]
                             if not lien.startswith("http"):
                                 lien = "https://www.linkedin.com" + lien
-
                             if not (titre and "linkedin.com/jobs" in lien):
                                 continue
                             if ent and not any(a in norm(ent) for a in aliases):
                                 continue
-
                             score, matches = scorer(titre)
                             if score < SCORE_MIN:
                                 continue
@@ -403,12 +427,10 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     continue
 
             if not cards:
-                print(f"    ℹ️ Aucune card LinkedIn pour {nom} (start={start})")
-                debug_snippet = html[:2000].replace('\n', ' ')
-                print(f"    🔍 HTML début: {debug_snippet}")
+                print(f"    ℹ️ Aucune card pour {nom} (start={start}) après attente JS")
                 break
 
-            print(f"    ✓ {len(cards)} cards trouvées pour {nom} (start={start})")
+            print(f"    ✓ {len(cards)} cards pour {nom} (start={start})")
 
             for card in cards:
                 try:
@@ -464,11 +486,12 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                 except Exception:
                     continue
 
-            time.sleep(random.uniform(4.0, 7.0))
+            time.sleep(random.uniform(3.0, 5.0))
 
         except Exception as e:
             print(f"    ⚠️ LinkedIn UC: {e}")
             break
+
     return offres
 
 # ═══ SOURCE 2 : APEC ═══
