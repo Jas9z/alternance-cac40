@@ -1,5 +1,342 @@
 [
     {
+        "entreprise": "AXA en France",
+        "titre": "Adjoint technico-commercial (F/H) - Alternance",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/adjoint-technico-commercial-f-h-alternance-at-axa-en-france-4386533160",
+        "score": 18,
+        "mots_cles_matches": [
+            "technico-commercial",
+            "commercial",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternant(e) Technico-commercial(e) H/F",
+        "localisation": "Écouflant",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-technico-commercial-e-h-f-at-edf-4389435367",
+        "score": 18,
+        "mots_cles_matches": [
+            "technico-commercial",
+            "commercial",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternant(e) Technico-Commercial(e) H/F",
+        "localisation": "Tours",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-technico-commercial-e-h-f-at-edf-4384549288",
+        "score": 18,
+        "mots_cles_matches": [
+            "technico-commercial",
+            "commercial",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Ingénieur Commercial F/H",
+        "localisation": "Jeumont",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4387209738",
+        "score": 13,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Ingénieur commercial F/H",
+        "localisation": "Beaumont-Hague",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4391545631",
+        "score": 13,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALT - Ingénieur Commercial & Analyste du Marché Énergétique",
+        "localisation": "Dijon",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-ing%C3%A9nieur-commercial-analyste-du-march%C3%A9-%C3%A9nerg%C3%A9tique-at-edf-4384305261",
+        "score": 13,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "Alternance - Ingénieur Commercial Export Drones et Armes sous-marines H/F",
+        "localisation": "Salon-de-Provence",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-export-drones-et-armes-sous-marines-h-f-at-naval-group-4383105030",
+        "score": 13,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance Commercial Spécialiste Digital Building  F/H - Rueil Malmaison",
+        "localisation": "Dijon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-commercial-sp%C3%A9cialiste-digital-building-f-h-rueil-malmaison-at-schneider-electric-4377274391",
+        "score": 7,
+        "mots_cles_matches": [
+            "commercial",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance Commercial Spécialiste Digital Building  F/H - Rueil Malmaison",
+        "localisation": "Metz",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-commercial-sp%C3%A9cialiste-digital-building-f-h-rueil-malmaison-at-schneider-electric-4377265702",
+        "score": 7,
+        "mots_cles_matches": [
+            "commercial",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Alternance - Chef de projets IT F/H",
+        "localisation": "Saint-Denis",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projets-it-f-h-at-vinci-energies-4387643296",
+        "score": 7,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALTERNANCE - Ingénieur / Chargé d'affaires commerciales H/F",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-charg%C3%A9-d-affaires-commerciales-h-f-at-edf-4385808780",
+        "score": 7,
+        "mots_cles_matches": [
+            "commercial",
+            "ingenieur",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chargé de Mission Transformation (F/H) - alternance",
+        "localisation": "Nantes",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-transformation-f-h-alternance-at-axa-en-france-4383834479",
+        "score": 6,
+        "mots_cles_matches": [
+            "transformation",
+            "si",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Chargé de développement commercial F/H",
+        "localisation": "Dijon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-de-d%C3%A9veloppement-commercial-f-h-at-edf-4388118628",
+        "score": 6,
+        "mots_cles_matches": [
+            "commercial",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternant Chargé de développement commercial H/F",
+        "localisation": "Lille",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-charg%C3%A9-de-d%C3%A9veloppement-commercial-h-f-at-edf-4390673311",
+        "score": 6,
+        "mots_cles_matches": [
+            "commercial",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "GROUPEMENT DES CONCESSIONNAIRES RENAULT",
+        "titre": "Alternance - Conseiller clientèle après-vente H/F",
+        "localisation": "Cannes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-conseiller-client%C3%A8le-apr%C3%A8s-vente-h-f-at-groupement-des-concessionnaires-renault-4385270647",
+        "score": 5,
+        "mots_cles_matches": [
+            "vente"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "GROUPEMENT DES CONCESSIONNAIRES RENAULT",
+        "titre": "Alternance - Conseiller clientèle après-vente H/F",
+        "localisation": "Nice",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-conseiller-client%C3%A8le-apr%C3%A8s-vente-h-f-at-groupement-des-concessionnaires-renault-4385275530",
+        "score": 5,
+        "mots_cles_matches": [
+            "vente"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chargé de projet communication – sensibilisation utilisateurs à la sécurité informatique",
+        "localisation": "Centre-Val de Loire",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-projet-communication-%E2%80%93-sensibilisation-utilisateurs-%C3%A0-la-s%C3%A9curit%C3%A9-informatique-at-societe-generale-assurances-4381085000",
+        "score": 5,
+        "mots_cles_matches": [
+            "si",
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Chef de projet informatique F/H",
+        "localisation": "Flavigny-le-Grand",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-informatique-f-h-at-vinci-energies-4382336310",
+        "score": 5,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chargé de middle-office Epargne retraite collective / Epargne salariale",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-middle-office-epargne-retraite-collective-epargne-salariale-at-societe-generale-assurances-4389306092",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Unibail-Rodamco-Westfield",
+        "titre": "Chargé(e) de mission développement durable F/H - Alternance",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-d%C3%A9veloppement-durable-f-h-alternance-at-unibail-rodamco-westfield-4381479430",
+        "score": 3,
+        "mots_cles_matches": [
+            "si",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Chargé de Projet IS/IT F/H",
+        "localisation": "Le Creusot",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-de-projet-is-it-f-h-at-edf-4390672354",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Chargé/Chargée d'affaires électricité / essais F/H",
+        "localisation": "Penly",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-charg%C3%A9e-d-affaires-%C3%A9lectricit%C3%A9-essais-f-h-at-edf-4387607092",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "27/03/2026",
+        "last_seen": "27/03/2026",
+        "is_priority": false
+    },
+    {
         "entreprise": "Air Liquide",
         "titre": "Stage - Siège social - Real Estate project and data manager H/F",
         "localisation": "Paris",
