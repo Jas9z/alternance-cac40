@@ -11,8 +11,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": true
     },
     {
@@ -43,8 +43,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": true
     },
     {
@@ -59,8 +59,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -75,8 +75,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -91,8 +91,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -107,8 +107,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -122,8 +122,8 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -137,8 +137,8 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -152,8 +152,8 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -168,8 +168,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -184,8 +184,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -199,8 +199,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -214,8 +214,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -228,8 +228,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -242,8 +242,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -258,8 +258,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -272,8 +272,22 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance Chef(fe) de projet Développement commercial Decarbonation H/F",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-fe-de-projet-d%C3%A9veloppement-commercial-decarbonation-h-f-at-schneider-electric-4390995929",
+        "score": 5,
+        "mots_cles_matches": [
+            "commercial"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -287,8 +301,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -302,8 +316,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -317,8 +331,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
@@ -332,8 +346,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "27/03/2026",
-        "last_seen": "27/03/2026",
+        "first_seen": "28/03/2026",
+        "last_seen": "28/03/2026",
         "is_priority": false
     },
     {
