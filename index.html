@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    /* ─── RESET & BASE ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -74,6 +73,7 @@
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--subtle); transition: color var(--transition); letter-spacing: 0.3px; }
     .nav-links a:hover { color: var(--white); }
+    .nav-links a.nav-active { color: var(--accent); }
 
     .nav-cta { padding: 8px 18px; border: 1px solid var(--accent); border-radius: 6px; color: var(--accent) !important; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.4px; transition: background var(--transition), color var(--transition) !important; }
     .nav-cta:hover { background: var(--accent); color: var(--ink) !important; }
@@ -142,6 +142,39 @@
     .tag { padding: 5px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--line); color: var(--subtle); letter-spacing: 0.3px; }
     .tag-active { border-color: var(--accent); color: var(--accent); }
 
+    /* ─── TABS ─── */
+    .tabs-bar {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--line);
+      padding: 0 2.5rem;
+      background: rgba(10,10,15,0.5);
+    }
+    .tab-btn {
+      display: flex; align-items: center; gap: 8px;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;
+      color: var(--muted);
+      background: none; border: none; cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color var(--transition), border-color var(--transition);
+      letter-spacing: 0.2px;
+    }
+    .tab-btn:hover { color: var(--white); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 20px; height: 20px; padding: 0 6px;
+      border-radius: 100px; font-size: 0.68rem; font-weight: 700;
+      background: var(--surface-2); color: var(--muted);
+    }
+    .tab-btn.active .tab-badge { background: var(--accent-dim); color: var(--accent); }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ─── MAIN / OFFRES ─── */
     .main { max-width: 1400px; margin: 0 auto; padding: 4rem 2.5rem 6rem; }
 
     .section-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 2.5rem; gap: 1rem; flex-wrap: wrap; }
@@ -189,6 +222,193 @@
     .card-link svg { transition: transform var(--transition); flex-shrink: 0; }
     .card-link:hover svg { transform: translate(2px, -2px); }
 
+    /* Bouton Postuler sur les cartes offres */
+    .card-apply-btn {
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      padding: 8px 14px;
+      background: transparent; border: 1px solid var(--line);
+      border-radius: 8px; font-size: 0.8rem; font-weight: 600;
+      color: var(--muted); cursor: pointer;
+      transition: all var(--transition);
+      font-family: var(--font-body);
+    }
+    .card-apply-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+    .card-apply-btn.applied { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+    .card-actions { display: flex; gap: 8px; margin-top: auto; }
+    .card-actions .card-link { flex: 1; margin-top: 0; }
+
+    /* ─── CANDIDATURES ─── */
+    .cand-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;
+    }
+    .cand-stats {
+      display: flex; gap: 12px; flex-wrap: wrap;
+    }
+    .cand-stat {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 16px; border-radius: 8px;
+      background: var(--surface); border: 1px solid var(--line);
+      font-size: 0.82rem; font-weight: 600; color: var(--subtle);
+    }
+    .cand-stat-num { font-family: var(--font-head); font-size: 1.3rem; font-weight: 800; color: var(--white); line-height: 1; }
+    .cand-stat-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    .add-cand-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 20px; border-radius: 8px;
+      background: var(--accent); color: var(--ink);
+      font-family: var(--font-body); font-size: 0.88rem; font-weight: 700;
+      border: none; cursor: pointer;
+      transition: all var(--transition);
+    }
+    .add-cand-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(200,241,105,0.25); }
+
+    .cand-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .cand-card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 1.4rem 1.6rem;
+      display: grid; grid-template-columns: auto 1fr auto;
+      gap: 1.2rem; align-items: start;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .cand-card:hover { border-color: rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); }
+
+    /* Checkbox custom */
+    .cand-check-wrap { padding-top: 3px; }
+    .cand-checkbox {
+      appearance: none; -webkit-appearance: none;
+      width: 20px; height: 20px; border-radius: 6px;
+      border: 2px solid var(--muted); background: transparent;
+      cursor: pointer; flex-shrink: 0;
+      transition: all var(--transition);
+      position: relative;
+    }
+    .cand-checkbox:checked {
+      background: var(--accent); border-color: var(--accent);
+    }
+    .cand-checkbox:checked::after {
+      content: '';
+      position: absolute; left: 4px; top: 1px;
+      width: 6px; height: 10px;
+      border: 2px solid var(--ink);
+      border-top: none; border-left: none;
+      transform: rotate(45deg);
+    }
+    .cand-checkbox:hover:not(:checked) { border-color: var(--accent); }
+
+    .cand-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+    .cand-title { font-family: var(--font-head); font-size: 0.98rem; font-weight: 700; color: var(--white); letter-spacing: -0.2px; }
+    .cand-company { font-size: 0.82rem; font-weight: 600; color: var(--muted); }
+    .cand-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 2px; }
+    .cand-date { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+    .cand-location { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+
+    .cand-status {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 100px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase;
+    }
+    .status-envoyee    { background: rgba(99,102,241,0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+    .status-relance    { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+    .status-entretien  { background: rgba(200,241,105,0.12); color: var(--accent); border: 1px solid rgba(200,241,105,0.3); }
+    .status-refus      { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+    .status-attente    { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--line); }
+
+    .cand-desc {
+      margin-top: 8px; padding: 10px 14px;
+      background: rgba(255,255,255,0.03); border-radius: 8px;
+      border-left: 2px solid var(--line);
+      font-size: 0.82rem; color: var(--subtle); line-height: 1.6;
+      white-space: pre-wrap; word-break: break-word;
+    }
+
+    .cand-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+    .cand-tag {
+      padding: 3px 10px; border-radius: 100px;
+      font-size: 0.68rem; font-weight: 600;
+      background: var(--surface-2); color: var(--subtle);
+      border: 1px solid var(--line);
+    }
+
+    .cand-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+    .cand-edit-btn, .cand-del-btn {
+      background: none; border: 1px solid var(--line);
+      border-radius: 6px; padding: 5px 9px;
+      color: var(--muted); cursor: pointer; font-size: 0.75rem;
+      transition: all var(--transition); font-family: var(--font-body);
+      display: inline-flex; align-items: center; gap: 5px;
+    }
+    .cand-edit-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+    .cand-del-btn:hover { border-color: #f87171; color: #f87171; background: rgba(239,68,68,0.08); }
+
+    .cand-link-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 9px; border-radius: 6px;
+      background: none; border: 1px solid var(--line);
+      color: var(--muted); font-size: 0.75rem; font-weight: 600;
+      cursor: pointer; font-family: var(--font-body);
+      transition: all var(--transition);
+    }
+    .cand-link-btn:hover { border-color: #5ba4f5; color: #5ba4f5; background: rgba(10,102,194,0.1); }
+
+    .cand-empty {
+      text-align: center; padding: 5rem 2rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .cand-empty-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      background: var(--surface-2); border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+    }
+    .cand-empty h3 { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
+
+    /* ─── MODAL ─── */
+    .modal-backdrop {
+      position: fixed; inset: 0; z-index: 900;
+      background: rgba(10,10,15,0.85); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 1.5rem;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .modal-backdrop.open { opacity: 1; pointer-events: auto; }
+
+    .modal {
+      background: var(--ink-2); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px; padding: 2rem; width: 100%; max-width: 540px;
+      display: flex; flex-direction: column; gap: 1.2rem;
+      transform: translateY(12px); transition: transform 0.2s;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .modal-backdrop.open .modal { transform: none; }
+
+    .modal-title { font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--white); letter-spacing: -0.5px; }
+
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field label { font-size: 0.78rem; font-weight: 600; color: var(--subtle); letter-spacing: 0.4px; text-transform: uppercase; }
+    .field input, .field select, .field textarea {
+      padding: 0.8rem 1rem; background: rgba(255,255,255,0.05);
+      border: 1px solid var(--line); border-radius: 8px;
+      color: var(--white); font-family: var(--font-body); font-size: 0.9rem;
+      outline: none; transition: border-color var(--transition);
+      width: 100%;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
+    .field textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
+    .field select option { background: var(--ink-2); }
+
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 0.5rem; }
+    .modal-cancel { padding: 10px 20px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line); color: var(--subtle); font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; cursor: pointer; transition: all var(--transition); }
+    .modal-cancel:hover { color: var(--white); border-color: rgba(255,255,255,0.15); }
+    .modal-save { padding: 10px 24px; border-radius: 8px; background: var(--accent); color: var(--ink); font-family: var(--font-body); font-size: 0.88rem; font-weight: 700; border: none; cursor: pointer; transition: all var(--transition); }
+    .modal-save:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(200,241,105,0.25); }
+
+    /* ─── DIVERS ─── */
     .skeleton-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; display: flex; flex-direction: column; gap: 14px; }
     .skel { border-radius: 6px; background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%); background-size: 200% 100%; animation: skel-anim 1.6s ease infinite; }
     @keyframes skel-anim { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
@@ -221,6 +441,11 @@
       .toolbar { grid-template-columns: 1fr; }
       .select-input { min-width: unset; }
       footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
+      .tabs-bar { padding: 0 1.25rem; }
+      .tab-btn { padding: 0.85rem 1rem; font-size: 0.82rem; }
+      .cand-card { grid-template-columns: auto 1fr; }
+      .cand-actions { flex-direction: row; grid-column: 1 / -1; }
+      .field-row { grid-template-columns: 1fr; }
     }
 
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
@@ -232,7 +457,8 @@
   <nav>
     <div class="nav-logo">JB<span>.</span></div>
     <div class="nav-links">
-      <a href="#offres">Offres</a>
+      <a href="#offres" onclick="switchTab('offres')">Offres</a>
+      <a href="#candidatures" onclick="switchTab('candidatures')">Candidatures</a>
       <a href="https://www.linkedin.com/in/jasim-bouchekoua-766612346" target="_blank" rel="noopener">LinkedIn</a>
       <a href="CV_Jasim_Bouchekoua.pdf" download class="nav-cta">Télécharger le CV</a>
     </div>
@@ -250,7 +476,7 @@
         les 40 plus grandes entreprises françaises.
       </p>
       <div class="hero-actions">
-        <a href="#offres" class="btn btn-accent">
+        <a href="#offres" class="btn btn-accent" onclick="switchTab('offres')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           Voir les offres
         </a>
@@ -264,6 +490,10 @@
       <div class="stat-item">
         <span class="stat-num" id="heroCount">—</span>
         <span class="stat-label">offres actives</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="heroApplied">—</span>
+        <span class="stat-label">candidatures</span>
       </div>
       <div class="stat-item">
         <span class="stat-num">64</span>
@@ -290,41 +520,160 @@
     </div>
   </div>
 
-  <main class="main" id="offres">
-    <div class="section-header reveal">
-      <div>
-        <h2 class="section-title">Offres en cours <span id="countBadge"></span></h2>
+  <!-- TABS BAR -->
+  <div class="tabs-bar" id="tabsBar">
+    <button class="tab-btn active" id="tab-offres" onclick="switchTab('offres')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Offres scrappées
+      <span class="tab-badge" id="badgeOffres">—</span>
+    </button>
+    <button class="tab-btn" id="tab-candidatures" onclick="switchTab('candidatures')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      Mes candidatures
+      <span class="tab-badge" id="badgeCand">0</span>
+    </button>
+  </div>
+
+  <!-- ════════════ PANEL : OFFRES ════════════ -->
+  <div id="panel-offres" class="tab-panel active">
+    <main class="main" id="offres">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Offres en cours <span id="countBadge"></span></h2>
+        </div>
+        <span class="section-count" id="sectionCount">Chargement...</span>
       </div>
-      <span class="section-count" id="sectionCount">Chargement...</span>
-    </div>
 
-    <div class="toolbar reveal">
-      <div class="search-wrap">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="search" id="searchInput" class="search-input" placeholder="Poste, entreprise, ville..." oninput="filterJobs()" autocomplete="off" />
+      <div class="toolbar reveal">
+        <div class="search-wrap">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="searchInput" class="search-input" placeholder="Poste, entreprise, ville..." oninput="filterJobs()" autocomplete="off" />
+        </div>
+        <select id="companyFilter" class="select-input" onchange="filterJobs()">
+          <option value="">Toutes les entreprises</option>
+        </select>
+        <select id="sortSelect" class="select-input" onchange="filterJobs()">
+          <option value="default">Tri par défaut</option>
+          <option value="az">Entreprise A → Z</option>
+          <option value="za">Entreprise Z → A</option>
+          <option value="title">Titre A → Z</option>
+          <option value="recent">Plus récent</option>
+        </select>
       </div>
-      <select id="companyFilter" class="select-input" onchange="filterJobs()">
-        <option value="">Toutes les entreprises</option>
-      </select>
-      <select id="sortSelect" class="select-input" onchange="filterJobs()">
-        <option value="default">Tri par défaut</option>
-        <option value="az">Entreprise A → Z</option>
-        <option value="za">Entreprise Z → A</option>
-        <option value="title">Titre A → Z</option>
-        <option value="recent">Plus récent</option>
-      </select>
-    </div>
 
-    <div class="status-bar reveal">
-      <span class="status-count" id="statusCount">Chargement des offres...</span>
-      <span class="status-live">
-        <span class="live-dot"></span>
-        Mise à jour quotidienne — <span id="lastUpdate"></span>
-      </span>
-    </div>
+      <div class="status-bar reveal">
+        <span class="status-count" id="statusCount">Chargement des offres...</span>
+        <span class="status-live">
+          <span class="live-dot"></span>
+          Mise à jour quotidienne — <span id="lastUpdate"></span>
+        </span>
+      </div>
 
-    <div id="jobList" class="job-grid" role="list" aria-live="polite"></div>
-  </main>
+      <div id="jobList" class="job-grid" role="list" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <!-- ════════════ PANEL : CANDIDATURES ════════════ -->
+  <div id="panel-candidatures" class="tab-panel">
+    <main class="main" id="candidatures">
+      <div class="cand-header reveal">
+        <div>
+          <h2 class="section-title">Mes <span>candidatures</span></h2>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <div class="cand-stats">
+            <div class="cand-stat">
+              <span class="cand-stat-dot" style="background:#818cf8"></span>
+              <span class="cand-stat-num" id="statEnvoyee">0</span>
+              <span>envoyées</span>
+            </div>
+            <div class="cand-stat">
+              <span class="cand-stat-dot" style="background:var(--accent)"></span>
+              <span class="cand-stat-num" id="statEntretien">0</span>
+              <span>entretiens</span>
+            </div>
+            <div class="cand-stat">
+              <span class="cand-stat-dot" style="background:#f87171"></span>
+              <span class="cand-stat-num" id="statRefus">0</span>
+              <span>refus</span>
+            </div>
+          </div>
+          <button class="add-cand-btn" onclick="openModal()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Ajouter une candidature
+          </button>
+        </div>
+      </div>
+      <div class="cand-list" id="candList"></div>
+    </main>
+  </div>
+
+  <!-- ════════════ MODAL CANDIDATURE ════════════ -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOutside(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 class="modal-title" id="modalTitle">Nouvelle candidature</h2>
+
+      <div class="field">
+        <label>Titre du poste *</label>
+        <input type="text" id="mTitre" placeholder="Ex : Alternance Ingénieur d'Affaires IT" />
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>Entreprise *</label>
+          <input type="text" id="mEntreprise" placeholder="Ex : Capgemini" />
+        </div>
+        <div class="field">
+          <label>Localisation</label>
+          <input type="text" id="mLoc" placeholder="Ex : Paris" />
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>Date de candidature</label>
+          <input type="date" id="mDate" />
+        </div>
+        <div class="field">
+          <label>Statut</label>
+          <select id="mStatut">
+            <option value="attente">En attente</option>
+            <option value="envoyee">Envoyée</option>
+            <option value="relance">Relancée</option>
+            <option value="entretien">Entretien</option>
+            <option value="refus">Refus</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Lien de l'offre</label>
+        <input type="url" id="mLien" placeholder="https://..." />
+      </div>
+
+      <div class="field">
+        <label>Mots-clés / caractéristiques</label>
+        <input type="text" id="mTags" placeholder="Ex : avant-vente, B2B, cloud, télétravail" />
+      </div>
+
+      <div class="field">
+        <label>Description &amp; notes</label>
+        <textarea id="mDesc" placeholder="Ce que tu as retenu du poste, pourquoi tu postules, contacts..."></textarea>
+      </div>
+
+      <div class="field">
+        <label>
+          <input type="checkbox" id="mPostule" style="width:14px;height:14px;margin-right:6px;accent-color:var(--accent)" />
+          J'ai déjà postulé à cette offre
+        </label>
+      </div>
+
+      <div class="modal-actions">
+        <button class="modal-cancel" onclick="closeModal()">Annuler</button>
+        <button class="modal-save" onclick="saveCand()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
 
   <button id="scrollTop" aria-label="Retour en haut">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
@@ -362,6 +711,15 @@
       card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
     });
 
+    // ════════ TABS ════════
+    function switchTab(name) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('tab-' + name).classList.add('active');
+      document.getElementById('panel-' + name).classList.add('active');
+    }
+
+    // ════════ OFFRES ════════
     let allJobs = [];
 
     function h(s) {
@@ -379,9 +737,11 @@
         </div>`).join('');
     }
 
-    // Cache-buster fort : timestamp + random
-    function cacheBust() {
-      return Date.now() + '_' + Math.random().toString(36).slice(2);
+    function cacheBust() { return Date.now() + '_' + Math.random().toString(36).slice(2); }
+
+    function isApplied(job) {
+      const cands = getCands();
+      return cands.some(c => c.lien && c.lien === job.lien);
     }
 
     async function loadJobs() {
@@ -396,12 +756,12 @@
 
         document.getElementById('heroCount').textContent = allJobs.length;
 
-        // Affiche la date de la dernière mise à jour (last_seen le plus récent)
         const dates = allJobs.map(j => j.last_seen).filter(Boolean);
         if (dates.length) {
           document.getElementById('lastUpdate').textContent = 'Dernière MAJ : ' + dates[0];
         }
 
+        document.getElementById('badgeOffres').textContent = allJobs.length;
         populateFilters();
         renderJobs(allJobs);
       } catch(err) {
@@ -447,8 +807,8 @@
         const source = (job.source || 'LinkedIn').toLowerCase();
         const sourceBadgeClass = source === 'apec' ? 'source-apec' : 'source-linkedin';
         const sourceLabel = source === 'apec' ? 'APEC' : 'LinkedIn';
-        // Affiche first_seen (ex: "24/03/2026") ou last_seen
         const dateLabel = job.first_seen || job.last_seen || '';
+        const applied = isApplied(job);
 
         return `
         <article class="job-card" role="listitem">
@@ -468,10 +828,17 @@
               ${h(dateLabel)}
             </span>` : ''}
           </div>
-          <a href="${h(job.lien)}" class="card-link" target="_blank" rel="noopener noreferrer">
-            Voir sur ${sourceLabel}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+          <div class="card-actions">
+            <a href="${h(job.lien)}" class="card-link" target="_blank" rel="noopener noreferrer">
+              Voir sur ${sourceLabel}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <button class="card-apply-btn${applied ? ' applied' : ''}" onclick='quickApply(${JSON.stringify(job)})'>
+              ${applied
+                ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Postulé'
+                : '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Postuler'}
+            </button>
+          </div>
         </article>`;
       }).join('');
     }
@@ -494,7 +861,198 @@
       renderJobs(res);
     }
 
+    // Quick-apply depuis une carte offre → pré-remplit le modal
+    function quickApply(job) {
+      const today = new Date().toISOString().slice(0,10);
+      openModal(null, {
+        titre: job.titre || '',
+        entreprise: job.entreprise || '',
+        loc: job.localisation || '',
+        date: today,
+        statut: 'envoyee',
+        lien: job.lien || '',
+        tags: (job.mots_cles_matches || []).join(', '),
+        desc: '',
+        postule: true,
+      });
+    }
+
+    // ════════ CANDIDATURES (localStorage) ════════
+    const LS_KEY = 'jb_cands_v1';
+
+    function getCands() {
+      try { return JSON.parse(localStorage.getItem(LS_KEY) || '[]'); }
+      catch { return []; }
+    }
+    function saveCands(arr) {
+      localStorage.setItem(LS_KEY, JSON.stringify(arr));
+      renderCands();
+      document.getElementById('heroApplied').textContent = arr.length;
+      document.getElementById('badgeCand').textContent = arr.length;
+    }
+
+    const STATUS_LABELS = {
+      envoyee:   { label: 'Envoyée',    cls: 'status-envoyee' },
+      relance:   { label: 'Relancée',   cls: 'status-relance' },
+      entretien: { label: 'Entretien',  cls: 'status-entretien' },
+      refus:     { label: 'Refus',      cls: 'status-refus' },
+      attente:   { label: 'En attente', cls: 'status-attente' },
+    };
+
+    function renderCands() {
+      const cands = getCands();
+      const list = document.getElementById('candList');
+
+      // Compteurs stats
+      document.getElementById('statEnvoyee').textContent   = cands.filter(c => ['envoyee','relance'].includes(c.statut)).length;
+      document.getElementById('statEntretien').textContent = cands.filter(c => c.statut === 'entretien').length;
+      document.getElementById('statRefus').textContent     = cands.filter(c => c.statut === 'refus').length;
+      document.getElementById('badgeCand').textContent     = cands.length;
+      document.getElementById('heroApplied').textContent   = cands.length;
+
+      if (!cands.length) {
+        list.innerHTML = `
+          <div class="cand-empty">
+            <div class="cand-empty-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6b6b80" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Aucune candidature</h3>
+            <p>Clique sur <strong>Ajouter</strong> ou sur <strong>Postuler</strong> depuis une offre.</p>
+          </div>`;
+        return;
+      }
+
+      list.innerHTML = cands.map((c, i) => {
+        const st = STATUS_LABELS[c.statut] || STATUS_LABELS['attente'];
+        const tags = (c.tags || '').split(',').map(t => t.trim()).filter(Boolean);
+        const dateDisplay = c.date ? new Date(c.date).toLocaleDateString('fr-FR', {day:'2-digit', month:'short', year:'numeric'}) : '';
+
+        return `
+        <div class="cand-card">
+          <div class="cand-check-wrap">
+            <input type="checkbox" class="cand-checkbox" ${c.postule ? 'checked' : ''}
+              onchange="togglePostule(${i}, this.checked)" title="Marquer comme postulé" />
+          </div>
+          <div class="cand-body">
+            <div class="cand-title">${h(c.titre)}</div>
+            <div class="cand-company">${h(c.entreprise)}${c.loc ? ' &mdash; ' + h(c.loc) : ''}</div>
+            <div class="cand-meta">
+              ${dateDisplay ? `<span class="cand-date"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>${dateDisplay}</span>` : ''}
+              <span class="cand-status ${st.cls}">${st.label}</span>
+            </div>
+            ${c.desc ? `<div class="cand-desc">${h(c.desc)}</div>` : ''}
+            ${tags.length ? `<div class="cand-tags">${tags.map(t => `<span class="cand-tag">${h(t)}</span>`).join('')}</div>` : ''}
+          </div>
+          <div class="cand-actions">
+            ${c.lien ? `<a href="${h(c.lien)}" target="_blank" rel="noopener" class="cand-link-btn">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              Offre
+            </a>` : ''}
+            <button class="cand-edit-btn" onclick="openModal(${i})">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              Éditer
+            </button>
+            <button class="cand-del-btn" onclick="deleteCand(${i})">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+              Sup.
+            </button>
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    function togglePostule(i, val) {
+      const cands = getCands();
+      cands[i].postule = val;
+      saveCands(cands);
+    }
+
+    function deleteCand(i) {
+      if (!confirm('Supprimer cette candidature ?')) return;
+      const cands = getCands();
+      cands.splice(i, 1);
+      saveCands(cands);
+    }
+
+    // ════════ MODAL ════════
+    let editIndex = null;
+
+    function openModal(index = null, prefill = null) {
+      editIndex = index;
+      const title = document.getElementById('modalTitle');
+      title.textContent = index !== null ? 'Modifier la candidature' : 'Nouvelle candidature';
+
+      if (index !== null) {
+        const c = getCands()[index];
+        document.getElementById('mTitre').value      = c.titre || '';
+        document.getElementById('mEntreprise').value = c.entreprise || '';
+        document.getElementById('mLoc').value        = c.loc || '';
+        document.getElementById('mDate').value       = c.date || '';
+        document.getElementById('mStatut').value     = c.statut || 'attente';
+        document.getElementById('mLien').value       = c.lien || '';
+        document.getElementById('mTags').value       = c.tags || '';
+        document.getElementById('mDesc').value       = c.desc || '';
+        document.getElementById('mPostule').checked  = !!c.postule;
+      } else if (prefill) {
+        document.getElementById('mTitre').value      = prefill.titre || '';
+        document.getElementById('mEntreprise').value = prefill.entreprise || '';
+        document.getElementById('mLoc').value        = prefill.loc || '';
+        document.getElementById('mDate').value       = prefill.date || '';
+        document.getElementById('mStatut').value     = prefill.statut || 'attente';
+        document.getElementById('mLien').value       = prefill.lien || '';
+        document.getElementById('mTags').value       = prefill.tags || '';
+        document.getElementById('mDesc').value       = prefill.desc || '';
+        document.getElementById('mPostule').checked  = !!prefill.postule;
+      } else {
+        ['mTitre','mEntreprise','mLoc','mLien','mTags','mDesc'].forEach(id => document.getElementById(id).value = '');
+        document.getElementById('mDate').value   = new Date().toISOString().slice(0,10);
+        document.getElementById('mStatut').value = 'attente';
+        document.getElementById('mPostule').checked = false;
+      }
+
+      document.getElementById('modalBackdrop').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('modalBackdrop').classList.remove('open');
+      editIndex = null;
+    }
+
+    function closeModalOutside(e) {
+      if (e.target === document.getElementById('modalBackdrop')) closeModal();
+    }
+
+    function saveCand() {
+      const titre = document.getElementById('mTitre').value.trim();
+      const entreprise = document.getElementById('mEntreprise').value.trim();
+      if (!titre || !entreprise) { alert('Le titre et l\'entreprise sont obligatoires.'); return; }
+
+      const cand = {
+        titre,
+        entreprise,
+        loc:     document.getElementById('mLoc').value.trim(),
+        date:    document.getElementById('mDate').value,
+        statut:  document.getElementById('mStatut').value,
+        lien:    document.getElementById('mLien').value.trim(),
+        tags:    document.getElementById('mTags').value.trim(),
+        desc:    document.getElementById('mDesc').value.trim(),
+        postule: document.getElementById('mPostule').checked,
+      };
+
+      const cands = getCands();
+      if (editIndex !== null) {
+        cands[editIndex] = cand;
+      } else {
+        cands.unshift(cand);
+      }
+      saveCands(cands);
+      closeModal();
+      switchTab('candidatures');
+    }
+
+    // Init
     loadJobs();
+    renderCands();
   </script>
 </body>
 </html>
