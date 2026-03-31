@@ -11,8 +11,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": true
     },
     {
@@ -43,8 +43,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": true
     },
     {
@@ -59,8 +59,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -75,8 +75,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -91,8 +91,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -107,8 +107,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -152,8 +152,8 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -168,8 +168,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -184,8 +184,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -199,8 +199,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -214,8 +214,38 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI Construction",
+        "titre": "Chargé(e) de Développement Commercial et Communication (Alternance) F/H",
+        "localisation": "Richwiller",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-d%C3%A9veloppement-commercial-et-communication-alternance-f-h-at-vinci-construction-4393224890",
+        "score": 6,
+        "mots_cles_matches": [
+            "commercial",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "Chargé(e) de Développement Commercial et Communication (Alternance) F/H",
+        "localisation": "Richwiller",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-d%C3%A9veloppement-commercial-et-communication-alternance-f-h-at-vinci-4393267101",
+        "score": 6,
+        "mots_cles_matches": [
+            "commercial",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -228,8 +258,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -242,8 +272,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -272,8 +302,8 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -286,8 +316,8 @@
             "commercial"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -301,8 +331,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -316,8 +346,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -331,8 +361,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
@@ -346,8 +376,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "31/03/2026",
+        "last_seen": "31/03/2026",
         "is_priority": false
     },
     {
