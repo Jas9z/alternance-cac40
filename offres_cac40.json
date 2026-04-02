@@ -1,5 +1,22 @@
 [
     {
+        "entreprise": "EDF",
+        "titre": "Alternance - Ingénieur(e) technico-commercial CVC H/F",
+        "localisation": "Clermont-Ferrand",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-e-technico-commercial-cvc-h-f-at-edf-4395231493",
+        "score": 19,
+        "mots_cles_matches": [
+            "technico-commercial",
+            "commercial",
+            "tech",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "AXA en France",
         "titre": "Adjoint technico-commercial (F/H) - Alternance",
         "localisation": "Paris",
@@ -11,8 +28,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": true
     },
     {
@@ -43,8 +60,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": true
     },
     {
@@ -59,8 +76,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -75,8 +92,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -91,8 +108,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -107,8 +124,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -152,8 +169,8 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -168,8 +185,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -184,8 +201,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -199,8 +216,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -214,8 +231,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -229,8 +246,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -244,8 +261,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -258,8 +275,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -272,8 +289,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -288,8 +305,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "30/03/2026",
-        "last_seen": "30/03/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -302,8 +319,8 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -316,8 +333,24 @@
             "commercial"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chargé de projet Sécurité IT Network Cloud (F/H) alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-projet-s%C3%A9curit%C3%A9-it-network-cloud-f-h-alternance-at-axa-en-france-4394958811",
+        "score": 5,
+        "mots_cles_matches": [
+            "cloud",
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -331,8 +364,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -346,8 +379,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -361,8 +394,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
@@ -376,8 +409,23 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "01/04/2026",
-        "last_seen": "01/04/2026",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Alternance - Ingénieur d'affaires IT F/H",
+        "localisation": "Pérols",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-d-affaires-it-f-h-at-vinci-energies-4395212903",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "02/04/2026",
+        "last_seen": "02/04/2026",
         "is_priority": false
     },
     {
