@@ -1,5 +1,41 @@
 [
     {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternant(e) Ingénieur(e) Avant-Vente Transformation Digitale  Industrie 4.0 - (H/F)",
+        "localisation": "Rueil-Malmaison",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-ing%C3%A9nieur-e-avant-vente-transformation-digitale-industrie-4-0-h-f-at-schneider-electric-4395464564",
+        "score": 22,
+        "mots_cles_matches": [
+            "avant-vente",
+            "vente",
+            "transformation",
+            "it",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternant(e) Ingénieur(e) Avant-Vente Transformation Digitale  Industrie 4.0 - (H/F)",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-ing%C3%A9nieur-e-avant-vente-transformation-digitale-industrie-4-0-h-f-at-schneider-electric-4395450715",
+        "score": 22,
+        "mots_cles_matches": [
+            "avant-vente",
+            "vente",
+            "transformation",
+            "it",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "EDF",
         "titre": "Alternance - Ingénieur(e) technico-commercial CVC H/F",
         "localisation": "Clermont-Ferrand",
@@ -12,8 +48,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": true
     },
     {
@@ -28,8 +64,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": true
     },
     {
@@ -60,8 +96,8 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": true
     },
     {
@@ -76,8 +112,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -92,8 +128,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -108,8 +144,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -124,8 +160,40 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Disneyland Paris",
+        "titre": "Alternance – Assistant(e) Analyste Stratégie Commerciale (F/H/NB)",
+        "localisation": "Montévrain",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-assistant-e-analyste-strat%C3%A9gie-commerciale-f-h-nb-at-disneyland-paris-4398503364",
+        "score": 11,
+        "mots_cles_matches": [
+            "commercial",
+            "strategie",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "The Walt Disney Company",
+        "titre": "Alternance – Assistant(e) Analyste Stratégie Commerciale (F/H/NB)",
+        "localisation": "Montévrain",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-assistant-e-analyste-strat%C3%A9gie-commerciale-f-h-nb-at-the-walt-disney-company-4395430327",
+        "score": 11,
+        "mots_cles_matches": [
+            "commercial",
+            "strategie",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -185,8 +253,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -201,8 +269,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -216,8 +284,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -231,8 +299,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -246,8 +314,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -261,8 +329,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -275,8 +343,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -289,8 +357,8 @@
             "vente"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -333,8 +401,8 @@
             "commercial"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -364,8 +432,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -379,8 +447,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -394,8 +462,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -409,8 +477,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
@@ -424,8 +492,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "07/04/2026",
-        "last_seen": "07/04/2026",
+        "first_seen": "08/04/2026",
+        "last_seen": "08/04/2026",
         "is_priority": false
     },
     {
