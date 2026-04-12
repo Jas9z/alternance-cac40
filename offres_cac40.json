@@ -48,8 +48,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": true
     },
     {
@@ -112,8 +112,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -128,8 +128,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -160,8 +160,8 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -194,6 +194,22 @@
         "source": "LinkedIn",
         "first_seen": "08/04/2026",
         "last_seen": "08/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Management de produit et développement commercial F/H",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-management-de-produit-et-d%C3%A9veloppement-commercial-f-h-at-edf-4400679520",
+        "score": 9,
+        "mots_cles_matches": [
+            "commercial",
+            "it",
+            "management"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -253,8 +269,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -284,8 +300,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -299,8 +315,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -314,8 +330,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -329,8 +345,23 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "La Poste Groupe",
+        "titre": "Alternance Chargé de développement commercial F/H",
+        "localisation": "Cadaujac",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-de-d%C3%A9veloppement-commercial-f-h-at-la-poste-groupe-4398718103",
+        "score": 6,
+        "mots_cles_matches": [
+            "commercial",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -461,8 +492,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -476,8 +507,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -491,8 +522,8 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
@@ -506,8 +537,38 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "08/04/2026",
-        "last_seen": "08/04/2026",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALTERNANCE : Master 1 ou 2 - Chargée/Chargé d'Affaires Conduite du Changement EV100 F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-master-1-ou-2-charg%C3%A9e-charg%C3%A9-d-affaires-conduite-du-changement-ev100-f-h-at-edf-4400677566",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALTERNANCE - BAC+2/+3 - Chargée ou Chargé d'Affaires Electricité F/H",
+        "localisation": "Cany-Barville",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-bac%2B2-%2B3-charg%C3%A9e-ou-charg%C3%A9-d-affaires-electricit%C3%A9-f-h-at-edf-4400387736",
+        "score": 3,
+        "mots_cles_matches": [
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "12/04/2026",
+        "last_seen": "12/04/2026",
         "is_priority": false
     },
     {
