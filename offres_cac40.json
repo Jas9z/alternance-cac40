@@ -4,11 +4,11 @@
         "titre": "Alternant(e) Ingénieur(e) Avant-Vente Transformation Digitale  Industrie 4.0 - (H/F)",
         "localisation": "Rueil-Malmaison",
         "lien": "https://fr.linkedin.com/jobs/view/alternant-e-ing%C3%A9nieur-e-avant-vente-transformation-digitale-industrie-4-0-h-f-at-schneider-electric-4395464564",
-        "score": 22,
+        "score": 31,
         "mots_cles_matches": [
             "avant-vente",
             "vente",
-            "transformation",
+            "transformation digitale",
             "it",
             "ingenieur"
         ],
@@ -22,11 +22,11 @@
         "titre": "Alternant(e) Ingénieur(e) Avant-Vente Transformation Digitale  Industrie 4.0 - (H/F)",
         "localisation": "Saint-Priest",
         "lien": "https://fr.linkedin.com/jobs/view/alternant-e-ing%C3%A9nieur-e-avant-vente-transformation-digitale-industrie-4-0-h-f-at-schneider-electric-4395450715",
-        "score": 22,
+        "score": 31,
         "mots_cles_matches": [
             "avant-vente",
             "vente",
-            "transformation",
+            "transformation digitale",
             "it",
             "ingenieur"
         ],
@@ -101,6 +101,269 @@
         "is_priority": true
     },
     {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chargé de mission - PMO",
+        "localisation": "Centre-Val de Loire",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-pmo-at-societe-generale-assurances-4388994685",
+        "score": 18,
+        "mots_cles_matches": [
+            "pmo",
+            "si",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Assistant Chef de Projet Digitalisation no-code - Alternance F/H",
+        "localisation": "Nantes",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-chef-de-projet-digitalisation-no-code-alternance-f-h-at-vinci-energies-4389291829",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Alternance - Chef de projet GRC Cybersécurité F/H",
+        "localisation": "Saint-Denis",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-grc-cybers%C3%A9curit%C3%A9-f-h-at-vinci-energies-4387213227",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it",
+            "cyber"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Customer Success Manager - Génie électrique - Rueil Malmaison - F/H",
+        "localisation": "Rueil-Malmaison",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-customer-success-manager-g%C3%A9nie-%C3%A9lectrique-rueil-malmaison-f-h-at-schneider-electric-4392446481",
+        "score": 16,
+        "mots_cles_matches": [
+            "customer success",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "LVMH",
+        "titre": "Alternance - Assistant Chef de Projet Virtuoses Métiers d’Excellence",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-chef-de-projet-virtuoses-m%C3%A9tiers-d%E2%80%99excellence-at-lvmh-4380942902",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "LVMH",
+        "titre": "Alternance – Assistant(e) Chef de Projet Média EMEA (F/H) – Septembre 2026 - 12 mois",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-assistant-e-chef-de-projet-m%C3%A9dia-emea-f-h-%E2%80%93-septembre-2026-12-mois-at-lvmh-4371466144",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "GROUPEMENT DES CONCESSIONNAIRES RENAULT",
+        "titre": "Alternance - Chef de Projet Digital Junior H/F",
+        "localisation": "Clamart",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-digital-junior-h-f-at-groupement-des-concessionnaires-renault-4395944783",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Alternance - Ingénieur Chef de projets F/H",
+        "localisation": "Quimper",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-chef-de-projets-f-h-at-vinci-energies-4389298546",
+        "score": 14,
+        "mots_cles_matches": [
+            "chef de projet",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Scrum Product Ownership - F/H",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-scrum-product-ownership-f-h-at-schneider-electric-4390977126",
+        "score": 13,
+        "mots_cles_matches": [
+            "product owner"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "LVMH",
+        "titre": "ALTERNANCE - Chef de projet Partenariat (F/H)- Septembre 2026",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-partenariat-f-h-septembre-2026-at-lvmh-4387446864",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "LVMH",
+        "titre": "Alternance - Chef de projet Finance/Transformation (F/H) – Septembre 2026 – 12 mois",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-finance-transformation-f-h-%E2%80%93-septembre-2026-%E2%80%93-12-mois-at-lvmh-4389406053",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "alternance 12 à 24 mois – chef de projet engagement clients",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-12-%C3%A0-24-mois-%E2%80%93-chef-de-projet-engagement-clients-at-sanofi-4393524548",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Chef de projet Affaires - Génie électrique - Lyon - F/H",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-affaires-g%C3%A9nie-%C3%A9lectrique-lyon-f-h-at-schneider-electric-4395973618",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Chef de projet Affaires - bac+3/5 - St Priest- F/H",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-affaires-bac%2B3-5-st-priest-f-h-at-schneider-electric-4393482911",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chef de Projet Innovation",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-innovation-at-societe-generale-assurances-4379456714",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chef de projet communication clients",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-communication-clients-at-societe-generale-assurances-4393880686",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "#Alternance Chef de projet mobile F/H",
+        "localisation": "Vitrolles",
+        "lien": "https://fr.linkedin.com/jobs/view/%23alternance-chef-de-projet-mobile-f-h-at-vinci-energies-4387662199",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "SAP",
+        "titre": "Alternance - Account Executive Associate F/H",
+        "localisation": "Levallois-Perret",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-account-executive-associate-f-h-at-sap-4389802666",
+        "score": 12,
+        "mots_cles_matches": [
+            "account executive"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "EDF",
         "titre": "Alternance - Ingénieur Commercial F/H",
         "localisation": "Jeumont",
@@ -158,6 +421,23 @@
             "ingenieur commercial",
             "commercial",
             "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "LVMH",
+        "titre": "Alternance - Assistant Tech & Digital HR and Talent Management (F/H) - Septembre 2026",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-tech-digital-hr-and-talent-management-f-h-septembre-2026-at-lvmh-4374781648",
+        "score": 12,
+        "mots_cles_matches": [
+            "si",
+            "it",
+            "tech",
+            "management"
         ],
         "source": "LinkedIn",
         "first_seen": "13/04/2026",
@@ -358,6 +638,36 @@
         "mots_cles_matches": [
             "commercial",
             "charge"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Assistant chef de produit F/H",
+        "localisation": "Carros",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-chef-de-produit-f-h-at-schneider-electric-4392199333",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "first_seen": "13/04/2026",
+        "last_seen": "13/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Assistant Manager",
+        "localisation": "Centre-Val de Loire",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-manager-at-societe-generale-assurances-4384229877",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
         ],
         "source": "LinkedIn",
         "first_seen": "13/04/2026",
