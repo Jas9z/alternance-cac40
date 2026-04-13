@@ -83,49 +83,146 @@ BATCHS = {
     "D": ENTREPRISES[3*N//4:],
 }
 
+# ═══ ANGLES DE RECHERCHE — alignés avec les postes cibles Bac+4/5 ═══
+
 ANGLES = [
+    # Famille Commerce / Vente IT
     "Alternance ingenieur affaires",
-    "Alternance avant-vente",
-    "Alternance technico-commercial",
-    "Alternance business developer",
+    "Alternance ingenieur commercial grands comptes",
+    "Alternance business developer IT",
+    "Alternance account manager IT",
+    "Alternance avant-vente pre-sales",
+    "Alternance bid manager",
+    "Alternance customer success manager IT",
+    "Alternance technical sales",
+    "Alternance account executive",
+    "Alternance inside sales B2B",
+    "Alternance partenariats alliances",
+    # Famille Chef de Projet / Delivery
     "Alternance chef de projet IT",
-    "Alternance account manager",
+    "Alternance chef de projet deploiement",
+    "Alternance IT project manager",
+    "Alternance AMOA systeme information",
+    "Alternance business analyst SI",
+    "Alternance product owner",
+    "Alternance consultant fonctionnel CRM ERP",
+    "Alternance PMO project management officer",
+    "Alternance transformation digitale",
+    "Alternance scrum master",
+    "Alternance IT delivery manager",
+    "Alternance conduite du changement IT",
+    "Alternance coordinateur deploiement logiciel",
+    # Famille Telecoms / Reseaux / Infra
+    "Alternance charge affaires deploiement reseaux",
+    "Alternance chef de projet infrastructures cloud",
+    "Alternance service delivery manager",
+    "Alternance technical account manager",
+    "Alternance ingenieur affaires telecoms",
+    "Alternance chef de projet fibre FTTH",
+    "Alternance coordinateur technique deploiement",
+    "Alternance charge projet architecture reseau",
+    "Alternance analyste gouvernance IT",
+    "Alternance solution architect junior",
 ]
 
 ANGLES_APEC = [
     "ingenieur affaires alternance",
-    "avant-vente alternance",
-    "technico-commercial alternance",
-    "pre-sales alternance",
-    "charge deploiement alternance",
-    "business developer alternance",
+    "avant-vente pre-sales alternance",
+    "technico-commercial IT alternance",
+    "business developer IT alternance",
+    "chef de projet IT alternance",
+    "account manager IT alternance",
+    "AMOA SI alternance",
+    "business analyst SI alternance",
+    "product owner alternance",
+    "PMO alternance",
+    "customer success manager alternance",
+    "bid manager alternance",
+    "deploiement reseaux alternance",
+    "chef de projet fibre alternance",
+    "service delivery manager alternance",
+    "solution architect alternance",
+    "consultant fonctionnel CRM ERP alternance",
 ]
 
+# ═══ SCORING — Bac+4/5 oriente commerce/gestion/projet/telecoms ═══
+
 MOTS_POSITIFS = {
-    "avant-vente": 8, "avant vente": 8, "pre-sales": 8, "presales": 8,
-    "solution engineer": 8, "solution architect": 7,
-    "technico-commercial": 8, "technico commercial": 8,
-    "ingenieur d affaires": 8, "ingenieur affaires": 8,
-    "charge d affaires": 8, "charge affaires": 8,
-    "charge de deploiement": 8, "ppo": 7,
-    "business manager": 7, "ingenieur commercial": 7,
-    "business developer": 6, "business development": 6,
-    "key account": 6, "account manager": 6, "kam": 6,
-    "commercial": 5, "business": 5, "sales": 5, "vente": 5, "b2b": 5,
-    "chef de projet": 5, "project manager": 5, "deploiement": 6,
-    "consultant": 4, "strategy": 4, "strategie": 4, "transformation": 3,
-    "cloud": 2, "data": 2, "saas": 2, "erp": 2, "crm": 2,
-    "telecom": 2, "si": 2, "it": 2, "tech": 2, "cyber": 2,
-    "manager": 2, "management": 2, "ingenieur": 1, "charge": 1,
+    # Famille Avant-Vente / Pre-Sales
+    "avant-vente": 10, "avant vente": 10, "pre-sales": 10, "presales": 10,
+    "solution engineer": 9, "solution architect": 9,
+    "ingenieur avant-vente": 10, "pre sales engineer": 10,
+
+    # Famille Commerce / Vente
+    "ingenieur d affaires": 10, "ingenieur affaires": 10,
+    "charge d affaires": 10, "charge affaires": 10,
+    "ingenieur commercial": 9, "commercial grands comptes": 9,
+    "grands comptes": 8, "key account": 8, "account manager": 8, "kam": 8,
+    "account executive": 8, "technico-commercial": 9, "technico commercial": 9,
+    "business developer": 7, "business development": 7, "business manager": 8,
+    "inside sales": 7, "b2b": 5, "sales": 5, "vente": 5,
+    "bid manager": 9, "appel d offres": 7, "reponse appel offres": 7,
+    "customer success": 9, "csm": 8,
+    "technical sales": 8, "technical account": 8, "tam": 7,
+    "partenariats": 6, "alliances strategiques": 7, "sales operations": 7, "salesops": 7,
+    "charge de comptes": 8, "comptes strategiques": 8,
+
+    # Famille Chef de Projet / Delivery
+    "chef de projet": 8, "project manager": 8, "it project": 8,
+    "amoa": 9, "maitrise d ouvrage": 9,
+    "business analyst": 8, "analyste metier": 8, "analyste fonctionnel": 8,
+    "product owner": 9, "po ": 6,
+    "consultant fonctionnel": 8, "crm": 6, "erp": 6,
+    "pmo": 9, "project management officer": 9,
+    "transformation digitale": 7, "conduite du changement": 8,
+    "scrum master": 8, "agile": 5,
+    "it delivery": 8, "delivery manager": 8,
+    "coordinateur deploiement": 8, "deploiement logiciel": 7,
+    "charge de deploiement": 8, "deploiement": 6,
+    "service delivery": 8, "sdm": 7,
+
+    # Famille Telecoms / Reseaux / Infra
+    "telecoms": 6, "telecom": 6, "ingenieur affaires telecoms": 10,
+    "fibre": 5, "ftth": 7, "deploiement reseau": 7, "deploiement reseaux": 7,
+    "charge affaires deploiement": 9, "chef de projet fibre": 9,
+    "architecture reseau": 7,
+    "infrastructures cloud": 7, "cloud": 4,
+    "gouvernance it": 7, "analyste gouvernance": 7,
+    "coordinateur technique": 7,
+
+    # Mots generiques IT / Tech
+    "consultant": 4, "strategy": 4, "strategie": 4,
+    "saas": 3, "si": 3, "it": 3, "tech": 3, "cyber": 3,
+    "data": 2, "manager": 3, "management": 3,
+    "ingenieur": 2, "charge": 2,
 }
 
-SCORE_MIN = 3
+# Score minimum — releve a 6 pour plus de precision
+SCORE_MIN = 6
+
+# ═══ METIERS PRIORITAIRES — liste exhaustive des postes cibles ═══
 
 METIERSPRIORITAIRES = [
+    # Avant-vente
     "avant-vente", "avant vente", "pre-sales", "presales",
-    "technico-commercial", "ingenieur affaires", "ingenieur d affaires",
-    "charge affaires", "charge de deploiement", "solution engineer",
-    "business manager", "ppo",
+    "solution engineer", "solution architect",
+    # Commerce
+    "ingenieur affaires", "ingenieur d affaires", "charge affaires", "charge d affaires",
+    "ingenieur commercial", "grands comptes", "key account", "account manager",
+    "account executive", "business manager", "technico-commercial",
+    "business developer", "bid manager", "customer success", "csm",
+    "technical sales", "technical account", "tam", "inside sales",
+    "partenariats", "salesops", "sales operations",
+    # Projet / Delivery
+    "amoa", "maitrise d ouvrage", "business analyst", "product owner",
+    "chef de projet", "project manager", "pmo", "project management officer",
+    "transformation digitale", "conduite du changement", "scrum master",
+    "it delivery", "delivery manager", "coordinateur deploiement",
+    "service delivery", "sdm",
+    # Telecoms / Reseau
+    "ingenieur affaires telecoms", "fibre", "ftth",
+    "deploiement reseau", "deploiement reseaux", "charge affaires deploiement",
+    "architecture reseau", "gouvernance it",
 ]
 
 MOTS_INTERDITS = [
@@ -140,6 +237,13 @@ MOTS_INTERDITS = [
     "juridique", "droit", "paralegal",
     "qualite", "qhse", "hse",
     "stage ",
+    # Metiers trop bas niveau (bac+2/3) — pas pertinents pour un M2
+    "technicien reseau", "technicien informatique", "technicien systemes",
+    "administrateur systeme", "developpeur", "developpement logiciel",
+    "programmeur", "integrateur", "devops", "sre ",
+    "data scientist", "data engineer", "data analyst",
+    "community manager", "traffic manager", "seo", "sea ",
+    "charge de communication",
 ]
 
 USER_AGENTS = [
@@ -168,7 +272,7 @@ def scorer(titre):
             matches.append(mot)
     for p in METIERSPRIORITAIRES:
         if p in t:
-            score += 3
+            score += 4  # bonus renforce pour les postes cibles
             break
     return score, matches
 
@@ -195,10 +299,10 @@ def get_chrome_major_version():
         )
         version_str = result.stdout.strip().split()[-1]
         major = int(version_str.split(".")[0])
-        print(f"  ℹ️ Chrome détecté : version majeure {major}")
+        print(f"  Chrome detecte : version majeure {major}")
         return major
     except Exception as e:
-        print(f"  ⚠️ Impossible de détecter la version Chrome : {e} → fallback 145")
+        print(f"  Impossible de detecter la version Chrome : {e} -> fallback 145")
         return 145
 
 # ═══ DRIVER undetected-chromedriver ═══
@@ -304,7 +408,6 @@ def quit_driver(driver):
 def scrape_linkedin(driver, angle, nom, aliases, vues, date):
     offres = []
 
-    # Sélecteurs à attendre pour confirmer que le JS a injecté les offres
     SELECTORS_WAIT = [
         "ul.jobs-search__results-list",
         "div.jobs-search-results-list",
@@ -322,7 +425,6 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
         try:
             driver.get(url)
 
-            # Attendre que le JS injecte les offres dans le DOM
             loaded = False
             for sel in SELECTORS_WAIT:
                 try:
@@ -330,12 +432,11 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                         EC.presence_of_element_located((By.CSS_SELECTOR, sel))
                     )
                     loaded = True
-                    print(f"    ✓ Conteneur JS chargé : {sel}")
+                    print(f"    OK Conteneur JS charge : {sel}")
                     break
                 except TimeoutException:
                     continue
 
-            # Fallback : attendre au moins un lien /jobs/view/
             if not loaded:
                 try:
                     WebDriverWait(driver, 10).until(
@@ -344,32 +445,29 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                         )
                     )
                     loaded = True
-                    print(f"    ✓ Lien /jobs/view/ détecté pour {nom}")
+                    print(f"    OK Lien /jobs/view/ detecte pour {nom}")
                 except TimeoutException:
                     pass
 
             if not loaded:
-                print(f"    ℹ️ Timeout JS pour {nom} (start={start}) — page non rendue")
+                print(f"    Timeout JS pour {nom} (start={start}) — page non rendue")
                 html = driver.page_source
-                print(f"    🔍 HTML début: {html[:1000].replace(chr(10), ' ')}")
+                print(f"    HTML debut: {html[:1000].replace(chr(10), ' ')}")
                 break
 
-            # Scroll progressif pour déclencher le lazy-load
             for scroll_pos in [300, 600, 900, 1200]:
                 driver.execute_script(f"window.scrollTo(0, {scroll_pos});")
                 time.sleep(random.uniform(0.4, 0.8))
 
-            # Courte pause de stabilisation après scroll
             time.sleep(random.uniform(2.0, 3.5))
 
             if any(kw in driver.current_url for kw in ["authwall", "login", "uas/authenticate"]):
-                print(f"    ⚠️ LinkedIn authwall pour {nom}")
+                print(f"    LinkedIn authwall pour {nom}")
                 return offres
 
             html = driver.page_source
             soup = BeautifulSoup(html, "html.parser")
 
-            # 4 couches de sélecteurs CSS
             cards = soup.select("ul.jobs-search__results-list > li")
             if not cards:
                 cards = soup.select("li[data-occlude-height]")
@@ -381,11 +479,10 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     tag.find("a", href=lambda h: h and "/jobs/view/" in (h or ""))
                 )
 
-            # Couche 4 : fallback extraction directe par liens /jobs/view/
             if not cards:
                 liens_directs = soup.find_all("a", href=lambda h: h and "/jobs/view/" in (h or ""))
                 if liens_directs:
-                    print(f"    ℹ️ Fallback liens directs : {len(liens_directs)} trouvés pour {nom}")
+                    print(f"    Fallback liens directs : {len(liens_directs)} trouves pour {nom}")
                     for a_tag in liens_directs:
                         try:
                             parent = a_tag.find_parent(["li", "div"])
@@ -427,10 +524,10 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     continue
 
             if not cards:
-                print(f"    ℹ️ Aucune card pour {nom} (start={start}) après attente JS")
+                print(f"    Aucune card pour {nom} (start={start}) apres attente JS")
                 break
 
-            print(f"    ✓ {len(cards)} cards pour {nom} (start={start})")
+            print(f"    OK {len(cards)} cards pour {nom} (start={start})")
 
             for card in cards:
                 try:
@@ -489,7 +586,7 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
             time.sleep(random.uniform(3.0, 5.0))
 
         except Exception as e:
-            print(f"    ⚠️ LinkedIn UC: {e}")
+            print(f"    LinkedIn UC: {e}")
             break
 
     return offres
@@ -537,7 +634,7 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
             except Exception:
                 continue
     except Exception as e:
-        print(f"  ⚠️ APEC: {e}")
+        print(f"  APEC: {e}")
     return offres
 
 # ═══ SOURCE 3 : FRANCE TRAVAIL (API officielle) ═══
@@ -565,7 +662,7 @@ def get_ft_token(session):
         _ft_token = r.json().get("access_token")
         return _ft_token
     except Exception as e:
-        print(f"  ⚠️ France Travail token: {e}")
+        print(f"  France Travail token: {e}")
         return None
 
 def scrape_france_travail(session, mot_cle, aliases, vues, date):
@@ -612,7 +709,7 @@ def scrape_france_travail(session, mot_cle, aliases, vues, date):
             except Exception:
                 continue
     except Exception as e:
-        print(f"  ⚠️ France Travail search: {e}")
+        print(f"  France Travail search: {e}")
     return offres
 
 # ═══ MAIN ═══
@@ -628,64 +725,76 @@ def main():
     aliases_toutes = [a for _, als in ENTREPRISES for a in als]
     date = datetime.now().strftime("%d/%m/%Y")
 
-    print(f"🚀 Batch {batch} — {len(entreprises)} entreprises")
+    print(f"Batch {batch} — {len(entreprises)} entreprises")
 
     offres = []
     vues = set()
     session = make_session()
 
-    # ——— LinkedIn (undetected-chromedriver) ———
-    print(f"\n🔵 LinkedIn UC ({len(ANGLES)} angles × {len(entreprises)} entreprises)")
+    # LinkedIn (undetected-chromedriver)
+    print(f"\nLinkedIn UC ({len(ANGLES)} angles x {len(entreprises)} entreprises)")
     driver = None
     try:
         driver = make_uc_driver()
         for nom, aliases in entreprises:
-            print(f"  → {nom}")
+            print(f"  -> {nom}")
             for angle in ANGLES:
                 nouveaux = scrape_linkedin(driver, angle, nom, aliases, vues, date)
                 offres.extend(nouveaux)
                 time.sleep(random.uniform(2.0, 4.0))
             time.sleep(random.uniform(2.0, 4.0))
-        print(f"  ✓ LinkedIn UC : {len(offres)} offres")
+        print(f"  OK LinkedIn UC : {len(offres)} offres")
     except Exception as e:
-        print(f"  ⚠️ LinkedIn UC init échoué : {e}")
+        print(f"  LinkedIn UC init echoue : {e}")
     finally:
         if driver:
             quit_driver(driver)
 
-    # ——— APEC (batch A seulement) ———
+    # APEC (batch A seulement)
     if batch == "A":
-        print(f"\n🟡 APEC ({len(ANGLES_APEC)} requêtes)")
+        print(f"\nAPEC ({len(ANGLES_APEC)} requetes)")
         n_avant = len(offres)
         for mots in ANGLES_APEC:
-            print(f"  → {mots}")
+            print(f"  -> {mots}")
             offres.extend(scrape_apec(session, mots, aliases_toutes, vues, date))
             time.sleep(random.uniform(1.5, 2.5))
-        print(f"  ✓ APEC : +{len(offres) - n_avant} offres")
+        print(f"  OK APEC : +{len(offres) - n_avant} offres")
 
-    # ——— France Travail (si credentials dispos) ———
+    # France Travail (si credentials dispos)
     if FT_CLIENT_ID and FT_CLIENT_SECRET:
-        print(f"\n🟢 France Travail")
+        print(f"\nFrance Travail")
         n_avant = len(offres)
+        ft_angles = [
+            "alternance ingenieur affaires",
+            "alternance avant-vente pre-sales",
+            "alternance chef de projet IT",
+            "alternance AMOA SI",
+            "alternance business analyst SI",
+            "alternance product owner",
+            "alternance PMO",
+            "alternance customer success manager",
+            "alternance bid manager",
+            "alternance deploiement reseaux",
+        ]
         for nom, aliases in entreprises:
-            for angle in ["alternance ingenieur affaires", "alternance avant-vente", "alternance technico-commercial"]:
+            for angle in ft_angles:
                 offres.extend(scrape_france_travail(session, f"{angle} {nom}", aliases, vues, date))
                 time.sleep(random.uniform(0.5, 1.0))
-        print(f"  ✓ France Travail : +{len(offres) - n_avant} offres")
+        print(f"  OK France Travail : +{len(offres) - n_avant} offres")
     else:
-        print("\n⚠️ France Travail ignoré (FT_CLIENT_ID / FT_CLIENT_SECRET non définis)")
+        print("\nFrance Travail ignore (FT_CLIENT_ID / FT_CLIENT_SECRET non definis)")
 
     offres.sort(key=lambda x: (not x.get("is_priority", False), -x.get("score", 0)))
 
-    print(f"\n✅ Batch {batch} : {len(offres)} offres → {fichier}")
+    print(f"\nBatch {batch} : {len(offres)} offres -> {fichier}")
     if offres:
-        print("🏆 Top 5 :")
+        print("Top 5 :")
         for o in offres[:5]:
-            flag = "⭐" if o.get("is_priority") else "  "
+            flag = "[PRIORITY]" if o.get("is_priority") else "          "
             print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
 
     json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
-    print(f"💾 {fichier} écrit.")
+    print(f"Fichier {fichier} ecrit.")
 
 if __name__ == "__main__":
     main()
