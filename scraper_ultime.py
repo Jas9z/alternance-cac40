@@ -1,5 +1,5 @@
 import json, time, random, unicodedata, os, re, sys, subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 from urllib.parse import quote_plus
 import requests
 from bs4 import BeautifulSoup
@@ -83,10 +83,9 @@ BATCHS = {
     "D": ENTREPRISES[3*N//4:],
 }
 
-# ═══ ANGLES DE RECHERCHE — alignés avec les postes cibles Bac+4/5 ═══
+# ═══ ANGLES DE RECHERCHE ═══
 
 ANGLES = [
-    # Famille Commerce / Vente IT
     "Alternance ingenieur affaires",
     "Alternance ingenieur commercial grands comptes",
     "Alternance business developer IT",
@@ -98,7 +97,6 @@ ANGLES = [
     "Alternance account executive",
     "Alternance inside sales B2B",
     "Alternance partenariats alliances",
-    # Famille Chef de Projet / Delivery
     "Alternance chef de projet IT",
     "Alternance chef de projet deploiement",
     "Alternance IT project manager",
@@ -112,7 +110,6 @@ ANGLES = [
     "Alternance IT delivery manager",
     "Alternance conduite du changement IT",
     "Alternance coordinateur deploiement logiciel",
-    # Famille Telecoms / Reseaux / Infra
     "Alternance charge affaires deploiement reseaux",
     "Alternance chef de projet infrastructures cloud",
     "Alternance service delivery manager",
@@ -145,15 +142,12 @@ ANGLES_APEC = [
     "consultant fonctionnel CRM ERP alternance",
 ]
 
-# ═══ SCORING — Bac+4/5 oriente commerce/gestion/projet/telecoms ═══
+# ═══ SCORING ═══
 
 MOTS_POSITIFS = {
-    # Famille Avant-Vente / Pre-Sales
     "avant-vente": 10, "avant vente": 10, "pre-sales": 10, "presales": 10,
     "solution engineer": 9, "solution architect": 9,
     "ingenieur avant-vente": 10, "pre sales engineer": 10,
-
-    # Famille Commerce / Vente
     "ingenieur d affaires": 10, "ingenieur affaires": 10,
     "charge d affaires": 10, "charge affaires": 10,
     "ingenieur commercial": 9, "commercial grands comptes": 9,
@@ -166,8 +160,6 @@ MOTS_POSITIFS = {
     "technical sales": 8, "technical account": 8, "tam": 7,
     "partenariats": 6, "alliances strategiques": 7, "sales operations": 7, "salesops": 7,
     "charge de comptes": 8, "comptes strategiques": 8,
-
-    # Famille Chef de Projet / Delivery
     "chef de projet": 8, "project manager": 8, "it project": 8,
     "amoa": 9, "maitrise d ouvrage": 9,
     "business analyst": 8, "analyste metier": 8, "analyste fonctionnel": 8,
@@ -180,8 +172,6 @@ MOTS_POSITIFS = {
     "coordinateur deploiement": 8, "deploiement logiciel": 7,
     "charge de deploiement": 8, "deploiement": 6,
     "service delivery": 8, "sdm": 7,
-
-    # Famille Telecoms / Reseaux / Infra
     "telecoms": 6, "telecom": 6, "ingenieur affaires telecoms": 10,
     "fibre": 5, "ftth": 7, "deploiement reseau": 7, "deploiement reseaux": 7,
     "charge affaires deploiement": 9, "chef de projet fibre": 9,
@@ -189,37 +179,28 @@ MOTS_POSITIFS = {
     "infrastructures cloud": 7, "cloud": 4,
     "gouvernance it": 7, "analyste gouvernance": 7,
     "coordinateur technique": 7,
-
-    # Mots generiques IT / Tech
     "consultant": 4, "strategy": 4, "strategie": 4,
     "saas": 3, "si": 3, "it": 3, "tech": 3, "cyber": 3,
     "data": 2, "manager": 3, "management": 3,
     "ingenieur": 2, "charge": 2,
 }
 
-# Score minimum — releve a 6 pour plus de precision
 SCORE_MIN = 6
 
-# ═══ METIERS PRIORITAIRES — liste exhaustive des postes cibles ═══
-
 METIERSPRIORITAIRES = [
-    # Avant-vente
     "avant-vente", "avant vente", "pre-sales", "presales",
     "solution engineer", "solution architect",
-    # Commerce
     "ingenieur affaires", "ingenieur d affaires", "charge affaires", "charge d affaires",
     "ingenieur commercial", "grands comptes", "key account", "account manager",
     "account executive", "business manager", "technico-commercial",
     "business developer", "bid manager", "customer success", "csm",
     "technical sales", "technical account", "tam", "inside sales",
     "partenariats", "salesops", "sales operations",
-    # Projet / Delivery
     "amoa", "maitrise d ouvrage", "business analyst", "product owner",
     "chef de projet", "project manager", "pmo", "project management officer",
     "transformation digitale", "conduite du changement", "scrum master",
     "it delivery", "delivery manager", "coordinateur deploiement",
     "service delivery", "sdm",
-    # Telecoms / Reseau
     "ingenieur affaires telecoms", "fibre", "ftth",
     "deploiement reseau", "deploiement reseaux", "charge affaires deploiement",
     "architecture reseau", "gouvernance it",
@@ -237,7 +218,6 @@ MOTS_INTERDITS = [
     "juridique", "droit", "paralegal",
     "qualite", "qhse", "hse",
     "stage ",
-    # Metiers trop bas niveau (bac+2/3) — pas pertinents pour un M2
     "technicien reseau", "technicien informatique", "technicien systemes",
     "administrateur systeme", "developpeur", "developpement logiciel",
     "programmeur", "integrateur", "devops", "sre ",
@@ -272,7 +252,7 @@ def scorer(titre):
             matches.append(mot)
     for p in METIERSPRIORITAIRES:
         if p in t:
-            score += 4  # bonus renforce pour les postes cibles
+            score += 4
             break
     return score, matches
 
@@ -305,6 +285,105 @@ def get_chrome_major_version():
         print(f"  Impossible de detecter la version Chrome : {e} -> fallback 145")
         return 145
 
+# ═══ EXTRACTION DATE DE PUBLICATION LINKEDIN ═══
+# LinkedIn expose la date dans un attribut <time datetime="YYYY-MM-DDTHH:MM:SS.000Z">
+# ou dans un texte type "il y a 2 jours", "il y a 1 semaine", "il y a 3 semaines"
+
+def parse_linkedin_date_text(text, today_str):
+    """
+    Convertit les textes relatifs LinkedIn en date ISO YYYY-MM-DD.
+    Exemples : "il y a 2 jours", "il y a 1 semaine", "il y a 3 semaines",
+               "2 days ago", "1 week ago", "3 weeks ago", "just now", "à l'instant"
+    Retourne None si non parseable.
+    """
+    if not text:
+        return None
+    t = text.lower().strip()
+    today = datetime.strptime(today_str, "%d/%m/%Y")
+
+    # Patterns français
+    m = re.search(r"il y a (\d+)\s*(minute|heure|jour|semaine|mois)", t)
+    if m:
+        n, unit = int(m.group(1)), m.group(2)
+        if unit.startswith("minute") or unit.startswith("heure"):
+            return today.strftime("%Y-%m-%d")
+        if unit.startswith("jour"):
+            return (today - timedelta(days=n)).strftime("%Y-%m-%d")
+        if unit.startswith("semaine"):
+            return (today - timedelta(weeks=n)).strftime("%Y-%m-%d")
+        if unit.startswith("mois"):
+            return (today - timedelta(days=n * 30)).strftime("%Y-%m-%d")
+
+    # Patterns anglais
+    m = re.search(r"(\d+)\s*(minute|hour|day|week|month)s?\s*ago", t)
+    if m:
+        n, unit = int(m.group(1)), m.group(2)
+        if unit in ("minute", "hour"):
+            return today.strftime("%Y-%m-%d")
+        if unit == "day":
+            return (today - timedelta(days=n)).strftime("%Y-%m-%d")
+        if unit == "week":
+            return (today - timedelta(weeks=n)).strftime("%Y-%m-%d")
+        if unit == "month":
+            return (today - timedelta(days=n * 30)).strftime("%Y-%m-%d")
+
+    # "just now" / "à l'instant"
+    if "just now" in t or "instant" in t:
+        return today.strftime("%Y-%m-%d")
+
+    return None
+
+def extract_posted_date_from_card(card, today_str):
+    """
+    Cherche la date de publication dans une card LinkedIn.
+    Priorité : attribut datetime du tag <time> > texte relatif > None
+    """
+    # 1. Tag <time> avec attribut datetime (format ISO)
+    time_tag = card.find("time")
+    if time_tag:
+        dt = time_tag.get("datetime", "")
+        if dt:
+            try:
+                # Format LinkedIn : "2025-04-10T12:00:00.000Z" ou "2025-04-10"
+                return datetime.fromisoformat(dt.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+            except Exception:
+                pass
+        # Essayer le texte du tag <time>
+        parsed = parse_linkedin_date_text(time_tag.get_text(strip=True), today_str)
+        if parsed:
+            return parsed
+
+    # 2. Chercher les éléments qui contiennent une date relative
+    date_selectors = [
+        ".job-search-card__listdate",
+        ".job-search-card__listdate--new",
+        "time[class*='listdate']",
+        "[class*='posted']",
+        "[class*='date']",
+        "span[class*='time']",
+    ]
+    for sel in date_selectors:
+        el = card.select_one(sel)
+        if el:
+            dt = el.get("datetime", "")
+            if dt:
+                try:
+                    return datetime.fromisoformat(dt.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+                except Exception:
+                    pass
+            parsed = parse_linkedin_date_text(el.get_text(strip=True), today_str)
+            if parsed:
+                return parsed
+
+    # 3. Fallback : chercher dans tout le texte de la card
+    full_text = card.get_text(" ", strip=True)
+    parsed = parse_linkedin_date_text(full_text, today_str)
+    if parsed:
+        return parsed
+
+    return None
+
+
 # ═══ DRIVER undetected-chromedriver ═══
 
 def make_uc_driver():
@@ -336,7 +415,6 @@ def make_uc_driver():
         "source": """
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
             delete navigator.__proto__.webdriver;
-
             Object.defineProperty(navigator, 'plugins', {
                 get: () => {
                     const arr = [
@@ -348,28 +426,16 @@ def make_uc_driver():
                     return arr;
                 }
             });
-
             Object.defineProperty(navigator, 'languages', { get: () => ['fr-FR', 'fr', 'en-US', 'en'] });
-
             Object.defineProperty(screen, 'width',       { get: () => 1920 });
             Object.defineProperty(screen, 'height',      { get: () => 1080 });
             Object.defineProperty(screen, 'availWidth',  { get: () => 1920 });
             Object.defineProperty(screen, 'availHeight', { get: () => 1040 });
             Object.defineProperty(screen, 'colorDepth',  { get: () => 24 });
-
             window.chrome = {
-                app: {
-                    isInstalled: false,
-                    InstallState: { DISABLED: 'disabled', INSTALLED: 'installed', NOT_INSTALLED: 'not_installed' },
-                    RunningState: { CANNOT_RUN: 'cannot_run', READY_TO_RUN: 'ready_to_run', RUNNING: 'running' }
-                },
-                runtime: {
-                    OnInstalledReason: {}, OnRestartRequiredReason: {},
-                    PlatformArch: {}, PlatformNaclArch: {},
-                    PlatformOs: {}, RequestUpdateCheckStatus: {}
-                }
+                app: { isInstalled: false },
+                runtime: {}
             };
-
             const originalQuery = window.navigator.permissions.query;
             window.navigator.permissions.query = (parameters) => (
                 parameters.name === 'notifications' ?
@@ -403,7 +469,7 @@ def quit_driver(driver):
     except Exception:
         pass
 
-# ═══ SOURCE 1 : LINKEDIN (undetected-chromedriver) ═══
+# ═══ SOURCE 1 : LINKEDIN ═══
 
 def scrape_linkedin(driver, angle, nom, aliases, vues, date):
     offres = []
@@ -432,7 +498,6 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                         EC.presence_of_element_located((By.CSS_SELECTOR, sel))
                     )
                     loaded = True
-                    print(f"    OK Conteneur JS charge : {sel}")
                     break
                 except TimeoutException:
                     continue
@@ -445,14 +510,11 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                         )
                     )
                     loaded = True
-                    print(f"    OK Lien /jobs/view/ detecte pour {nom}")
                 except TimeoutException:
                     pass
 
             if not loaded:
-                print(f"    Timeout JS pour {nom} (start={start}) — page non rendue")
-                html = driver.page_source
-                print(f"    HTML debut: {html[:1000].replace(chr(10), ' ')}")
+                print(f"    Timeout JS pour {nom} (start={start})")
                 break
 
             for scroll_pos in [300, 600, 900, 1200]:
@@ -482,7 +544,6 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
             if not cards:
                 liens_directs = soup.find_all("a", href=lambda h: h and "/jobs/view/" in (h or ""))
                 if liens_directs:
-                    print(f"    Fallback liens directs : {len(liens_directs)} trouves pour {nom}")
                     for a_tag in liens_directs:
                         try:
                             parent = a_tag.find_parent(["li", "div"])
@@ -511,11 +572,15 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                             if k in vues:
                                 continue
                             vues.add(k)
+                            # Tentative extraction date depuis parent
+                            posted_date = extract_posted_date_from_card(parent, date)
                             offres.append({
                                 "entreprise": ent or nom, "titre": titre,
                                 "localisation": loc, "lien": lien,
                                 "score": score, "mots_cles_matches": matches,
-                                "source": "LinkedIn", "first_seen": date, "last_seen": date,
+                                "source": "LinkedIn",
+                                "posted_date": posted_date,   # ← date réelle de publication
+                                "first_seen": date, "last_seen": date,
                                 "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
                             })
                         except Exception:
@@ -524,10 +589,7 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     continue
 
             if not cards:
-                print(f"    Aucune card pour {nom} (start={start}) apres attente JS")
                 break
-
-            print(f"    OK {len(cards)} cards pour {nom} (start={start})")
 
             for card in cards:
                 try:
@@ -573,11 +635,17 @@ def scrape_linkedin(driver, angle, nom, aliases, vues, date):
                     if k in vues:
                         continue
                     vues.add(k)
+
+                    # ← NOUVEAU : extraction de la vraie date de publication
+                    posted_date = extract_posted_date_from_card(card, date)
+
                     offres.append({
                         "entreprise": ent or nom, "titre": titre,
                         "localisation": loc, "lien": lien,
                         "score": score, "mots_cles_matches": matches,
-                        "source": "LinkedIn", "first_seen": date, "last_seen": date,
+                        "source": "LinkedIn",
+                        "posted_date": posted_date,   # ← date réelle (ISO YYYY-MM-DD) ou None
+                        "first_seen": date, "last_seen": date,
                         "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
                     })
                 except Exception:
@@ -605,6 +673,8 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
                 ent_el   = card.select_one(".card-offer__company, .company-name, .company")
                 loc_el   = card.select_one(".card-offer__location, .location, .lieu")
                 lien_el  = card.select_one("a[href*='apec.fr'], a[href*='/offre-'], a")
+                # APEC expose parfois la date dans .card-offer__date ou un attribut data-date
+                date_el  = card.select_one(".card-offer__date, [data-date], time")
 
                 titre = titre_el.get_text(strip=True) if titre_el else ""
                 ent   = ent_el.get_text(strip=True) if ent_el else ""
@@ -612,6 +682,18 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
                 lien  = lien_el.get("href", "").split("?")[0] if lien_el else ""
                 if lien and not lien.startswith("http"):
                     lien = "https://www.apec.fr" + lien
+
+                # Extraction date APEC
+                posted_date = None
+                if date_el:
+                    dt_attr = date_el.get("datetime", "") or date_el.get("data-date", "")
+                    if dt_attr:
+                        try:
+                            posted_date = datetime.fromisoformat(dt_attr.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+                        except Exception:
+                            pass
+                    if not posted_date:
+                        posted_date = parse_linkedin_date_text(date_el.get_text(strip=True), date)
 
                 if not (titre and lien and any(a in norm(ent) for a in aliases_toutes)):
                     continue
@@ -628,7 +710,9 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
                     "entreprise": ent, "titre": titre,
                     "localisation": loc, "lien": lien,
                     "score": score, "mots_cles_matches": matches,
-                    "source": "APEC", "first_seen": date, "last_seen": date,
+                    "source": "APEC",
+                    "posted_date": posted_date,
+                    "first_seen": date, "last_seen": date,
                     "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
                 })
             except Exception:
@@ -637,7 +721,7 @@ def scrape_apec(session, mots, aliases_toutes, vues, date):
         print(f"  APEC: {e}")
     return offres
 
-# ═══ SOURCE 3 : FRANCE TRAVAIL (API officielle) ═══
+# ═══ SOURCE 3 : FRANCE TRAVAIL ═══
 
 FT_TOKEN_URL = "https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=%2Fpartenaire"
 FT_SEARCH_URL = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
@@ -688,6 +772,15 @@ def scrape_france_travail(session, mot_cle, aliases, vues, date):
                 lien  = item.get("origineOffre", {}).get("urlOrigine") or \
                         f"https://candidat.francetravail.fr/offres/recherche/detail/{item.get('id','')}"
 
+                # France Travail API expose dateCreation (ISO 8601)
+                date_creation = item.get("dateCreation", "")
+                posted_date = None
+                if date_creation:
+                    try:
+                        posted_date = datetime.fromisoformat(date_creation.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+                    except Exception:
+                        pass
+
                 if not any(a in norm(ent) for a in aliases):
                     continue
 
@@ -703,7 +796,9 @@ def scrape_france_travail(session, mot_cle, aliases, vues, date):
                     "entreprise": ent, "titre": titre,
                     "localisation": loc, "lien": lien,
                     "score": score, "mots_cles_matches": matches,
-                    "source": "France Travail", "first_seen": date, "last_seen": date,
+                    "source": "France Travail",
+                    "posted_date": posted_date,
+                    "first_seen": date, "last_seen": date,
                     "is_priority": any(p in norm(titre) for p in METIERSPRIORITAIRES),
                 })
             except Exception:
@@ -731,7 +826,7 @@ def main():
     vues = set()
     session = make_session()
 
-    # LinkedIn (undetected-chromedriver)
+    # LinkedIn
     print(f"\nLinkedIn UC ({len(ANGLES)} angles x {len(entreprises)} entreprises)")
     driver = None
     try:
@@ -760,7 +855,7 @@ def main():
             time.sleep(random.uniform(1.5, 2.5))
         print(f"  OK APEC : +{len(offres) - n_avant} offres")
 
-    # France Travail (si credentials dispos)
+    # France Travail
     if FT_CLIENT_ID and FT_CLIENT_SECRET:
         print(f"\nFrance Travail")
         n_avant = len(offres)
@@ -782,7 +877,7 @@ def main():
                 time.sleep(random.uniform(0.5, 1.0))
         print(f"  OK France Travail : +{len(offres) - n_avant} offres")
     else:
-        print("\nFrance Travail ignore (FT_CLIENT_ID / FT_CLIENT_SECRET non definis)")
+        print("\nFrance Travail ignore (credentials non definis)")
 
     offres.sort(key=lambda x: (not x.get("is_priority", False), -x.get("score", 0)))
 
@@ -791,7 +886,8 @@ def main():
         print("Top 5 :")
         for o in offres[:5]:
             flag = "[PRIORITY]" if o.get("is_priority") else "          "
-            print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']}")
+            pd = o.get("posted_date") or "date inconnue"
+            print(f"  {flag}[{o['score']}pts] {o['titre']} — {o['entreprise']} ({pd})")
 
     json.dump(offres, open(fichier, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
     print(f"Fichier {fichier} ecrit.")
