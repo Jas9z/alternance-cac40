@@ -13,8 +13,9 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-07",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -31,8 +32,43 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-07",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Airbus Defence and Space",
+        "titre": "ALT 2026 -  Apprenti(e) en Assistance à Chef de Projet et conduite du changement (F/H)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-2026-apprenti-e-en-assistance-%C3%A0-chef-de-projet-et-conduite-du-changement-f-h-at-airbus-defence-and-space-4387511942",
+        "score": 26,
+        "mots_cles_matches": [
+            "chef de projet",
+            "conduite du changement",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-24",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Attaché/Attachée Commercial Grands Comptes F/H",
+        "localisation": "Puteaux",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-attach%C3%A9-attach%C3%A9e-commercial-grands-comptes-f-h-at-edf-4391756035",
+        "score": 21,
+        "mots_cles_matches": [
+            "commercial grands comptes",
+            "grands comptes"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-27",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -40,16 +76,16 @@
         "titre": "Alternance - Ingénieur(e) technico-commercial CVC H/F",
         "localisation": "Clermont-Ferrand",
         "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-e-technico-commercial-cvc-h-f-at-edf-4395231493",
-        "score": 19,
+        "score": 18,
         "mots_cles_matches": [
             "technico-commercial",
-            "commercial",
             "tech",
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-02",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -112,8 +148,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-23",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -149,6 +186,57 @@
         "is_priority": true
     },
     {
+        "entreprise": "AXA",
+        "titre": "Alternance Assistant(e) Product Owner Data / Data Lake F/H",
+        "localisation": "Fontenay-sous-Bois",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%8Bassistant-e-product-owner-data-data-lake-f-h-at-axa-4391123744",
+        "score": 18,
+        "mots_cles_matches": [
+            "product owner",
+            "si",
+            "data"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-26",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Immobilier",
+        "titre": "ALTERNANCE - Chef de projet RSE & Biodiversité - Montrouge H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-rse-biodiversit%C3%A9-montrouge-h-f-at-ca-immobilier-4393879807",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "Alternance - Ingénieur - Chef de Projet SI - H/F",
+        "localisation": "Brest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-chef-de-projet-si-h-f-at-naval-group-4382514601",
+        "score": 17,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-01",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "Schneider Electric",
         "titre": "Alternance - Customer Success Manager - Génie électrique - Rueil Malmaison - F/H",
         "localisation": "Rueil-Malmaison",
@@ -159,8 +247,25 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-31",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - PMO / Digitalisation / Pilotage F/H",
+        "localisation": "Romans-sur-Isère",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-pmo-digitalisation-pilotage-f-h-at-edf-4388304074",
+        "score": 16,
+        "mots_cles_matches": [
+            "pmo",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-20",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -174,8 +279,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-25",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -189,8 +295,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -204,8 +311,153 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-08",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Ingénieur Commercial F/H",
+        "localisation": "Jeumont",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4387209738",
+        "score": 15,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-18",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Ingénieur commercial F/H",
+        "localisation": "Beaumont-Hague",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4391545631",
+        "score": 15,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-27",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chef de projet junior conformité filiales (F/H) - Alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-junior-conformit%C3%A9-filiales-f-h-alternance-at-axa-en-france-4386704080",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-17",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Assistant chef de projet restauration et services (F/H) - alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-chef-de-projet-restauration-et-services-f-h-alternance-at-axa-en-france-4388389131",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-20",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Groupe Crédit Agricole",
+        "titre": "ALTERNANCE - Assistant(e) chef de projet H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-chef-de-projet-h-f-at-groupe-cr%C3%A9dit-agricole-4382111899",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-28",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Groupe Crédit Agricole",
+        "titre": "Alternance - Assistant(e) Chef de Projet Risques H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-chef-de-projet-risques-h-f-at-groupe-cr%C3%A9dit-agricole-4401338478",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-13",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Groupe Crédit Agricole",
+        "titre": "Alternance - Assistant(e) Chef de projet H/F - Janvier 2027",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-chef-de-projet-h-f-janvier-2027-at-groupe-cr%C3%A9dit-agricole-4385357230",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-04",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Groupe Crédit Agricole",
+        "titre": "ALTERNANCE - Assistant(e) au chef de projet résolution H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-au-chef-de-projet-r%C3%A9solution-h-f-at-groupe-cr%C3%A9dit-agricole-4382131003",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-28",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "Alternance-ASSISTANT CHEF DE PROJET F/H",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-chef-de-projet-f-h-at-engie-4389472805",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -224,6 +476,22 @@
         "is_priority": true
     },
     {
+        "entreprise": "Sanofi",
+        "titre": "alternance 12 mois – transformation digitale",
+        "localisation": "Le Trait",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-12-mois-%E2%80%93-transformation-digitale-at-sanofi-4401726782",
+        "score": 14,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "Schneider Electric",
         "titre": "Alternance - Scrum Product Ownership - F/H",
         "localisation": "Grenoble",
@@ -233,8 +501,39 @@
             "product owner"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-27",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance -  PMO/Communication au sein de la Direction Performance Projets F/H",
+        "localisation": "Puteaux",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-pmo-communication-au-sein-de-la-direction-performance-projets-f-h-at-edf-4386585804",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-17",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Planificateur / support PMO F/H",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-planificateur-support-pmo-f-h-at-edf-4387205883",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-18",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -247,8 +546,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-09",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -261,8 +561,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-23",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -289,8 +590,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-08",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -303,8 +605,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-02",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -317,8 +620,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-25",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -331,8 +635,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": true
     },
     {
@@ -364,36 +669,169 @@
         "is_priority": true
     },
     {
-        "entreprise": "EDF",
-        "titre": "Alternance - Ingénieur Commercial F/H",
-        "localisation": "Jeumont",
-        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4387209738",
-        "score": 13,
+        "entreprise": "AXA en France",
+        "titre": "Chef de projet stratégiques de transformation (F/H) - Alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-strat%C3%A9giques-de-transformation-f-h-alternance-at-axa-en-france-4391544337",
+        "score": 12,
         "mots_cles_matches": [
-            "ingenieur commercial",
-            "commercial",
-            "ingenieur"
+            "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
-        "is_priority": false
+        "posted_date": "2026-03-27",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chef de projet communication réseaux (F/H) en Alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-communication-r%C3%A9seaux-f-h-en-alternance-at-axa-en-france-4401398380",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-13",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chef de projet transformation assurance (F/H) - Alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-transformation-assurance-f-h-alternance-at-axa-en-france-4392019033",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-27",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Chef de Projet H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-h-f-at-cr%C3%A9dit-agricole-assurances-4397317764",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Chef de projet RSE H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-rse-h-f-at-cr%C3%A9dit-agricole-assurances-4390356755",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-25",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "alternance 12 à 24 mois – chef de projet marketing vaccins pédiatrie",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-12-%C3%A0-24-mois-%E2%80%93-chef-de-projet-marketing-vaccins-p%C3%A9diatrie-at-sanofi-4401742117",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
     },
     {
         "entreprise": "EDF",
-        "titre": "Alternance - Ingénieur commercial F/H",
-        "localisation": "Beaumont-Hague",
-        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-f-h-at-edf-4391545631",
-        "score": 13,
+        "titre": "Alternant Chef de projet informatique H/F",
+        "localisation": "Puteaux",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-chef-de-projet-informatique-h-f-at-edf-4399814736",
+        "score": 12,
         "mots_cles_matches": [
-            "ingenieur commercial",
-            "commercial",
-            "ingenieur"
+            "chef de projet"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
-        "is_priority": false
+        "posted_date": "2026-04-09",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALTERNANCE - Chef de projet Patrimoine F/H",
+        "localisation": "Cesson-Sévigné",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-patrimoine-f-h-at-edf-4397324088",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "ALTERNANCE – Chef de projet en ingénierie domaine Sous-marin H/F",
+        "localisation": "Cherbourg",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-chef-de-projet-en-ing%C3%A9nierie-domaine-sous-marin-h-f-at-naval-group-4382089061",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-01",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "ALTERNANCE - Chef de Projet Infrastructure H/F",
+        "localisation": "Toulon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-infrastructure-h-f-at-naval-group-4387507503",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Nestlé",
+        "titre": "Alternance - Chef de Projet Packaging Junior Perrier & Maison Perrier  F/H",
+        "localisation": "Issy-les-Moulineaux",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-packaging-junior-perrier-maison-perrier-f-h-at-nestl%C3%A9-4387287839",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-20",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": true
     },
     {
         "entreprise": "EDF",
@@ -440,8 +878,9 @@
             "management"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-06",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": false
     },
     {
@@ -490,6 +929,56 @@
         "source": "LinkedIn",
         "first_seen": "13/04/2026",
         "last_seen": "13/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Société Générale Assurances",
+        "titre": "Chargé de projet communication – sensibilisation utilisateurs à la sécurité informatique",
+        "localisation": "Centre-Val de Loire",
+        "lien": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-projet-communication-%E2%80%93-sensibilisation-utilisateurs-%C3%A0-la-s%C3%A9curit%C3%A9-informatique-at-societe-generale-assurances-4400007465",
+        "score": 8,
+        "mots_cles_matches": [
+            "si",
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-13",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "KPMG France",
+        "titre": "Consultant Alternant Finance Strategy & Transformation F/H",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-alternant-finance-strategy-transformation-f-h-at-kpmg-france-4398530487",
+        "score": 8,
+        "mots_cles_matches": [
+            "consultant",
+            "strategy"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-07",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "ALTERNANT — Ingénieur(e) Cybersécurité & Systèmes Radio F/H",
+        "localisation": "Ollioules",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-%E2%80%94-ing%C3%A9nieur-e-cybers%C3%A9curit%C3%A9-syst%C3%A8mes-radio-f-h-at-naval-group-4399760144",
+        "score": 8,
+        "mots_cles_matches": [
+            "it",
+            "cyber",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": false
     },
     {
@@ -655,8 +1144,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-31",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": false
     },
     {
@@ -670,8 +1160,57 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-04-03",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Airbus Helicopters",
+        "titre": "Apprenti(e) en Développement des objets connectés à destination du site (H/F)",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/apprenti-e-en-d%C3%A9veloppement-des-objets-connect%C3%A9s-%C3%A0-destination-du-site-h-f-at-airbus-helicopters-4397806069",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-04",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Legrand France",
+        "titre": "Alternance – Assistant Product Manager (F/H)",
+        "localisation": "Limoges",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-assistant-product-manager-f-h-at-legrand-france-4399529660",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-13",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "Alternance - Exploitant des outils cybersécurité - H/F",
+        "localisation": "Brest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-exploitant-des-outils-cybers%C3%A9curit%C3%A9-h-f-at-naval-group-4399015381",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "cyber"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-10",
+        "first_seen": "14/04/2026",
+        "last_seen": "14/04/2026",
         "is_priority": false
     },
     {
