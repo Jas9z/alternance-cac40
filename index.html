@@ -27,10 +27,14 @@
       --font-head:  'Syne', sans-serif;
       --font-body:  'Inter', sans-serif;
       --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      /* Couleurs fraîcheur */
+      --fresh-hot:    #4ade80;   /* < 3 jours */
+      --fresh-recent: #60a5fa;   /* 3–7 jours */
+      --fresh-normal: #a0a0b2;   /* 7–21 jours */
+      --fresh-old:    #6b6b80;   /* > 21 jours */
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       font-family: var(--font-body);
       background: var(--ink);
@@ -39,55 +43,36 @@
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
-
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
 
     body::before {
       content: '';
-      position: fixed;
-      inset: 0;
+      position: fixed; inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 1000;
-      opacity: 0.35;
+      pointer-events: none; z-index: 1000; opacity: 0.35;
     }
 
     nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 500;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2.5rem;
-      height: 62px;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 62px;
       background: rgba(10,10,15,0.7);
       backdrop-filter: blur(20px) saturate(180%);
       border-bottom: 1px solid var(--line);
     }
-
     .nav-logo { font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px; color: var(--white); }
     .nav-logo span { color: var(--accent); }
-
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--subtle); transition: color var(--transition); letter-spacing: 0.3px; }
     .nav-links a:hover { color: var(--white); }
-    .nav-links a.nav-active { color: var(--accent); }
-
     .nav-cta { padding: 8px 18px; border: 1px solid var(--accent); border-radius: 6px; color: var(--accent) !important; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.4px; transition: background var(--transition), color var(--transition) !important; }
     .nav-cta:hover { background: var(--accent); color: var(--ink) !important; }
 
     .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 2.5rem 5rem;
-      position: relative;
-      overflow: hidden;
+      min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem; position: relative; overflow: hidden;
     }
-
     .hero-bg {
       position: absolute; inset: 0;
       background:
@@ -95,36 +80,28 @@
         radial-gradient(ellipse 50% 40% at 10% 80%, rgba(99,102,241,0.07) 0%, transparent 60%),
         var(--ink);
     }
-
     .hero-grid-overlay {
       position: absolute; inset: 0;
       background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
       background-size: 80px 80px;
       mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
     }
-
     .hero-content { position: relative; z-index: 2; max-width: 900px; }
-
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
       font-size: 0.8rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
       color: var(--accent); margin-bottom: 1.5rem;
     }
     .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--accent); }
-
     .hero h1 { font-family: var(--font-head); font-size: clamp(3rem, 8vw, 7rem); font-weight: 800; line-height: 0.95; letter-spacing: -3px; color: var(--white); margin-bottom: 1.5rem; }
     .hero h1 em { font-style: normal; color: var(--accent); }
-
     .hero-sub { font-size: clamp(1rem, 1.5vw, 1.2rem); font-weight: 300; color: var(--subtle); max-width: 560px; line-height: 1.7; margin-bottom: 2.5rem; }
-
     .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all var(--transition); border: none; font-family: var(--font-body); letter-spacing: 0.2px; }
     .btn-accent { background: var(--accent); color: var(--ink); }
     .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(200,241,105,0.25); }
     .btn-ghost { background: var(--surface-2); color: var(--white); border: 1px solid var(--line); }
     .btn-ghost:hover { background: var(--surface); border-color: rgba(255,255,255,0.15); }
-
     .hero-stats {
       position: absolute; bottom: 5rem; right: 2.5rem; z-index: 2;
       display: flex; flex-direction: column; gap: 12px; text-align: right;
@@ -143,54 +120,29 @@
     .tag-active { border-color: var(--accent); color: var(--accent); }
 
     /* ─── TABS ─── */
-    .tabs-bar {
-      display: flex;
-      gap: 0;
-      border-bottom: 1px solid var(--line);
-      padding: 0 2.5rem;
-      background: rgba(10,10,15,0.5);
-    }
-    .tab-btn {
-      display: flex; align-items: center; gap: 8px;
-      padding: 1rem 1.5rem;
-      font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;
-      color: var(--muted);
-      background: none; border: none; cursor: pointer;
-      border-bottom: 2px solid transparent;
-      margin-bottom: -1px;
-      transition: color var(--transition), border-color var(--transition);
-      letter-spacing: 0.2px;
-    }
+    .tabs-bar { display: flex; gap: 0; border-bottom: 1px solid var(--line); padding: 0 2.5rem; background: rgba(10,10,15,0.5); }
+    .tab-btn { display: flex; align-items: center; gap: 8px; padding: 1rem 1.5rem; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; color: var(--muted); background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color var(--transition), border-color var(--transition); letter-spacing: 0.2px; }
     .tab-btn:hover { color: var(--white); }
     .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
-    .tab-badge {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-width: 20px; height: 20px; padding: 0 6px;
-      border-radius: 100px; font-size: 0.68rem; font-weight: 700;
-      background: var(--surface-2); color: var(--muted);
-    }
+    .tab-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 100px; font-size: 0.68rem; font-weight: 700; background: var(--surface-2); color: var(--muted); }
     .tab-btn.active .tab-badge { background: var(--accent-dim); color: var(--accent); }
-
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
 
     /* ─── MAIN / OFFRES ─── */
     .main { max-width: 1400px; margin: 0 auto; padding: 4rem 2.5rem 6rem; }
-
     .section-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 2.5rem; gap: 1rem; flex-wrap: wrap; }
     .section-title { font-family: var(--font-head); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; letter-spacing: -1px; color: var(--white); }
     .section-title span { color: var(--accent); }
     .section-count { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
 
-    .toolbar { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; margin-bottom: 2rem; }
-
+    .toolbar { display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; margin-bottom: 2rem; }
     .search-wrap { position: relative; }
     .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
     .search-input { width: 100%; padding: 0.9rem 1rem 0.9rem 46px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--white); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color var(--transition), background var(--transition); }
     .search-input::placeholder { color: var(--muted); }
     .search-input:focus { border-color: var(--accent); background: rgba(200,241,105,0.04); }
-
-    .select-input { padding: 0.9rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--white); font-family: var(--font-body); font-size: 0.85rem; outline: none; cursor: pointer; min-width: 180px; transition: border-color var(--transition); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b80' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+    .select-input { padding: 0.9rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--white); font-family: var(--font-body); font-size: 0.85rem; outline: none; cursor: pointer; min-width: 160px; transition: border-color var(--transition); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b80' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
     .select-input:focus { border-color: var(--accent); }
     .select-input option { background: var(--ink-2); }
 
@@ -200,6 +152,17 @@
     .live-dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; animation: livepulse 2s ease-in-out infinite; }
     @keyframes livepulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.4); } 50% { box-shadow: 0 0 0 5px rgba(74,222,128,0); } }
 
+    /* ─── Légende fraîcheur ─── */
+    .freshness-legend {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 1.5rem; flex-wrap: wrap;
+      padding: 10px 14px; border-radius: 8px;
+      background: var(--surface); border: 1px solid var(--line);
+    }
+    .freshness-legend-title { font-size: 0.72rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; white-space: nowrap; }
+    .fl-item { display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: var(--muted); font-weight: 500; }
+    .fl-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
     .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
 
     .job-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; display: flex; flex-direction: column; gap: 1rem; transition: border-color var(--transition), background var(--transition), transform var(--transition); cursor: default; position: relative; overflow: hidden; }
@@ -207,11 +170,37 @@
     .job-card:hover { border-color: rgba(200,241,105,0.25); background: rgba(255,255,255,0.06); transform: translateY(-3px); }
     .job-card:hover::after { opacity: 1; }
 
+    /* Indicateur de fraîcheur sur la card */
+    .freshness-bar {
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .fresh-hot    .freshness-bar { background: var(--fresh-hot); box-shadow: 0 0 8px rgba(74,222,128,0.4); }
+    .fresh-recent .freshness-bar { background: var(--fresh-recent); box-shadow: 0 0 8px rgba(96,165,250,0.3); }
+    .fresh-normal .freshness-bar { background: rgba(160,160,178,0.3); }
+    .fresh-old    .freshness-bar { background: rgba(107,107,128,0.2); }
+
     .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-    .company-badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; background: var(--surface-2); color: var(--subtle); border: 1px solid var(--line); flex-shrink: 0; }
+    .card-top-left { display: flex; flex-direction: column; gap: 6px; }
+    .company-badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; background: var(--surface-2); color: var(--subtle); border: 1px solid var(--line); flex-shrink: 0; align-self: flex-start; }
     .source-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; flex-shrink: 0; }
     .source-linkedin { background: rgba(10,102,194,0.2); color: #5ba4f5; border: 1px solid rgba(10,102,194,0.3); }
     .source-apec { background: rgba(200,241,105,0.1); color: var(--accent); border: 1px solid rgba(200,241,105,0.2); }
+
+    /* ─── Badge date de publication ─── */
+    .posted-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 9px; border-radius: 100px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.3px;
+      border: 1px solid; white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .posted-hot    { background: rgba(74,222,128,0.1);  color: var(--fresh-hot);    border-color: rgba(74,222,128,0.3); }
+    .posted-recent { background: rgba(96,165,250,0.1);  color: var(--fresh-recent); border-color: rgba(96,165,250,0.3); }
+    .posted-normal { background: rgba(160,160,178,0.08);color: var(--fresh-normal); border-color: rgba(160,160,178,0.2); }
+    .posted-old    { background: rgba(107,107,128,0.07);color: var(--fresh-old);    border-color: rgba(107,107,128,0.2); }
+    .posted-unknown{ background: var(--surface-2);      color: var(--muted);        border-color: var(--line); }
+
     .card-title { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--white); line-height: 1.35; letter-spacing: -0.3px; }
     .card-meta { display: flex; align-items: center; gap: 14px; font-size: 0.78rem; color: var(--muted); font-weight: 500; flex-wrap: wrap; }
     .card-meta-item { display: flex; align-items: center; gap: 5px; }
@@ -222,186 +211,65 @@
     .card-link svg { transition: transform var(--transition); flex-shrink: 0; }
     .card-link:hover svg { transform: translate(2px, -2px); }
 
-    /* Bouton Postuler sur les cartes offres */
-    .card-apply-btn {
-      display: flex; align-items: center; justify-content: center; gap: 7px;
-      padding: 8px 14px;
-      background: transparent; border: 1px solid var(--line);
-      border-radius: 8px; font-size: 0.8rem; font-weight: 600;
-      color: var(--muted); cursor: pointer;
-      transition: all var(--transition);
-      font-family: var(--font-body);
-    }
+    .card-apply-btn { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 14px; background: transparent; border: 1px solid var(--line); border-radius: 8px; font-size: 0.8rem; font-weight: 600; color: var(--muted); cursor: pointer; transition: all var(--transition); font-family: var(--font-body); }
     .card-apply-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
     .card-apply-btn.applied { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
     .card-actions { display: flex; gap: 8px; margin-top: auto; }
     .card-actions .card-link { flex: 1; margin-top: 0; }
 
     /* ─── CANDIDATURES ─── */
-    .cand-header {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;
-    }
-    .cand-stats {
-      display: flex; gap: 12px; flex-wrap: wrap;
-    }
-    .cand-stat {
-      display: flex; align-items: center; gap: 8px;
-      padding: 8px 16px; border-radius: 8px;
-      background: var(--surface); border: 1px solid var(--line);
-      font-size: 0.82rem; font-weight: 600; color: var(--subtle);
-    }
+    .cand-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
+    .cand-stats { display: flex; gap: 12px; flex-wrap: wrap; }
+    .cand-stat { display: flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); font-size: 0.82rem; font-weight: 600; color: var(--subtle); }
     .cand-stat-num { font-family: var(--font-head); font-size: 1.3rem; font-weight: 800; color: var(--white); line-height: 1; }
     .cand-stat-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-
-    .add-cand-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 20px; border-radius: 8px;
-      background: var(--accent); color: var(--ink);
-      font-family: var(--font-body); font-size: 0.88rem; font-weight: 700;
-      border: none; cursor: pointer;
-      transition: all var(--transition);
-    }
+    .add-cand-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 8px; background: var(--accent); color: var(--ink); font-family: var(--font-body); font-size: 0.88rem; font-weight: 700; border: none; cursor: pointer; transition: all var(--transition); }
     .add-cand-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(200,241,105,0.25); }
-
     .cand-list { display: flex; flex-direction: column; gap: 12px; }
-
-    .cand-card {
-      background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 1.4rem 1.6rem;
-      display: grid; grid-template-columns: auto 1fr auto;
-      gap: 1.2rem; align-items: start;
-      transition: border-color var(--transition), background var(--transition);
-    }
+    .cand-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.6rem; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: start; transition: border-color var(--transition), background var(--transition); }
     .cand-card:hover { border-color: rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); }
-
-    /* Checkbox custom */
     .cand-check-wrap { padding-top: 3px; }
-    .cand-checkbox {
-      appearance: none; -webkit-appearance: none;
-      width: 20px; height: 20px; border-radius: 6px;
-      border: 2px solid var(--muted); background: transparent;
-      cursor: pointer; flex-shrink: 0;
-      transition: all var(--transition);
-      position: relative;
-    }
-    .cand-checkbox:checked {
-      background: var(--accent); border-color: var(--accent);
-    }
-    .cand-checkbox:checked::after {
-      content: '';
-      position: absolute; left: 4px; top: 1px;
-      width: 6px; height: 10px;
-      border: 2px solid var(--ink);
-      border-top: none; border-left: none;
-      transform: rotate(45deg);
-    }
+    .cand-checkbox { appearance: none; -webkit-appearance: none; width: 20px; height: 20px; border-radius: 6px; border: 2px solid var(--muted); background: transparent; cursor: pointer; flex-shrink: 0; transition: all var(--transition); position: relative; }
+    .cand-checkbox:checked { background: var(--accent); border-color: var(--accent); }
+    .cand-checkbox:checked::after { content: ''; position: absolute; left: 4px; top: 1px; width: 6px; height: 10px; border: 2px solid var(--ink); border-top: none; border-left: none; transform: rotate(45deg); }
     .cand-checkbox:hover:not(:checked) { border-color: var(--accent); }
-
     .cand-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
     .cand-title { font-family: var(--font-head); font-size: 0.98rem; font-weight: 700; color: var(--white); letter-spacing: -0.2px; }
     .cand-company { font-size: 0.82rem; font-weight: 600; color: var(--muted); }
     .cand-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 2px; }
     .cand-date { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; color: var(--muted); font-weight: 500; }
-    .cand-location { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; color: var(--muted); font-weight: 500; }
-
-    .cand-status {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 3px 10px; border-radius: 100px;
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase;
-    }
+    .cand-status { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 100px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
     .status-envoyee    { background: rgba(99,102,241,0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
     .status-relance    { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
     .status-entretien  { background: rgba(200,241,105,0.12); color: var(--accent); border: 1px solid rgba(200,241,105,0.3); }
     .status-refus      { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
     .status-attente    { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--line); }
-
-    .cand-desc {
-      margin-top: 8px; padding: 10px 14px;
-      background: rgba(255,255,255,0.03); border-radius: 8px;
-      border-left: 2px solid var(--line);
-      font-size: 0.82rem; color: var(--subtle); line-height: 1.6;
-      white-space: pre-wrap; word-break: break-word;
-    }
-
+    .cand-desc { margin-top: 8px; padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px; border-left: 2px solid var(--line); font-size: 0.82rem; color: var(--subtle); line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
     .cand-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-    .cand-tag {
-      padding: 3px 10px; border-radius: 100px;
-      font-size: 0.68rem; font-weight: 600;
-      background: var(--surface-2); color: var(--subtle);
-      border: 1px solid var(--line);
-    }
-
+    .cand-tag { padding: 3px 10px; border-radius: 100px; font-size: 0.68rem; font-weight: 600; background: var(--surface-2); color: var(--subtle); border: 1px solid var(--line); }
     .cand-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
-    .cand-edit-btn, .cand-del-btn {
-      background: none; border: 1px solid var(--line);
-      border-radius: 6px; padding: 5px 9px;
-      color: var(--muted); cursor: pointer; font-size: 0.75rem;
-      transition: all var(--transition); font-family: var(--font-body);
-      display: inline-flex; align-items: center; gap: 5px;
-    }
+    .cand-edit-btn, .cand-del-btn { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; color: var(--muted); cursor: pointer; font-size: 0.75rem; transition: all var(--transition); font-family: var(--font-body); display: inline-flex; align-items: center; gap: 5px; }
     .cand-edit-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
     .cand-del-btn:hover { border-color: #f87171; color: #f87171; background: rgba(239,68,68,0.08); }
-
-    .cand-link-btn {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 5px 9px; border-radius: 6px;
-      background: none; border: 1px solid var(--line);
-      color: var(--muted); font-size: 0.75rem; font-weight: 600;
-      cursor: pointer; font-family: var(--font-body);
-      transition: all var(--transition);
-    }
+    .cand-link-btn { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border-radius: 6px; background: none; border: 1px solid var(--line); color: var(--muted); font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: var(--font-body); transition: all var(--transition); }
     .cand-link-btn:hover { border-color: #5ba4f5; color: #5ba4f5; background: rgba(10,102,194,0.1); }
-
-    .cand-empty {
-      text-align: center; padding: 5rem 2rem;
-      color: var(--muted); font-size: 0.9rem;
-    }
-    .cand-empty-icon {
-      width: 52px; height: 52px; border-radius: 14px;
-      background: var(--surface-2); border: 1px solid var(--line);
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 1.2rem;
-    }
+    .cand-empty { text-align: center; padding: 5rem 2rem; color: var(--muted); font-size: 0.9rem; }
+    .cand-empty-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; }
     .cand-empty h3 { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
 
     /* ─── MODAL ─── */
-    .modal-backdrop {
-      position: fixed; inset: 0; z-index: 900;
-      background: rgba(10,10,15,0.85); backdrop-filter: blur(8px);
-      display: flex; align-items: center; justify-content: center;
-      padding: 1.5rem;
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.2s;
-    }
+    .modal-backdrop { position: fixed; inset: 0; z-index: 900; background: rgba(10,10,15,0.85); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 1.5rem; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
     .modal-backdrop.open { opacity: 1; pointer-events: auto; }
-
-    .modal {
-      background: var(--ink-2); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px; padding: 2rem; width: 100%; max-width: 540px;
-      display: flex; flex-direction: column; gap: 1.2rem;
-      transform: translateY(12px); transition: transform 0.2s;
-      max-height: 90vh; overflow-y: auto;
-    }
+    .modal { background: var(--ink-2); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 2rem; width: 100%; max-width: 540px; display: flex; flex-direction: column; gap: 1.2rem; transform: translateY(12px); transition: transform 0.2s; max-height: 90vh; overflow-y: auto; }
     .modal-backdrop.open .modal { transform: none; }
-
     .modal-title { font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--white); letter-spacing: -0.5px; }
-
     .field { display: flex; flex-direction: column; gap: 6px; }
     .field label { font-size: 0.78rem; font-weight: 600; color: var(--subtle); letter-spacing: 0.4px; text-transform: uppercase; }
-    .field input, .field select, .field textarea {
-      padding: 0.8rem 1rem; background: rgba(255,255,255,0.05);
-      border: 1px solid var(--line); border-radius: 8px;
-      color: var(--white); font-family: var(--font-body); font-size: 0.9rem;
-      outline: none; transition: border-color var(--transition);
-      width: 100%;
-    }
+    .field input, .field select, .field textarea { padding: 0.8rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid var(--line); border-radius: 8px; color: var(--white); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color var(--transition); width: 100%; }
     .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
     .field textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
     .field select option { background: var(--ink-2); }
-
     .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-
     .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 0.5rem; }
     .modal-cancel { padding: 10px 20px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line); color: var(--subtle); font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; cursor: pointer; transition: all var(--transition); }
     .modal-cancel:hover { color: var(--white); border-color: rgba(255,255,255,0.15); }
@@ -412,16 +280,13 @@
     .skeleton-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; display: flex; flex-direction: column; gap: 14px; }
     .skel { border-radius: 6px; background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%); background-size: 200% 100%; animation: skel-anim 1.6s ease infinite; }
     @keyframes skel-anim { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-
     .empty { grid-column: 1 / -1; text-align: center; padding: 6rem 2rem; }
     .empty-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--surface-2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 1px solid var(--line); }
     .empty h3 { font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
     .empty p { font-size: 0.9rem; color: var(--muted); }
-
     #scrollTop { position: fixed; bottom: 2rem; right: 2rem; width: 42px; height: 42px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; color: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all var(--transition); z-index: 200; }
     #scrollTop.show { opacity: 1; pointer-events: auto; }
     #scrollTop:hover { background: var(--accent); color: var(--ink); border-color: transparent; }
-
     footer { border-top: 1px solid var(--line); padding: 2.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
     .footer-left { display: flex; flex-direction: column; gap: 4px; }
     .footer-name { font-family: var(--font-head); font-size: 0.95rem; font-weight: 700; color: var(--white); }
@@ -438,7 +303,8 @@
       .about-band { padding: 1.5rem 1.25rem; }
       .tags-list { margin-left: 0; }
       .main { padding: 3rem 1.25rem 5rem; }
-      .toolbar { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      .toolbar .search-wrap { grid-column: 1 / -1; }
       .select-input { min-width: unset; }
       footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; }
       .tabs-bar { padding: 0 1.25rem; }
@@ -446,6 +312,7 @@
       .cand-card { grid-template-columns: auto 1fr; }
       .cand-actions { flex-direction: row; grid-column: 1 / -1; }
       .field-row { grid-template-columns: 1fr; }
+      .freshness-legend { gap: 10px; }
     }
 
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
@@ -520,7 +387,6 @@
     </div>
   </div>
 
-  <!-- TABS BAR -->
   <div class="tabs-bar" id="tabsBar">
     <button class="tab-btn active" id="tab-offres" onclick="switchTab('offres')">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -534,7 +400,7 @@
     </button>
   </div>
 
-  <!-- ════════════ PANEL : OFFRES ════════════ -->
+  <!-- PANEL OFFRES -->
   <div id="panel-offres" class="tab-panel active">
     <main class="main" id="offres">
       <div class="section-header reveal">
@@ -552,13 +418,31 @@
         <select id="companyFilter" class="select-input" onchange="filterJobs()">
           <option value="">Toutes les entreprises</option>
         </select>
+        <select id="freshnessFilter" class="select-input" onchange="filterJobs()">
+          <option value="">Toutes les dates</option>
+          <option value="hot">Moins de 3 jours</option>
+          <option value="recent">Moins d'une semaine</option>
+          <option value="week">Moins de 2 semaines</option>
+          <option value="month">Moins d'un mois</option>
+        </select>
         <select id="sortSelect" class="select-input" onchange="filterJobs()">
           <option value="default">Tri par défaut</option>
+          <option value="newest">Plus récent d'abord</option>
+          <option value="oldest">Plus ancien d'abord</option>
           <option value="az">Entreprise A → Z</option>
           <option value="za">Entreprise Z → A</option>
           <option value="title">Titre A → Z</option>
-          <option value="recent">Plus récent</option>
         </select>
+      </div>
+
+      <!-- Légende fraîcheur -->
+      <div class="freshness-legend reveal">
+        <span class="freshness-legend-title">Fraîcheur</span>
+        <span class="fl-item"><span class="fl-dot" style="background:var(--fresh-hot)"></span>Moins de 3 jours</span>
+        <span class="fl-item"><span class="fl-dot" style="background:var(--fresh-recent)"></span>3 – 7 jours</span>
+        <span class="fl-item"><span class="fl-dot" style="background:var(--fresh-normal)"></span>7 – 21 jours</span>
+        <span class="fl-item"><span class="fl-dot" style="background:rgba(107,107,128,0.7)"></span>Plus de 21 jours</span>
+        <span class="fl-item"><span class="fl-dot" style="background:var(--surface-2);border:1px solid var(--line)"></span>Date inconnue</span>
       </div>
 
       <div class="status-bar reveal">
@@ -573,7 +457,7 @@
     </main>
   </div>
 
-  <!-- ════════════ PANEL : CANDIDATURES ════════════ -->
+  <!-- PANEL CANDIDATURES -->
   <div id="panel-candidatures" class="tab-panel">
     <main class="main" id="candidatures">
       <div class="cand-header reveal">
@@ -608,16 +492,14 @@
     </main>
   </div>
 
-  <!-- ════════════ MODAL CANDIDATURE ════════════ -->
+  <!-- MODAL -->
   <div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOutside(event)">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <h2 class="modal-title" id="modalTitle">Nouvelle candidature</h2>
-
       <div class="field">
         <label>Titre du poste *</label>
         <input type="text" id="mTitre" placeholder="Ex : Alternance Ingénieur d'Affaires IT" />
       </div>
-
       <div class="field-row">
         <div class="field">
           <label>Entreprise *</label>
@@ -628,7 +510,6 @@
           <input type="text" id="mLoc" placeholder="Ex : Paris" />
         </div>
       </div>
-
       <div class="field-row">
         <div class="field">
           <label>Date de candidature</label>
@@ -645,29 +526,24 @@
           </select>
         </div>
       </div>
-
       <div class="field">
         <label>Lien de l'offre</label>
         <input type="url" id="mLien" placeholder="https://..." />
       </div>
-
       <div class="field">
         <label>Mots-clés / caractéristiques</label>
         <input type="text" id="mTags" placeholder="Ex : avant-vente, B2B, cloud, télétravail" />
       </div>
-
       <div class="field">
         <label>Description &amp; notes</label>
         <textarea id="mDesc" placeholder="Ce que tu as retenu du poste, pourquoi tu postules, contacts..."></textarea>
       </div>
-
       <div class="field">
         <label>
           <input type="checkbox" id="mPostule" style="width:14px;height:14px;margin-right:6px;accent-color:var(--accent)" />
           J'ai déjà postulé à cette offre
         </label>
       </div>
-
       <div class="modal-actions">
         <button class="modal-cancel" onclick="closeModal()">Annuler</button>
         <button class="modal-save" onclick="saveCand()">Enregistrer</button>
@@ -719,6 +595,78 @@
       document.getElementById('panel-' + name).classList.add('active');
     }
 
+    // ════════ FRAÎCHEUR — logique date ════════
+
+    /**
+     * Retourne le nombre de jours entre une date ISO YYYY-MM-DD et aujourd'hui.
+     * Pour les offres legacy (first_seen au format DD/MM/YYYY), on fallback dessus.
+     * Retourne null si aucune date exploitable.
+     */
+    function daysAgo(job) {
+      const raw = job.posted_date || null;
+      if (raw) {
+        // Format ISO : YYYY-MM-DD
+        try {
+          const parts = raw.split('-');
+          const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+          const now = new Date();
+          now.setHours(0, 0, 0, 0);
+          return Math.round((now - d) / 86400000);
+        } catch(e) {}
+      }
+      // Fallback : first_seen au format DD/MM/YYYY
+      const fs = job.first_seen || job.last_seen;
+      if (fs) {
+        try {
+          const parts = fs.split('/');
+          const d = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+          const now = new Date();
+          now.setHours(0, 0, 0, 0);
+          return Math.round((now - d) / 86400000);
+        } catch(e) {}
+      }
+      return null;
+    }
+
+    /**
+     * Retourne { cls, label, badgeCls } selon l'âge de l'offre.
+     * cls      → classe CSS de la job-card (fringe bar + hover)
+     * label    → texte humain ex: "Aujourd'hui", "il y a 3 jours"
+     * badgeCls → classe CSS du posted-badge
+     * hasExactDate → true si on a une vraie date de publication (pas juste first_seen)
+     */
+    function freshnessInfo(job) {
+      const days = daysAgo(job);
+      const hasExact = !!job.posted_date;
+
+      if (days === null) {
+        return {
+          cls: '', label: 'Date inconnue', badgeCls: 'posted-unknown',
+          hasExact: false, days: null
+        };
+      }
+
+      let label;
+      if (days === 0)       label = "Aujourd'hui";
+      else if (days === 1)  label = "Hier";
+      else if (days < 7)    label = `il y a ${days} jours`;
+      else if (days < 14)   label = `il y a 1 semaine`;
+      else if (days < 21)   label = `il y a 2 semaines`;
+      else if (days < 35)   label = `il y a ~1 mois`;
+      else                   label = `il y a +${Math.round(days/30)} mois`;
+
+      // Si on n'a que first_seen (pas de vraie date), on indique que c'est approx.
+      if (!hasExact && days > 0) label = '~' + label;
+
+      let cls, badgeCls;
+      if (days <= 2)        { cls = 'fresh-hot';    badgeCls = 'posted-hot'; }
+      else if (days <= 6)   { cls = 'fresh-recent'; badgeCls = 'posted-recent'; }
+      else if (days <= 20)  { cls = 'fresh-normal'; badgeCls = 'posted-normal'; }
+      else                  { cls = 'fresh-old';    badgeCls = 'posted-old'; }
+
+      return { cls, label, badgeCls, hasExact, days };
+    }
+
     // ════════ OFFRES ════════
     let allJobs = [];
 
@@ -740,8 +688,7 @@
     function cacheBust() { return Date.now() + '_' + Math.random().toString(36).slice(2); }
 
     function isApplied(job) {
-      const cands = getCands();
-      return cands.some(c => c.lien && c.lien === job.lien);
+      return getCands().some(c => c.lien && c.lien === job.lien);
     }
 
     async function loadJobs() {
@@ -807,14 +754,26 @@
         const source = (job.source || 'LinkedIn').toLowerCase();
         const sourceBadgeClass = source === 'apec' ? 'source-apec' : 'source-linkedin';
         const sourceLabel = source === 'apec' ? 'APEC' : 'LinkedIn';
-        const dateLabel = job.first_seen || job.last_seen || '';
         const applied = isApplied(job);
 
+        // ← NOUVEAU : calcul fraîcheur
+        const fi = freshnessInfo(job);
+
+        // Icône horloge selon fraîcheur
+        const clockIcon = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+
         return `
-        <article class="job-card" role="listitem">
+        <article class="job-card ${fi.cls}" role="listitem">
+          <div class="freshness-bar"></div>
           <div class="card-top">
-            <span class="company-badge">${h(job.entreprise)}</span>
-            <span class="source-badge ${sourceBadgeClass}">${sourceLabel}</span>
+            <div class="card-top-left">
+              <span class="company-badge">${h(job.entreprise)}</span>
+              <span class="source-badge ${sourceBadgeClass}">${sourceLabel}</span>
+            </div>
+            <span class="posted-badge ${fi.badgeCls}" title="${job.posted_date ? 'Date de publication : ' + job.posted_date : 'Détectée le : ' + (job.first_seen || '?')}">
+              ${clockIcon}
+              ${h(fi.label)}
+            </span>
           </div>
           <div class="card-title">${h(job.titre)}</div>
           <div class="card-meta">
@@ -822,11 +781,6 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               ${h(job.localisation) || 'France'}
             </span>
-            ${dateLabel ? `
-            <span class="card-meta-item">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              ${h(dateLabel)}
-            </span>` : ''}
           </div>
           <div class="card-actions">
             <a href="${h(job.lien)}" class="card-link" target="_blank" rel="noopener noreferrer">
@@ -844,24 +798,44 @@
     }
 
     function filterJobs() {
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
-      const comp = document.getElementById('companyFilter').value;
-      const sort = document.getElementById('sortSelect').value;
+      const q         = document.getElementById('searchInput').value.toLowerCase().trim();
+      const comp      = document.getElementById('companyFilter').value;
+      const sort      = document.getElementById('sortSelect').value;
+      const fresh     = document.getElementById('freshnessFilter').value;
 
-      let res = allJobs.filter(j =>
-        (!q || [j.titre, j.entreprise, j.localisation].some(f => f?.toLowerCase().includes(q))) &&
-        (!comp || j.entreprise.toLowerCase() === comp)
-      );
+      let res = allJobs.filter(j => {
+        if (q && !([j.titre, j.entreprise, j.localisation].some(f => f?.toLowerCase().includes(q)))) return false;
+        if (comp && j.entreprise.toLowerCase() !== comp) return false;
+        if (fresh) {
+          const days = daysAgo(j);
+          if (days === null) return false;
+          if (fresh === 'hot'   && days > 2)  return false;
+          if (fresh === 'recent'&& days > 6)  return false;
+          if (fresh === 'week'  && days > 13) return false;
+          if (fresh === 'month' && days > 30) return false;
+        }
+        return true;
+      });
 
-      if (sort === 'az') res.sort((a, b) => a.entreprise.localeCompare(b.entreprise, 'fr'));
-      else if (sort === 'za') res.sort((a, b) => b.entreprise.localeCompare(a.entreprise, 'fr'));
-      else if (sort === 'title') res.sort((a, b) => a.titre.localeCompare(b.titre, 'fr'));
-      else if (sort === 'recent') res.sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
+      if (sort === 'newest') {
+        res.sort((a, b) => {
+          const da = daysAgo(a) ?? 9999;
+          const db = daysAgo(b) ?? 9999;
+          return da - db;  // plus petit = plus récent
+        });
+      } else if (sort === 'oldest') {
+        res.sort((a, b) => {
+          const da = daysAgo(a) ?? -1;
+          const db = daysAgo(b) ?? -1;
+          return db - da;
+        });
+      } else if (sort === 'az')    { res.sort((a, b) => a.entreprise.localeCompare(b.entreprise, 'fr')); }
+      else if (sort === 'za')    { res.sort((a, b) => b.entreprise.localeCompare(a.entreprise, 'fr')); }
+      else if (sort === 'title') { res.sort((a, b) => a.titre.localeCompare(b.titre, 'fr')); }
 
       renderJobs(res);
     }
 
-    // Quick-apply depuis une carte offre → pré-remplit le modal
     function quickApply(job) {
       const today = new Date().toISOString().slice(0,10);
       openModal(null, {
@@ -902,8 +876,6 @@
     function renderCands() {
       const cands = getCands();
       const list = document.getElementById('candList');
-
-      // Compteurs stats
       document.getElementById('statEnvoyee').textContent   = cands.filter(c => ['envoyee','relance'].includes(c.statut)).length;
       document.getElementById('statEntretien').textContent = cands.filter(c => c.statut === 'entretien').length;
       document.getElementById('statRefus').textContent     = cands.filter(c => c.statut === 'refus').length;
@@ -926,7 +898,6 @@
         const st = STATUS_LABELS[c.statut] || STATUS_LABELS['attente'];
         const tags = (c.tags || '').split(',').map(t => t.trim()).filter(Boolean);
         const dateDisplay = c.date ? new Date(c.date).toLocaleDateString('fr-FR', {day:'2-digit', month:'short', year:'numeric'}) : '';
-
         return `
         <div class="cand-card">
           <div class="cand-check-wrap">
@@ -945,16 +916,13 @@
           </div>
           <div class="cand-actions">
             ${c.lien ? `<a href="${h(c.lien)}" target="_blank" rel="noopener" class="cand-link-btn">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              Offre
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>Offre
             </a>` : ''}
             <button class="cand-edit-btn" onclick="openModal(${i})">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-              Éditer
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Éditer
             </button>
             <button class="cand-del-btn" onclick="deleteCand(${i})">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
-              Sup.
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>Sup.
             </button>
           </div>
         </div>`;
@@ -962,16 +930,11 @@
     }
 
     function togglePostule(i, val) {
-      const cands = getCands();
-      cands[i].postule = val;
-      saveCands(cands);
+      const cands = getCands(); cands[i].postule = val; saveCands(cands);
     }
-
     function deleteCand(i) {
       if (!confirm('Supprimer cette candidature ?')) return;
-      const cands = getCands();
-      cands.splice(i, 1);
-      saveCands(cands);
+      const cands = getCands(); cands.splice(i, 1); saveCands(cands);
     }
 
     // ════════ MODAL ════════
@@ -979,9 +942,7 @@
 
     function openModal(index = null, prefill = null) {
       editIndex = index;
-      const title = document.getElementById('modalTitle');
-      title.textContent = index !== null ? 'Modifier la candidature' : 'Nouvelle candidature';
-
+      document.getElementById('modalTitle').textContent = index !== null ? 'Modifier la candidature' : 'Nouvelle candidature';
       if (index !== null) {
         const c = getCands()[index];
         document.getElementById('mTitre').value      = c.titre || '';
@@ -1009,27 +970,17 @@
         document.getElementById('mStatut').value = 'attente';
         document.getElementById('mPostule').checked = false;
       }
-
       document.getElementById('modalBackdrop').classList.add('open');
     }
-
-    function closeModal() {
-      document.getElementById('modalBackdrop').classList.remove('open');
-      editIndex = null;
-    }
-
-    function closeModalOutside(e) {
-      if (e.target === document.getElementById('modalBackdrop')) closeModal();
-    }
+    function closeModal() { document.getElementById('modalBackdrop').classList.remove('open'); editIndex = null; }
+    function closeModalOutside(e) { if (e.target === document.getElementById('modalBackdrop')) closeModal(); }
 
     function saveCand() {
       const titre = document.getElementById('mTitre').value.trim();
       const entreprise = document.getElementById('mEntreprise').value.trim();
       if (!titre || !entreprise) { alert('Le titre et l\'entreprise sont obligatoires.'); return; }
-
       const cand = {
-        titre,
-        entreprise,
+        titre, entreprise,
         loc:     document.getElementById('mLoc').value.trim(),
         date:    document.getElementById('mDate').value,
         statut:  document.getElementById('mStatut').value,
@@ -1038,13 +989,9 @@
         desc:    document.getElementById('mDesc').value.trim(),
         postule: document.getElementById('mPostule').checked,
       };
-
       const cands = getCands();
-      if (editIndex !== null) {
-        cands[editIndex] = cand;
-      } else {
-        cands.unshift(cand);
-      }
+      if (editIndex !== null) cands[editIndex] = cand;
+      else cands.unshift(cand);
       saveCands(cands);
       closeModal();
       switchTab('candidatures');
