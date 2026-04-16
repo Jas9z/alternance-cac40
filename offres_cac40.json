@@ -50,9 +50,27 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-03-24",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "posted_date": "2026-04-14",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance – Technical Sales Consultant - H/F",
+        "localisation": "Rueil-Malmaison",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-technical-sales-consultant-h-f-at-schneider-electric-4401898566",
+        "score": 24,
+        "mots_cles_matches": [
+            "sales",
+            "technical sales",
+            "consultant",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-16",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -148,9 +166,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-03-23",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "posted_date": "2026-04-14",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -198,8 +216,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-26",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -248,8 +266,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-31",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -280,8 +298,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-25",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -296,8 +314,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -312,8 +330,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-08",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -376,8 +394,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-20",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -392,8 +410,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-28",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -408,8 +426,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -424,8 +442,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-04",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -440,8 +458,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-28",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -456,8 +474,56 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Assistant Chef de projet Etudes Client H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-chef-de-projet-etudes-client-h-f-at-cr%C3%A9dit-agricole-assurances-4390355749",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-03-25",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "ALT - Chef de Projet Digital",
+        "localisation": "La Garenne-Colombes",
+        "lien": "https://fr.linkedin.com/jobs/view/alt-chef-de-projet-digital-at-engie-4402528082",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-15",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Project manager junior - H/F",
+        "localisation": "Rueil-Malmaison",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-project-manager-junior-h-f-at-schneider-electric-4400774934",
+        "score": 15,
+        "mots_cles_matches": [
+            "project manager",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-14",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -487,8 +553,40 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "Alternance 12 mois – Transformation digitale et IA",
+        "localisation": "Vitry-sur-Seine",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-12-mois-%E2%80%93-transformation-digitale-et-ia-at-sanofi-4402272205",
+        "score": 14,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-15",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Sanofi",
+        "titre": "alternance 12 mois – transformation digitale sûreté",
+        "localisation": "Gentilly",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-12-mois-%E2%80%93-transformation-digitale-s%C3%BBret%C3%A9-at-sanofi-4402939389",
+        "score": 14,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-16",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -502,8 +600,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-27",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -547,8 +645,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-09",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -561,9 +659,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-03-23",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "posted_date": "2026-04-14",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -591,8 +689,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-08",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -606,8 +704,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-02",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -621,8 +719,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-25",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -636,8 +734,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -679,8 +777,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-27",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -694,8 +792,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -709,8 +807,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-27",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -724,8 +822,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -739,8 +837,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-25",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -754,8 +852,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": true
     },
     {
@@ -834,6 +932,21 @@
         "is_priority": true
     },
     {
+        "entreprise": "AXA en France",
+        "titre": "Chef de projets statistiques (F/H) en Alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projets-statistiques-f-h-en-alternance-at-axa-en-france-4402511273",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-15",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "EDF",
         "titre": "ALT - Ingénieur Commercial & Analyste du Marché Énergétique",
         "localisation": "Dijon",
@@ -879,8 +992,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-06",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -944,8 +1057,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -1040,6 +1153,23 @@
         "source": "LinkedIn",
         "first_seen": "12/04/2026",
         "last_seen": "12/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Chargé Data Management Office H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-data-management-office-h-f-at-cr%C3%A9dit-agricole-assurances-4399294959",
+        "score": 7,
+        "mots_cles_matches": [
+            "data",
+            "management",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-08",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -1145,8 +1275,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-31",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -1161,8 +1291,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -1177,8 +1307,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-04",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
@@ -1193,8 +1323,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "14/04/2026",
-        "last_seen": "14/04/2026",
+        "first_seen": "16/04/2026",
+        "last_seen": "16/04/2026",
         "is_priority": false
     },
     {
