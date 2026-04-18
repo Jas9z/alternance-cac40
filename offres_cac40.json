@@ -38,6 +38,25 @@
         "is_priority": true
     },
     {
+        "entreprise": "VINCI Energies",
+        "titre": "ALTERNANCE - Asssitant(e) Chef de Projets Déploiement Télécom F/H",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-asssitant-e-chef-de-projets-d%C3%A9ploiement-t%C3%A9l%C3%A9com-f-h-at-vinci-energies-4403529729",
+        "score": 30,
+        "mots_cles_matches": [
+            "chef de projet",
+            "deploiement",
+            "telecom",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-17",
+        "first_seen": "18/04/2026",
+        "last_seen": "18/04/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "Airbus Defence and Space",
         "titre": "ALT 2026 -  Apprenti(e) en Assistance à Chef de Projet et conduite du changement (F/H)",
         "localisation": "Paris",
@@ -183,8 +202,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-23",
+        "first_seen": "18/04/2026",
+        "last_seen": "18/04/2026",
         "is_priority": true
     },
     {
@@ -252,6 +272,22 @@
         "posted_date": "2026-04-17",
         "first_seen": "17/04/2026",
         "last_seen": "17/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "#Alternance Chef de projet déploiement ISO 27001 F/H",
+        "localisation": "Genay",
+        "lien": "https://fr.linkedin.com/jobs/view/%23alternance-chef-de-projet-d%C3%A9ploiement-iso-27001-f-h-at-vinci-energies-4401523784",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "deploiement"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-13",
+        "first_seen": "18/04/2026",
+        "last_seen": "18/04/2026",
         "is_priority": true
     },
     {
@@ -554,8 +590,9 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "first_seen": "13/04/2026",
-        "last_seen": "13/04/2026",
+        "posted_date": "2026-03-23",
+        "first_seen": "18/04/2026",
+        "last_seen": "18/04/2026",
         "is_priority": true
     },
     {
@@ -1007,6 +1044,21 @@
         "posted_date": "2026-04-15",
         "first_seen": "17/04/2026",
         "last_seen": "17/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "Chef de projet performance énergétique F/H",
+        "localisation": "Vitrolles",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-performance-%C3%A9nerg%C3%A9tique-f-h-at-vinci-energies-4402644555",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-15",
+        "first_seen": "18/04/2026",
+        "last_seen": "18/04/2026",
         "is_priority": true
     },
     {
