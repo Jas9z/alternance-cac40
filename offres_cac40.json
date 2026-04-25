@@ -52,8 +52,27 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "ALTERNANCE - Asssitant(e) Chef de Projets Déploiement Télécom F/H",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-asssitant-e-chef-de-projets-d%C3%A9ploiement-t%C3%A9l%C3%A9com-f-h-at-vinci-4405367967",
+        "score": 30,
+        "mots_cles_matches": [
+            "chef de projet",
+            "deploiement",
+            "telecom",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -121,8 +140,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-02",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -236,8 +255,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-26",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -270,8 +289,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -286,8 +305,58 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Tractebel",
+        "titre": "Alternant.e - Assistant.e Project Manager (F/H)",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-assistant-e-project-manager-f-h-at-tractebel-4403785862",
+        "score": 18,
+        "mots_cles_matches": [
+            "project manager",
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "Assistant Chef de Projet Digitalisation no-code - Alternance F/H",
+        "localisation": "Nantes",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-chef-de-projet-digitalisation-no-code-alternance-f-h-at-vinci-4405382711",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "#Alternance Chef de projet déploiement ISO 27001 F/H",
+        "localisation": "Genay",
+        "lien": "https://fr.linkedin.com/jobs/view/%23alternance-chef-de-projet-d%C3%A9ploiement-iso-27001-f-h-at-vinci-4405387564",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "deploiement"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -303,8 +372,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -431,8 +500,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-27",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -495,8 +564,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -511,8 +580,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-04",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -526,9 +595,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-03-28",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "posted_date": "2026-04-19",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -575,8 +644,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -623,8 +692,56 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Indosuez Wealth Management",
+        "titre": "Alternance - Chef de projet junior - Portfolio Management Office H/F",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-junior-portfolio-management-office-h-f-at-indosuez-wealth-management-4405343279",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "management"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "Alternance-Assistant Chef de projet satisfaction F/H",
+        "localisation": "Quimper",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-chef-de-projet-satisfaction-f-h-at-engie-4389776052",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-18",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE Lab Crigen",
+        "titre": "Alternant(e) Assistant(e) Chef de projets",
+        "localisation": "Stains",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-e-assistant-e-chef-de-projets-at-engie-lab-crigen-4404076257",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-20",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -703,8 +820,24 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "Alternance - Ingénieur Chef de projets F/H",
+        "localisation": "Quimper",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-chef-de-projets-f-h-at-vinci-4405386540",
+        "score": 14,
+        "mots_cles_matches": [
+            "chef de projet",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -763,8 +896,23 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "Alternante / Alternant - PMO & Control Tower GET SAP Program (F/H)",
+        "localisation": "La Garenne-Colombes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternante-alternant-pmo-control-tower-get-sap-program-f-h-at-engie-4405295741",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-22",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -940,8 +1088,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-03-27",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -955,8 +1103,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -1015,8 +1163,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -1045,8 +1193,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -1090,8 +1238,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
     },
     {
@@ -1105,9 +1253,56 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": true
+    },
+    {
+        "entreprise": "Indosuez Wealth Management",
+        "titre": "Alternance - Chef de projet junior - Organisation H/F",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-junior-organisation-h-f-at-indosuez-wealth-management-4404776769",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-23",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "Alternance - CHEF DE PROJET INNOVATION & IA - F/H",
+        "localisation": "La Garenne-Colombes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-innovation-ia-f-h-at-engie-4404887569",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-22",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI",
+        "titre": "#Alternance - Technicien(ne) Télécoms F/H",
+        "localisation": "Metz",
+        "lien": "https://fr.linkedin.com/jobs/view/%23alternance-technicien-ne-t%C3%A9l%C3%A9coms-f-h-at-vinci-4405371881",
+        "score": 15,
+        "mots_cles_matches": [
+            "telecoms",
+            "telecom",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": false
     },
     {
         "entreprise": "EDF",
@@ -1226,6 +1421,22 @@
         "is_priority": false
     },
     {
+        "entreprise": "VINCI",
+        "titre": "Alternance - Technicien Télécom F/H",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-technicien-t%C3%A9l%C3%A9com-f-h-at-vinci-4405382678",
+        "score": 9,
+        "mots_cles_matches": [
+            "telecom",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-24",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
+        "is_priority": false
+    },
+    {
         "entreprise": "Société Générale Assurances",
         "titre": "Chargé de projet communication – sensibilisation utilisateurs à la sécurité informatique",
         "localisation": "Centre-Val de Loire",
@@ -1254,8 +1465,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
@@ -1271,8 +1482,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
@@ -1288,8 +1499,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
@@ -1417,8 +1628,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-08",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
@@ -1433,8 +1644,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
@@ -1604,8 +1815,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-10",
-        "first_seen": "24/04/2026",
-        "last_seen": "24/04/2026",
+        "first_seen": "25/04/2026",
+        "last_seen": "25/04/2026",
         "is_priority": false
     },
     {
