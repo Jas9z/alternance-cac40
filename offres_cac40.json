@@ -106,8 +106,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-27",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -176,8 +176,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-02",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -325,8 +325,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -948,8 +948,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -1230,8 +1230,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -1305,8 +1305,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": true
     },
     {
@@ -1580,8 +1580,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": false
     },
     {
@@ -1597,8 +1597,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": false
     },
     {
@@ -1742,8 +1742,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "28/04/2026",
-        "last_seen": "28/04/2026",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": false
     },
     {
@@ -1928,9 +1928,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-15",
-        "first_seen": "17/04/2026",
-        "last_seen": "17/04/2026",
+        "posted_date": "2026-04-30",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": false
     },
     {
@@ -2010,6 +2010,22 @@
         "posted_date": "2026-04-29",
         "first_seen": "29/04/2026",
         "last_seen": "29/04/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "La Poste Groupe",
+        "titre": "Alternance Assistant Manager F/H",
+        "localisation": "Nantes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-manager-f-h-at-la-poste-groupe-4404223767",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-22",
+        "first_seen": "30/04/2026",
+        "last_seen": "30/04/2026",
         "is_priority": false
     },
     {
