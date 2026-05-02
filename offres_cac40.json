@@ -358,8 +358,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -600,8 +600,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -616,8 +616,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-26",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -632,8 +632,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-19",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -744,8 +744,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -776,8 +776,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-20",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -893,6 +893,22 @@
         "is_priority": true
     },
     {
+        "entreprise": "ENGIE",
+        "titre": "Alternance - Chef de projet data marketing campagnes (F/H)",
+        "localisation": "La Garenne-Colombes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-data-marketing-campagnes-f-h-at-engie-4408526917",
+        "score": 14,
+        "mots_cles_matches": [
+            "chef de projet",
+            "data"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-29",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "Schneider Electric",
         "titre": "Alternance - Scrum Product Ownership - F/H",
         "localisation": "Grenoble",
@@ -978,8 +994,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -1170,8 +1186,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-03",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -1366,8 +1382,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -1383,6 +1399,21 @@
         "posted_date": "2026-04-28",
         "first_seen": "29/04/2026",
         "last_seen": "29/04/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ENGIE",
+        "titre": "Alternance-Chef de projet satisfaction F/H",
+        "localisation": "Quimper",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-satisfaction-f-h-at-engie-4389776052",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-18",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": true
     },
     {
@@ -1726,8 +1757,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-08",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": false
     },
     {
@@ -2008,8 +2039,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "02/05/2026",
+        "last_seen": "02/05/2026",
         "is_priority": false
     },
     {
