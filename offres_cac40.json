@@ -343,8 +343,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2049,8 +2049,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-14",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2065,8 +2065,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-21",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2145,8 +2145,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2800,9 +2800,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-16",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "posted_date": "2026-05-08",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2849,8 +2849,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-27",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -2881,8 +2881,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-01",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -3276,8 +3276,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-01",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -3365,8 +3365,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -3483,8 +3483,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-06",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -4176,6 +4176,21 @@
         "posted_date": "2026-05-07",
         "first_seen": "09/05/2026",
         "last_seen": "09/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Chef de projet Affaires - bac+3/5 - St Priest- F/H",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-affaires-bac%2B3-5-st-priest-f-h-at-schneider-electric-4409956535",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-06",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": true
     },
     {
@@ -5592,8 +5607,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": false
     },
     {
@@ -8332,8 +8347,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-30",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": false
     },
     {
@@ -8364,8 +8379,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": false
     },
     {
@@ -8459,8 +8474,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-21",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": false
     },
     {
@@ -8506,8 +8521,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "06/05/2026",
-        "last_seen": "06/05/2026",
+        "first_seen": "10/05/2026",
+        "last_seen": "10/05/2026",
         "is_priority": false
     },
     {
