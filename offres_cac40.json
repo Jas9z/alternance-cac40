@@ -90,8 +90,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -109,8 +109,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -288,9 +288,9 @@
             "management"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-27",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -627,6 +627,23 @@
         "posted_date": "2026-04-23",
         "first_seen": "08/05/2026",
         "last_seen": "08/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Cheffe ou Chef de Projet CRM et Marketing Produit F/H",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-cheffe-ou-chef-de-projet-crm-et-marketing-produit-f-h-at-edf-4407501336",
+        "score": 21,
+        "mots_cles_matches": [
+            "chef de projet",
+            "crm",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-28",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -1030,8 +1047,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -1112,8 +1129,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-13",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -1128,8 +1145,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -2385,8 +2402,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -2401,8 +2418,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -2742,6 +2759,38 @@
         "is_priority": true
     },
     {
+        "entreprise": "EDF",
+        "titre": "Alternance - Chef de projet marketing outils digitaux F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-marketing-outils-digitaux-f-h-at-edf-4407576566",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-28",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "La Poste Immobilier",
+        "titre": "Alternance - Chef de projet Exploitation durable junior",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-exploitation-durable-junior-at-la-poste-immobilier-4412674496",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "VINCI Energies",
         "titre": "Alternance - Ingénieur Chef de projets F/H",
         "localisation": "Quimper",
@@ -2833,8 +2882,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -3021,8 +3070,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -3588,8 +3637,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -3603,8 +3652,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -3813,9 +3862,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-05-07",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -3933,9 +3982,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-11",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": true
     },
     {
@@ -4290,8 +4339,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -5623,8 +5672,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6174,9 +6223,9 @@
             "strategy"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-16",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6192,8 +6241,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-05",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6208,9 +6257,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-14",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6243,8 +6292,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6276,8 +6325,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-04",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6293,8 +6342,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6310,8 +6359,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6327,8 +6376,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-28",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -6911,8 +6960,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -8127,9 +8176,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-05-06",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -8427,8 +8476,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-21",
-        "first_seen": "05/05/2026",
-        "last_seen": "05/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -8506,8 +8555,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-22",
-        "first_seen": "08/05/2026",
-        "last_seen": "08/05/2026",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
@@ -10183,6 +10232,54 @@
         "posted_date": "2026-05-06",
         "first_seen": "08/05/2026",
         "last_seen": "08/05/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Assistant(e) à l'appui manager F/H",
+        "localisation": "Saint-Denis",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-e-%C3%A0-l-appui-manager-f-h-at-edf-4404585897",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - Assistant gestionnaire de sites F/H",
+        "localisation": "Colombiers",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-gestionnaire-de-sites-f-h-at-edf-4411201304",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-11",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "ALTERNANCE - Assistant(e) manager  - BTS SAM -  F/H",
+        "localisation": "Saint-Paul-Trois-Châteaux",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-e-manager-bts-sam-f-h-at-edf-4402297815",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-04-15",
+        "first_seen": "11/05/2026",
+        "last_seen": "11/05/2026",
         "is_priority": false
     },
     {
