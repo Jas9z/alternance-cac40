@@ -289,8 +289,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -641,9 +641,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-28",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -1047,8 +1047,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -1553,6 +1553,22 @@
         "posted_date": "2026-05-07",
         "first_seen": "08/05/2026",
         "last_seen": "08/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "La Poste Groupe",
+        "titre": "Alternance Chef de Projet CRM F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-crm-f-h-at-la-poste-groupe-4413180473",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "crm"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -2402,8 +2418,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -2418,8 +2434,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -2770,8 +2786,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-28",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -2786,8 +2802,40 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "La Poste Groupe",
+        "titre": "Alternance Chef de projet exploitation durable junior F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-exploitation-durable-junior-f-h-at-la-poste-groupe-4413193122",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "NAVAL GROUP",
+        "titre": "Alternance - Chef de Projet SIE (Système d'Information Entreprise) - H/F",
+        "localisation": "Brest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-sie-syst%C3%A8me-d-information-entreprise-h-f-at-naval-group-4410153528",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -3070,8 +3118,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -3637,8 +3685,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -3862,9 +3910,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -3983,8 +4031,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": true
     },
     {
@@ -6224,8 +6272,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6241,8 +6289,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-05",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6258,8 +6306,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6292,8 +6340,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6325,8 +6373,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-04",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6342,8 +6390,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6359,8 +6407,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-23",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6376,8 +6424,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-28",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -6960,8 +7008,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -8176,9 +8224,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -8475,9 +8523,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-21",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -8555,8 +8603,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-22",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -10246,8 +10294,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
@@ -10261,9 +10309,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-05-11",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "posted_date": "2026-05-12",
+        "first_seen": "12/05/2026",
+        "last_seen": "12/05/2026",
         "is_priority": false
     },
     {
