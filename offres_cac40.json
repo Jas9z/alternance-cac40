@@ -90,8 +90,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": true
     },
     {
@@ -109,8 +109,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": true
     },
     {
@@ -1145,8 +1145,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": true
     },
     {
@@ -2930,8 +2930,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": true
     },
     {
@@ -3700,8 +3700,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-15",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": true
     },
     {
@@ -4291,6 +4291,21 @@
         "is_priority": true
     },
     {
+        "entreprise": "VINCI Energies",
+        "titre": "#AxiansAlternance - Chef de projet mobile F/H",
+        "localisation": "Vitrolles",
+        "lien": "https://fr.linkedin.com/jobs/view/%23axiansalternance-chef-de-projet-mobile-f-h-at-vinci-energies-4414274426",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-13",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "CMA CGM",
         "titre": "Alternance - Responsable opérationnel partenariats IA",
         "localisation": "Marseille",
@@ -4387,8 +4402,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": false
     },
     {
@@ -5720,8 +5735,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "11/05/2026",
-        "last_seen": "11/05/2026",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": false
     },
     {
@@ -6916,6 +6931,23 @@
         "posted_date": "2026-04-18",
         "first_seen": "08/05/2026",
         "last_seen": "08/05/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "VINCI Energies",
+        "titre": "#AxiansAlternance - Chargé(e) de Mission Environnement – Spécialité Bas Carbone F/H",
+        "localisation": "Issy-les-Moulineaux",
+        "lien": "https://fr.linkedin.com/jobs/view/%23axiansalternance-charg%C3%A9-e-de-mission-environnement-%E2%80%93-sp%C3%A9cialit%C3%A9-bas-carbone-f-h-at-vinci-energies-4413143408",
+        "score": 8,
+        "mots_cles_matches": [
+            "si",
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-11",
+        "first_seen": "14/05/2026",
+        "last_seen": "14/05/2026",
         "is_priority": false
     },
     {
