@@ -289,8 +289,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -642,8 +642,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -1047,8 +1047,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-17",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -1567,8 +1567,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2418,8 +2418,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2434,8 +2434,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2786,8 +2786,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-28",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2802,8 +2802,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2818,8 +2818,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -2834,8 +2834,24 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "La Poste Groupe",
+        "titre": "Alternance Ingénieur Commercial B to B F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-ing%C3%A9nieur-commercial-b-to-b-f-h-at-la-poste-groupe-4413845335",
+        "score": 15,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-13",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -3118,8 +3134,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -3911,8 +3927,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -4031,8 +4047,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": true
     },
     {
@@ -6287,8 +6303,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -6304,8 +6320,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-05",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -6321,8 +6337,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -6388,8 +6404,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-04",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -7040,8 +7056,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-16",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -8257,8 +8273,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -8635,8 +8651,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-22",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -10326,8 +10342,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
@@ -10342,8 +10358,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "12/05/2026",
-        "last_seen": "12/05/2026",
+        "first_seen": "15/05/2026",
+        "last_seen": "15/05/2026",
         "is_priority": false
     },
     {
