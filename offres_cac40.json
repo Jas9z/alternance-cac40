@@ -397,8 +397,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-14",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -416,8 +416,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-14",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -433,8 +433,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-05",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -486,8 +486,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-27",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -1117,9 +1117,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-24",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "posted_date": "2026-05-16",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -1610,6 +1610,23 @@
         "is_priority": true
     },
     {
+        "entreprise": "Crédit Agricole Immobilier",
+        "titre": "ALTERNANCE - Chef de projet RSE & Biodiversité - Montrouge H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-rse-biodiversit%C3%A9-montrouge-h-f-at-ca-immobilier-4408643708",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-04",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "NAVAL GROUP",
         "titre": "Alternance - Ingénieur - Chef de Projet SI - H/F",
         "localisation": "Brest",
@@ -1885,6 +1902,22 @@
         "is_priority": true
     },
     {
+        "entreprise": "Crédit Agricole Immobilier",
+        "titre": "ALTERNANCE - Chef de projet - Transformation & Stratégie H/F",
+        "localisation": "Montrouge",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-transformation-strat%C3%A9gie-h-f-at-ca-immobilier-4413899182",
+        "score": 16,
+        "mots_cles_matches": [
+            "chef de projet",
+            "strategie"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-13",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "LVMH",
         "titre": "Alternance - Assistant Chef de Projet Virtuoses Métiers d’Excellence",
         "localisation": "Paris",
@@ -2024,8 +2057,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-05",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2039,9 +2072,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-26",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "posted_date": "2026-05-17",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2055,9 +2088,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-19",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "posted_date": "2026-05-10",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2136,8 +2169,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-21",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2168,8 +2201,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-24",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2199,9 +2232,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-20",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "posted_date": "2026-05-11",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2216,8 +2249,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2904,8 +2937,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-13",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -2968,8 +3001,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3048,8 +3081,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-01",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3144,8 +3177,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3218,9 +3251,9 @@
             "pmo"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-22",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "posted_date": "2026-05-14",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3249,8 +3282,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "07/05/2026",
-        "last_seen": "07/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3459,8 +3492,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-01",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3832,8 +3865,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3847,8 +3880,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-28",
-        "first_seen": "29/04/2026",
-        "last_seen": "29/04/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3861,9 +3894,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-04-18",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "posted_date": "2026-05-10",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -3877,8 +3910,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-07",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -4372,8 +4405,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-06",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -4389,6 +4422,21 @@
         "posted_date": "2026-05-13",
         "first_seen": "17/05/2026",
         "last_seen": "17/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Indosuez Wealth Management",
+        "titre": "Alternance - Chef de projet junior - Organisation H/F",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-junior-organisation-h-f-at-indosuez-wealth-management-4415496853",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-18",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": true
     },
     {
@@ -4923,8 +4971,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-07",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -5805,8 +5853,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -7034,6 +7082,22 @@
         "posted_date": "2026-05-11",
         "first_seen": "17/05/2026",
         "last_seen": "17/05/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Assistant Transformation Agile H/F H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-assistant-transformation-agile-h-f-h-f-at-cr%C3%A9dit-agricole-assurances-4413406523",
+        "score": 8,
+        "mots_cles_matches": [
+            "agile",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-12",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -8562,8 +8626,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-30",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -8689,8 +8753,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-21",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -8705,8 +8769,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "09/05/2026",
-        "last_seen": "09/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
@@ -8736,8 +8800,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-04-29",
-        "first_seen": "17/05/2026",
-        "last_seen": "17/05/2026",
+        "first_seen": "18/05/2026",
+        "last_seen": "18/05/2026",
         "is_priority": false
     },
     {
