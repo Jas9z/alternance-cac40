@@ -750,8 +750,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -911,8 +911,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-14",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -930,8 +930,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-14",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -1375,8 +1375,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-19",
-        "first_seen": "23/05/2026",
-        "last_seen": "23/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -3315,8 +3315,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -4144,6 +4144,57 @@
         "posted_date": "2026-05-13",
         "first_seen": "27/05/2026",
         "last_seen": "27/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance – Ingénieur Transformation Digitale / Data Industrielle - Lyon (H/F)",
+        "localisation": "Saint-Priest",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-ing%C3%A9nieur-transformation-digitale-data-industrielle-lyon-h-f-at-schneider-electric-4419038986",
+        "score": 18,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it",
+            "data",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-28",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Disneyland Paris",
+        "titre": "Alternance – Assistant(e) Chef de Projet Boissons – Produit Restauration (F/H/NB)",
+        "localisation": "Marne-la-Vallée",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-assistant-e-chef-de-projet-boissons-%E2%80%93-produit-restauration-f-h-nb-at-disneyland-paris-4420242801",
+        "score": 18,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-28",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "CGI",
+        "titre": "Alternance : Sales / PMO F/H",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-sales-pmo-f-h-at-cgi-4419528129",
+        "score": 18,
+        "mots_cles_matches": [
+            "sales",
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-26",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -5904,6 +5955,22 @@
         "is_priority": true
     },
     {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance – Automatisme & Solutions Industrielles – Technico-commercial (H/F) - Nantes",
+        "localisation": "Nantes",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-automatisme-solutions-industrielles-%E2%80%93-technico-commercial-h-f-nantes-at-schneider-electric-4389826529",
+        "score": 16,
+        "mots_cles_matches": [
+            "technico-commercial",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-27",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "LVMH",
         "titre": "Alternance - Assistant Chef de Projet Virtuoses Métiers d’Excellence",
         "localisation": "Paris",
@@ -6235,8 +6302,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-20",
-        "first_seen": "23/05/2026",
-        "last_seen": "23/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6475,8 +6542,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6491,8 +6558,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6875,8 +6942,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6891,8 +6958,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6907,8 +6974,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-13",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6923,8 +6990,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-13",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6939,8 +7006,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-20",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -6955,8 +7022,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-20",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -10086,6 +10153,38 @@
         "is_priority": true
     },
     {
+        "entreprise": "EDF",
+        "titre": "Chef de projet informatique \"Autres SI Finance\" H/F",
+        "localisation": "Puteaux",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-informatique-autres-si-finance-h-f-at-edf-4419594082",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-27",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "La Poste Immobilier",
+        "titre": "Alternance - Chef de projet Exploitation durable junior",
+        "localisation": "Ville de Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-exploitation-durable-junior-at-la-poste-immobilier-4417224755",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-27",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "VINCI Energies",
         "titre": "Alternance - Ingénieur Chef de projets F/H",
         "localisation": "Quimper",
@@ -10145,8 +10244,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-08",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -10225,8 +10324,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-23",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -10788,6 +10887,38 @@
         "posted_date": "2026-05-12",
         "first_seen": "27/05/2026",
         "last_seen": "27/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Consulting Lean Manufacturing et Transformation Digitale - H/F",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-consulting-lean-manufacturing-et-transformation-digitale-h-f-at-schneider-electric-4413099729",
+        "score": 14,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-11",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "KPMG France",
+        "titre": "Alternant transformation digitale F/H",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/alternant-transformation-digitale-f-h-at-kpmg-france-4420276575",
+        "score": 14,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-28",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -12734,8 +12865,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -12854,8 +12985,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -13169,8 +13300,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-20",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -15121,6 +15252,21 @@
         "posted_date": "2026-05-12",
         "first_seen": "27/05/2026",
         "last_seen": "27/05/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Schneider Electric",
+        "titre": "Alternance - Chef de projet Affaires - bac+3/5 - Soultz - F/H",
+        "localisation": "Haut-Rhin",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projet-affaires-bac%2B3-5-soultz-f-h-at-schneider-electric-4384250982",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-27",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": true
     },
     {
@@ -18043,8 +18189,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-21",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -19724,8 +19870,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -19758,8 +19904,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-11",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -19825,8 +19971,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-04",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -22293,6 +22439,22 @@
         "is_priority": false
     },
     {
+        "entreprise": "KPMG France",
+        "titre": "Consultant Alternant Procurement Strategy & Transformation F/H",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-alternant-procurement-strategy-transformation-f-h-at-kpmg-france-4420278551",
+        "score": 8,
+        "mots_cles_matches": [
+            "consultant",
+            "strategy"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-05-28",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
+        "is_priority": false
+    },
+    {
         "entreprise": "Schneider Electric",
         "titre": "Alternance Commercial Spécialiste Digital Building  F/H - Rueil Malmaison",
         "localisation": "Dijon",
@@ -23599,8 +23761,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "26/05/2026",
-        "last_seen": "26/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -24143,8 +24305,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-21",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -25376,8 +25538,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-21",
-        "first_seen": "23/05/2026",
-        "last_seen": "23/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -25550,8 +25712,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-21",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -27242,8 +27404,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-12",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
@@ -28073,8 +28235,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-05-22",
-        "first_seen": "25/05/2026",
-        "last_seen": "25/05/2026",
+        "first_seen": "28/05/2026",
+        "last_seen": "28/05/2026",
         "is_priority": false
     },
     {
