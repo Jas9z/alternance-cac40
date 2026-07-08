@@ -4537,6 +4537,23 @@
         "is_priority": true
     },
     {
+        "entreprise": "Deloitte",
+        "titre": "Deloitte Capital Humain – Alternance Conseil en organisation, conduite du changement, stratégie sociale et digital RH F/H",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/deloitte-capital-humain-%E2%80%93-alternance-conseil-en-organisation-conduite-du-changement-strat%C3%A9gie-sociale-et-digital-rh-f-h-at-deloitte-4425531051",
+        "score": 19,
+        "mots_cles_matches": [
+            "conduite du changement",
+            "strategie",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-01",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "EDF",
         "titre": "Alternance - Ingénieur(e) technico-commercial CVC H/F",
         "localisation": "Clermont-Ferrand",
@@ -6706,8 +6723,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-19",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -10905,8 +10922,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-30",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -16656,8 +16673,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-19",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -17728,8 +17745,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-06",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -17808,8 +17825,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-06",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -17874,6 +17891,22 @@
         "posted_date": "2026-07-07",
         "first_seen": "07/07/2026",
         "last_seen": "07/07/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Sogeti",
+        "titre": "Chef de projet IT alternance F/H",
+        "localisation": "Issy-les-Moulineaux",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-it-alternance-f-h-at-sogeti-4438198144",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-08",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -18016,8 +18049,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-04",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -20726,8 +20759,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-11",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -21056,8 +21089,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-30",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -21071,8 +21104,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-30",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -21236,8 +21269,38 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-06",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "CGI",
+        "titre": "Alternance : PMO & Support F/H",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-pmo-support-f-h-at-cgi-4436916530",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-04",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Alternance - PMO et Support Projet F/H",
+        "localisation": "Jeumont",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-pmo-et-support-projet-f-h-at-edf-4438134607",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-08",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -25959,8 +26022,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-06-26",
-        "first_seen": "01/07/2026",
-        "last_seen": "01/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": true
     },
     {
@@ -32069,8 +32132,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-01",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": false
     },
     {
@@ -32086,8 +32149,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-01",
-        "first_seen": "07/07/2026",
-        "last_seen": "07/07/2026",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": false
     },
     {
@@ -34999,6 +35062,23 @@
         "posted_date": "2026-07-07",
         "first_seen": "07/07/2026",
         "last_seen": "07/07/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "CGI",
+        "titre": "Alternance : Consultant(e)/Ingénieur(e) SIG Géomatique F/H",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-consultant-e-ing%C3%A9nieur-e-sig-g%C3%A9omatique-f-h-at-cgi-4436403746",
+        "score": 9,
+        "mots_cles_matches": [
+            "consultant",
+            "si",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-02",
+        "first_seen": "08/07/2026",
+        "last_seen": "08/07/2026",
         "is_priority": false
     },
     {
