@@ -10274,6 +10274,22 @@
         "is_priority": true
     },
     {
+        "entreprise": "CGI",
+        "titre": "Alternance consultant(e) AMOA F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-consultant-e-amoa-f-h-at-cgi-4447089166",
+        "score": 17,
+        "mots_cles_matches": [
+            "amoa",
+            "consultant"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-30",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
+        "is_priority": true
+    },
+    {
         "entreprise": "Schneider Electric",
         "titre": "Alternance - Customer Success Manager - Génie électrique - Rueil Malmaison - F/H",
         "localisation": "Rueil-Malmaison",
@@ -20797,8 +20813,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-28",
-        "first_seen": "30/07/2026",
-        "last_seen": "30/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -21487,8 +21503,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-22",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -21839,8 +21855,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-22",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -26602,8 +26618,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-25",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -32496,8 +32512,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-10",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -33563,8 +33579,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-24",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -34015,6 +34031,36 @@
         "posted_date": "2026-07-24",
         "first_seen": "30/07/2026",
         "last_seen": "30/07/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "AXA en France",
+        "titre": "Chef de projet Communication Réseaux (F/H) - alternance",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-communication-r%C3%A9seaux-f-h-alternance-at-axa-en-france-4446746207",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-30",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Assurances",
+        "titre": "ALTERNANCE - Chef de Projets H/F",
+        "localisation": "Vaison-la-Romaine",
+        "lien": "https://fr.linkedin.com/jobs/view/alternance-chef-de-projets-h-f-at-cr%C3%A9dit-agricole-assurances-4444118290",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-07-29",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": true
     },
     {
@@ -40801,9 +40847,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-07-01",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "posted_date": "2026-07-28",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -50558,9 +50604,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-07-03",
-        "first_seen": "14/07/2026",
-        "last_seen": "14/07/2026",
+        "posted_date": "2026-07-25",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -50673,8 +50719,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-15",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -50721,8 +50767,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-15",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -56486,8 +56532,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-22",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -56646,8 +56692,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-15",
-        "first_seen": "29/07/2026",
-        "last_seen": "29/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -72176,8 +72222,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-10",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
@@ -72479,8 +72525,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-07-14",
-        "first_seen": "28/07/2026",
-        "last_seen": "28/07/2026",
+        "first_seen": "31/07/2026",
+        "last_seen": "31/07/2026",
         "is_priority": false
     },
     {
