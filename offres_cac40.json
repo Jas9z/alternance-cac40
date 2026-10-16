@@ -209,8 +209,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -318,8 +318,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -337,8 +337,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -356,8 +356,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -991,8 +991,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-17",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -1009,8 +1009,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -1275,8 +1275,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -1446,8 +1446,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -1592,8 +1592,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -1683,9 +1683,26 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "ordde.io | Ecosystem for Recruiters",
+        "titre": "Chef de projet électronique - EMS, de l'avant-vente au ramp-up",
+        "localisation": "Grenoble",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-%C3%A9lectronique-ems-de-l-avant-vente-au-ramp-up-at-ordde-io-ecosystem-for-recruiters-4475103856",
+        "score": 27,
+        "mots_cles_matches": [
+            "avant-vente",
+            "vente",
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-06",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -2188,8 +2205,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -2224,8 +2241,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -2260,8 +2277,26 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-04",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "CMA CGM",
+        "titre": "IT Project Manager / Forward Deployed Engineer Intern - AI & Automation",
+        "localisation": "Marseille",
+        "lien": "https://fr.linkedin.com/jobs/view/it-project-manager-forward-deployed-engineer-intern-ai-automation-at-cma-cgm-4478481029",
+        "score": 26,
+        "mots_cles_matches": [
+            "project manager",
+            "it project",
+            "it",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -2564,8 +2599,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -2615,8 +2650,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3106,8 +3141,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3125,8 +3160,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3161,8 +3196,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3197,8 +3232,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3300,8 +3335,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3317,8 +3352,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -3334,8 +3369,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4049,8 +4084,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4579,8 +4614,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4613,8 +4648,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4630,8 +4665,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4648,8 +4683,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4665,8 +4700,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4699,8 +4734,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4716,8 +4751,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4733,8 +4768,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4750,8 +4785,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4767,8 +4802,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -4786,6 +4821,23 @@
         "posted_date": "2026-10-05",
         "first_seen": "11/10/2026",
         "last_seen": "11/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Dassault Systèmes",
+        "titre": "Consultant Avant-Ventes CATIA H/F",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-avant-ventes-catia-h-f-at-dassault-syst%C3%A8mes-4474543627",
+        "score": 23,
+        "mots_cles_matches": [
+            "avant-vente",
+            "vente",
+            "consultant"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-01",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5411,8 +5463,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5445,8 +5497,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5479,8 +5531,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5497,8 +5549,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5515,8 +5567,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5604,8 +5656,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -5656,8 +5708,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6643,8 +6695,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6713,8 +6765,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6765,8 +6817,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6817,8 +6869,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6835,8 +6887,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6853,8 +6905,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6870,8 +6922,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6887,8 +6939,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6922,8 +6974,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6957,8 +7009,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -6991,8 +7043,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -7008,8 +7060,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -7025,8 +7077,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -7060,8 +7112,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -7231,8 +7283,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -8581,8 +8633,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -8917,8 +8969,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -8951,8 +9003,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -8968,8 +9020,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -8985,8 +9037,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -9019,8 +9071,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -9036,8 +9088,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -9333,8 +9385,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -9773,8 +9825,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -10939,8 +10991,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -11515,8 +11567,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -11532,8 +11584,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -12143,8 +12195,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13413,8 +13465,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13582,8 +13634,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13599,8 +13651,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-16",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13684,8 +13736,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13718,8 +13770,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13735,8 +13787,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13769,8 +13821,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13786,8 +13838,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13819,8 +13871,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13853,8 +13905,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13887,8 +13939,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13904,8 +13956,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13921,8 +13973,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-03",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -13955,8 +14007,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14023,8 +14075,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14039,8 +14091,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14056,8 +14108,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14073,8 +14125,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14090,8 +14142,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14107,8 +14159,25 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Groupe Solstyce",
+        "titre": "Assistant ingénieur commercial H/F",
+        "localisation": "Strasbourg",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-ing%C3%A9nieur-commercial-h-f-at-groupe-solstyce-4479356032",
+        "score": 18,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "si",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14222,8 +14291,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14453,8 +14522,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-16",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -14993,8 +15062,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15419,8 +15488,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15436,8 +15505,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15468,8 +15537,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15484,8 +15553,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15501,8 +15570,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15836,9 +15905,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-20",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-10-01",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -15981,8 +16050,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -18001,8 +18070,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20119,8 +20188,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20295,8 +20364,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20311,8 +20380,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20326,9 +20395,9 @@
             "management"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20343,8 +20412,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20406,9 +20475,9 @@
             "management"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20471,8 +20540,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20727,8 +20796,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20808,8 +20877,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-03",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -20840,8 +20909,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21080,8 +21149,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21128,8 +21197,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21160,8 +21229,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21176,8 +21245,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21192,8 +21261,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21288,8 +21357,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21304,8 +21373,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21320,8 +21389,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21368,8 +21437,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21416,8 +21485,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21448,8 +21517,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21464,8 +21533,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21480,8 +21549,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21512,8 +21581,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21544,8 +21613,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21559,9 +21628,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21576,8 +21645,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21592,8 +21661,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21609,8 +21678,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21625,8 +21694,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21641,8 +21710,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21657,8 +21726,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21673,8 +21742,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21689,8 +21758,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -21707,6 +21776,87 @@
         "posted_date": "2026-10-13",
         "first_seen": "15/10/2026",
         "last_seen": "15/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Group Infrastructure Platform",
+        "titre": "Product Owner Gestion des Identités et Habilitations IAM H/F",
+        "localisation": "Annecy",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-gestion-des-identit%C3%A9s-et-habilitations-iam-h-f-at-cr%C3%A9dit-agricole-group-infrastructure-platform-4478379740",
+        "score": 16,
+        "mots_cles_matches": [
+            "product owner",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-12",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Group Infrastructure Platform",
+        "titre": "Product Owner Assessment Cyber",
+        "localisation": "Guyancourt",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-assessment-cyber-at-cr%C3%A9dit-agricole-group-infrastructure-platform-4478388401",
+        "score": 16,
+        "mots_cles_matches": [
+            "product owner",
+            "cyber"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-12",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Group Infrastructure Platform",
+        "titre": "Product Owner Gestion des Identités et Habilitations IAM H/F",
+        "localisation": "Guyancourt",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-gestion-des-identit%C3%A9s-et-habilitations-iam-h-f-at-cr%C3%A9dit-agricole-group-infrastructure-platform-4478397069",
+        "score": 16,
+        "mots_cles_matches": [
+            "product owner",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-12",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "VINCI Concessions",
+        "titre": "Stagiaire en charge de projets communication et transformation digitale F/H",
+        "localisation": "Nanterre",
+        "lien": "https://fr.linkedin.com/jobs/view/stagiaire-en-charge-de-projets-communication-et-transformation-digitale-f-h-at-vinci-concessions-4472456054",
+        "score": 16,
+        "mots_cles_matches": [
+            "transformation digitale",
+            "it",
+            "charge"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-27",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "CGI",
+        "titre": "Product Owner technique F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-technique-f-h-at-cgi-4479590754",
+        "score": 16,
+        "mots_cles_matches": [
+            "product owner",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -23978,9 +24128,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-30",
-        "first_seen": "30/08/2026",
-        "last_seen": "30/08/2026",
+        "posted_date": "2026-10-12",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -24846,8 +24996,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -25679,8 +25829,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -28480,8 +28630,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -29378,8 +29528,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -30081,9 +30231,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-04",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-10-12",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -30146,8 +30296,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -31415,8 +31565,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32007,8 +32157,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32055,8 +32205,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32215,8 +32365,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32439,8 +32589,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32695,8 +32845,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32710,9 +32860,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32775,8 +32925,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32791,8 +32941,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -32919,8 +33069,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33224,8 +33374,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33256,8 +33406,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33352,8 +33502,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33560,8 +33710,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33624,8 +33774,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33673,8 +33823,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-19",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33737,8 +33887,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33769,8 +33919,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33817,8 +33967,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-17",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33833,8 +33983,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33849,8 +33999,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33897,8 +34047,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33929,8 +34079,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33945,8 +34095,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -33961,8 +34111,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34057,8 +34207,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34073,8 +34223,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34105,8 +34255,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34137,8 +34287,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34169,8 +34319,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34185,8 +34335,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34201,8 +34351,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34233,8 +34383,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34265,8 +34415,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34281,8 +34431,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34297,8 +34447,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34313,8 +34463,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34329,8 +34479,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34361,8 +34511,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34377,8 +34527,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34393,8 +34543,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "12/10/2026",
-        "last_seen": "12/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34409,8 +34559,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34425,8 +34575,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34441,8 +34591,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34457,8 +34607,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34473,8 +34623,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34489,8 +34639,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34505,8 +34655,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34521,8 +34671,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34537,8 +34687,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34553,8 +34703,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34569,8 +34719,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34585,8 +34735,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34601,8 +34751,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-16",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34617,8 +34767,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34632,9 +34782,9 @@
             "data"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34649,8 +34799,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34665,8 +34815,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34681,8 +34831,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -34713,8 +34863,120 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Airbus Aircraft",
+        "titre": "Aftermarket Supplier Account Manager - Equipment & Systems - M/F",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/aftermarket-supplier-account-manager-equipment-systems-m-f-at-airbus-aircraft-4468929014",
+        "score": 15,
+        "mots_cles_matches": [
+            "account manager",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Ingénieur commercial/Ingénieure commerciale Automobile",
+        "localisation": "Paris et périphérie",
+        "lien": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-commercial-ing%C3%A9nieure-commerciale-automobile-at-capgemini-4472499998",
+        "score": 15,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-28",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Personal Finance & Mobility",
+        "titre": "Chef de projet valeur résiduelle",
+        "localisation": "Paris et périphérie",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-valeur-r%C3%A9siduelle-at-cr%C3%A9dit-agricole-personal-finance-mobility-4471716438",
+        "score": 15,
+        "mots_cles_matches": [
+            "chef de projet",
+            "si"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-29",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Safran",
+        "titre": "Ingénieur commercial aéronautique F/H",
+        "localisation": "Conflans-Sainte-Honorine",
+        "lien": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-commercial-a%C3%A9ronautique-f-h-at-safran-4479305954",
+        "score": 15,
+        "mots_cles_matches": [
+            "ingenieur commercial",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Thales",
+        "titre": "Engineering Delivery Manager Offres - F/H",
+        "localisation": "Rungis",
+        "lien": "https://fr.linkedin.com/jobs/view/engineering-delivery-manager-offres-f-h-at-thales-4480114638",
+        "score": 15,
+        "mots_cles_matches": [
+            "delivery manager",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Amazon",
+        "titre": "Associate Account Manager, Amazon Vendor Services",
+        "localisation": "Clichy",
+        "lien": "https://fr.linkedin.com/jobs/view/associate-account-manager-amazon-vendor-services-at-amazon-4480111543",
+        "score": 15,
+        "mots_cles_matches": [
+            "account manager",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Google",
+        "titre": "Partner Delivery Manager (French, English)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/partner-delivery-manager-french-english-at-google-4479344783",
+        "score": 15,
+        "mots_cles_matches": [
+            "delivery manager",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -35546,8 +35808,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -35866,8 +36128,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -35994,8 +36256,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36186,8 +36448,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36218,8 +36480,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36250,8 +36512,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36266,8 +36528,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36314,8 +36576,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -36330,8 +36592,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -37005,8 +37267,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -37215,8 +37477,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -38760,8 +39022,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -39195,8 +39457,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -39209,9 +39471,9 @@
             "product owner"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-04",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-09-26",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -39976,9 +40238,9 @@
             "pmo"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-27",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-09-24",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40007,8 +40269,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40097,8 +40359,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40112,8 +40374,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40142,8 +40404,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40502,8 +40764,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40517,8 +40779,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40592,8 +40854,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40622,8 +40884,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40652,8 +40914,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40667,8 +40929,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40682,8 +40944,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40697,8 +40959,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40712,8 +40974,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40742,8 +41004,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40756,9 +41018,9 @@
             "product owner"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40772,8 +41034,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40787,8 +41049,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40802,8 +41064,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40817,8 +41079,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40832,8 +41094,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40847,8 +41109,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40862,8 +41124,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40877,8 +41139,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40892,8 +41154,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40907,8 +41169,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40922,8 +41184,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40937,8 +41199,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40952,8 +41214,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40967,8 +41229,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -40984,6 +41246,66 @@
         "posted_date": "2026-10-07",
         "first_seen": "15/10/2026",
         "last_seen": "15/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Product Owner",
+        "localisation": "Mérignac",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-at-capgemini-4480307995",
+        "score": 13,
+        "mots_cles_matches": [
+            "product owner"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Capgemini Engineering",
+        "titre": "PMO Industriel",
+        "localisation": "Équeurdreville-Hainneville",
+        "lien": "https://fr.linkedin.com/jobs/view/pmo-industriel-at-capgemini-engineering-4466220198",
+        "score": 13,
+        "mots_cles_matches": [
+            "pmo"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Crédit Agricole Group Infrastructure Platform",
+        "titre": "Product Owner Secur'IA H/F",
+        "localisation": "Guyancourt",
+        "lien": "https://fr.linkedin.com/jobs/view/product-owner-secur-ia-h-f-at-cr%C3%A9dit-agricole-group-infrastructure-platform-4479856226",
+        "score": 13,
+        "mots_cles_matches": [
+            "product owner"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Danone",
+        "titre": "INTERNSHIP - Junior Veeva Product Owner - Janvier - (H/F)",
+        "localisation": "Gif-sur-Yvette",
+        "lien": "https://fr.linkedin.com/jobs/view/internship-junior-veeva-product-owner-janvier-h-f-at-danone-4471101021",
+        "score": 13,
+        "mots_cles_matches": [
+            "product owner"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-07",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -42900,8 +43222,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -46605,9 +46927,9 @@
             "chef de projet"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-22",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-10-08",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -48108,8 +48430,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -48213,8 +48535,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -48604,8 +48926,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -49969,8 +50291,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -50663,8 +50985,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51354,8 +51676,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51369,8 +51691,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51460,8 +51782,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51536,8 +51858,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51612,8 +51934,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51627,8 +51949,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51642,8 +51964,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51657,8 +51979,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "12/10/2026",
-        "last_seen": "12/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51671,9 +51993,9 @@
             "scrum master"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51687,8 +52009,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-19",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51717,8 +52039,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51763,8 +52085,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51778,8 +52100,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51793,8 +52115,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51809,8 +52131,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51839,8 +52161,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51854,8 +52176,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51869,8 +52191,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51899,8 +52221,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51914,8 +52236,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-17",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51944,8 +52266,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51959,8 +52281,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51974,8 +52296,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -51989,8 +52311,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52019,8 +52341,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52034,8 +52356,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52049,8 +52371,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52079,8 +52401,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52094,8 +52416,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52109,8 +52431,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52124,8 +52446,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52139,8 +52461,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52154,8 +52476,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-19",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52169,8 +52491,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52184,8 +52506,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52199,8 +52521,23 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": true
+    },
+    {
+        "entreprise": "Nestlé Nespresso SA",
+        "titre": "Chef de projet Marketing - Expérience Client F/H",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-marketing-exp%C3%A9rience-client-f-h-at-nestl%C3%A9-nespresso-sa-4479229153",
+        "score": 12,
+        "mots_cles_matches": [
+            "chef de projet"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": true
     },
     {
@@ -52421,8 +52758,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -52616,6 +52953,23 @@
         "posted_date": "2026-10-09",
         "first_seen": "15/10/2026",
         "last_seen": "15/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "INFORMATIS TECHNOLOGY SYSTM",
+        "titre": "Consultant fonctionnel ERP - Gestion commerciale (H/F)",
+        "localisation": "Saint-Brieuc",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-fonctionnel-erp-gestion-commerciale-h-f-4478489255",
+        "score": 18,
+        "mots_cles_matches": [
+            "consultant fonctionnel",
+            "erp",
+            "consultant"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -52917,8 +53271,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -52986,8 +53340,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -53616,8 +53970,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -53633,8 +53987,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -53649,9 +54003,9 @@
             "charge"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -53668,8 +54022,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -53686,8 +54040,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -54123,8 +54477,25 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-03",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Capgemini",
+        "titre": "Consultant/ Consultante fonctionnel.le Oracle ERP Cloud",
+        "localisation": "Aix-en-Provence",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-consultante-fonctionnel-le-oracle-erp-cloud-at-capgemini-4474337880",
+        "score": 14,
+        "mots_cles_matches": [
+            "erp",
+            "cloud",
+            "consultant"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-01",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -55185,8 +55556,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57269,8 +57640,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57301,8 +57672,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57554,8 +57925,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57588,8 +57959,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57605,8 +57976,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -57743,8 +58114,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -58972,8 +59343,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59023,8 +59394,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59040,8 +59411,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59058,8 +59429,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59075,8 +59446,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59093,8 +59464,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59110,8 +59481,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59127,8 +59498,25 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Airbus Defence and Space",
+        "titre": "Defence Digital Sales Manager (M/F)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/defence-digital-sales-manager-m-f-at-airbus-defence-and-space-4470520122",
+        "score": 11,
+        "mots_cles_matches": [
+            "sales",
+            "it",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-26",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59178,8 +59566,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -59600,8 +59988,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -60084,8 +60472,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-03",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -61138,8 +61526,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -61437,8 +61825,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62025,8 +62413,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62476,8 +62864,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62646,8 +63034,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62910,8 +63298,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62927,8 +63315,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62944,8 +63332,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62977,8 +63365,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -62993,9 +63381,9 @@
             "data"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -63011,8 +63399,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -63028,8 +63416,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -63045,8 +63433,41 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Accenture France",
+        "titre": "CONSULTANT – CUSTOMER REINVENTION ADVISORY - CRM, CX & IA (F/H)",
+        "localisation": "Paris",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-customer-reinvention-advisory-crm-cx-ia-f-h-at-accenture-france-4478864684",
+        "score": 10,
+        "mots_cles_matches": [
+            "crm",
+            "consultant"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Deloitte",
+        "titre": "Responsable Stratégie de Propositions & Appels d’Offres F/H - (CDD 1 an)",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/responsable-strat%C3%A9gie-de-propositions-appels-d%E2%80%99offres-f-h-cdd-1-an-at-deloitte-4473804009",
+        "score": 10,
+        "mots_cles_matches": [
+            "strategie",
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-02",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -64408,9 +64829,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -66391,8 +66812,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -66689,8 +67110,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -66722,8 +67143,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -66868,9 +67289,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-22",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-10-04",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -67397,8 +67818,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68488,8 +68909,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68505,8 +68926,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68522,8 +68943,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68539,8 +68960,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-26",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68555,8 +68976,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68589,8 +69010,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68604,9 +69025,9 @@
             "cloud"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-17",
-        "first_seen": "06/10/2026",
-        "last_seen": "06/10/2026",
+        "posted_date": "2026-10-08",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68655,8 +69076,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68672,8 +69093,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68722,8 +69143,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68738,8 +69159,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68755,8 +69176,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68772,8 +69193,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68788,8 +69209,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68804,8 +69225,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -68821,8 +69242,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -70516,8 +70937,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -72833,8 +73254,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-04",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -74517,9 +74938,9 @@
             "ingenieur"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -76353,8 +76774,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -76370,8 +76791,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -76841,8 +77262,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77216,8 +77637,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77232,8 +77653,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77297,8 +77718,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77330,8 +77751,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77363,8 +77784,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77380,8 +77801,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-21",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77461,8 +77882,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77478,8 +77899,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77493,8 +77914,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77509,8 +77930,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77526,8 +77947,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77558,8 +77979,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77624,8 +78045,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77641,8 +78062,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77658,8 +78079,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77690,8 +78111,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77706,8 +78127,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77722,8 +78143,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-30",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77737,8 +78158,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-27",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77753,8 +78174,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77770,8 +78191,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -77819,8 +78240,73 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Airbus Defence and Space",
+        "titre": "Ingénieur de déploiement de segment sol Satcom (H/F)",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-de-d%C3%A9ploiement-de-segment-sol-satcom-h-f-at-airbus-defence-and-space-4469753146",
+        "score": 8,
+        "mots_cles_matches": [
+            "deploiement",
+            "ingenieur"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Airbus Aircraft",
+        "titre": "Technical Architect for Techdata (M/F)",
+        "localisation": "Toulouse",
+        "lien": "https://fr.linkedin.com/jobs/view/technical-architect-for-techdata-m-f-at-airbus-aircraft-4465940375",
+        "score": 8,
+        "mots_cles_matches": [
+            "it",
+            "tech",
+            "data"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-07",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "KPMG France",
+        "titre": "Consultant Stagiaire Stratégie MidMarket F/H",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-stagiaire-strat%C3%A9gie-midmarket-f-h-at-kpmg-france-4479594572",
+        "score": 8,
+        "mots_cles_matches": [
+            "consultant",
+            "strategie"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "KPMG France",
+        "titre": "Consultant Stagiaire Corporate Strategy F/H",
+        "localisation": "Courbevoie",
+        "lien": "https://fr.linkedin.com/jobs/view/consultant-stagiaire-corporate-strategy-f-h-at-kpmg-france-4471485733",
+        "score": 8,
+        "mots_cles_matches": [
+            "consultant",
+            "strategy"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-24",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -78025,8 +78511,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-04",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -78072,9 +78558,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -78329,8 +78815,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -81651,8 +82137,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -82179,8 +82665,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-04",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -82661,8 +83147,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -82917,8 +83403,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-16",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -83429,8 +83915,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -83444,9 +83930,9 @@
             "manager"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -84181,8 +84667,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -84245,9 +84731,9 @@
             "si"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -84522,8 +85008,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -84925,8 +85411,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85471,8 +85957,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85503,8 +85989,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85551,8 +86037,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85583,8 +86069,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85711,8 +86197,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85792,8 +86278,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85824,8 +86310,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85888,8 +86374,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85904,8 +86390,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85937,8 +86423,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -85953,8 +86439,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86001,8 +86487,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86017,8 +86503,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86049,8 +86535,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86065,8 +86551,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86474,8 +86960,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -86905,8 +87391,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -93374,8 +93860,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -97260,8 +97746,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -102455,8 +102941,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-11",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -102470,9 +102956,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -103986,9 +104472,9 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-08-22",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-10-07",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -104449,8 +104935,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -106874,8 +107360,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -108392,8 +108878,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -108408,8 +108894,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-07",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -108806,8 +109292,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109141,9 +109627,9 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-04",
-        "first_seen": "08/09/2026",
-        "last_seen": "08/09/2026",
+        "posted_date": "2026-09-25",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109238,8 +109724,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109286,8 +109772,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109302,8 +109788,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109525,8 +110011,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109667,9 +110153,9 @@
             "it"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109700,8 +110186,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -109860,8 +110346,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -110019,8 +110505,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -110738,8 +111224,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -110930,8 +111416,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -110978,8 +111464,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111074,8 +111560,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111154,8 +111640,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111250,8 +111736,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-18",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111266,8 +111752,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111282,8 +111768,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111298,8 +111784,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111314,8 +111800,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111330,8 +111816,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111346,8 +111832,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111362,8 +111848,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111378,8 +111864,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111442,8 +111928,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111458,8 +111944,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-22",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111473,9 +111959,9 @@
             "cyber"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111489,8 +111975,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111505,8 +111991,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111521,8 +112007,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111536,8 +112022,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111568,8 +112054,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111616,8 +112102,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-28",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111680,8 +112166,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111712,8 +112198,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111776,8 +112262,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111792,8 +112278,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111824,8 +112310,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111840,8 +112326,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111856,8 +112342,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111872,8 +112358,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111904,8 +112390,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111920,8 +112406,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111984,8 +112470,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -111999,8 +112485,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112015,8 +112501,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-24",
-        "first_seen": "02/10/2026",
-        "last_seen": "02/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112031,8 +112517,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112047,8 +112533,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112158,8 +112644,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112174,8 +112660,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112190,8 +112676,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-06",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112206,8 +112692,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-05",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112270,8 +112756,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112302,8 +112788,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112318,8 +112804,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112350,8 +112836,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112382,8 +112868,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-23",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112414,8 +112900,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112430,8 +112916,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112446,8 +112932,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112462,8 +112948,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-12",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112494,8 +112980,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112526,8 +113012,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112542,8 +113028,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112558,8 +113044,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112574,8 +113060,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-02",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112590,8 +113076,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-29",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112606,8 +113092,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112622,8 +113108,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112638,8 +113124,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-10",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112686,8 +113172,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-08",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112701,9 +113187,9 @@
             "tech"
         ],
         "source": "LinkedIn",
-        "posted_date": "2026-09-24",
-        "first_seen": "14/10/2026",
-        "last_seen": "14/10/2026",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112718,8 +113204,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-13",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112734,8 +113220,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-09",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112749,8 +113235,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112765,8 +113251,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-01",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112781,8 +113267,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112797,8 +113283,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-14",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112813,8 +113299,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112829,8 +113315,8 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-09-25",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
@@ -112845,8 +113331,232 @@
         ],
         "source": "LinkedIn",
         "posted_date": "2026-10-15",
-        "first_seen": "15/10/2026",
-        "last_seen": "15/10/2026",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Airbus Helicopters",
+        "titre": "Corporate Cybersecurity & Compliance Specialist",
+        "localisation": "Marignane",
+        "lien": "https://fr.linkedin.com/jobs/view/corporate-cybersecurity-compliance-specialist-at-airbus-helicopters-4473105649",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "cyber"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-02",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Alstom",
+        "titre": "CDD - Responsable Technique de développement des Systèmes et Produits d'information voyageurs (H/F)",
+        "localisation": "Villeurbanne",
+        "lien": "https://fr.linkedin.com/jobs/view/cdd-responsable-technique-de-d%C3%A9veloppement-des-syst%C3%A8mes-et-produits-d-information-voyageurs-h-f-at-alstom-4475216909",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-09",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "ArcelorMittal Aços Longos",
+        "titre": "Shared Technical Services manager",
+        "localisation": "Maizières-lès-Metz",
+        "lien": "https://fr.linkedin.com/jobs/view/shared-technical-services-manager-at-arcelormittal-long-carbon-latam-4469513119",
+        "score": 6,
+        "mots_cles_matches": [
+            "tech",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-19",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Crédit Agricole Technologies et Services",
+        "titre": "Change manager SI (H/F)",
+        "localisation": "Annecy",
+        "lien": "https://fr.linkedin.com/jobs/view/change-manager-si-h-f-at-cr%C3%A9dit-agricole-technologies-et-services-4466212993",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-08",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "LCL",
+        "titre": "Architecte technique H/F",
+        "localisation": "Villejuif",
+        "lien": "https://fr.linkedin.com/jobs/view/architecte-technique-h-f-at-lcl-4480128136",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Société Générale",
+        "titre": "Conseiller fusion et acquisition",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/conseiller-fusion-et-acquisition-at-societe-generale-4477316218",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Societe Generale Corporate and Investment Banking - SGCIB",
+        "titre": "Assistant Portfolio Manager",
+        "localisation": "La Défense",
+        "lien": "https://fr.linkedin.com/jobs/view/assistant-portfolio-manager-at-societe-generale-corporate-and-investment-banking-sgcib-4477301778",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Université Marie et Louis Pasteur",
+        "titre": "Adjoint au Responsable de la Sécurité des Systèmes d'Information (F/H) - DSIN",
+        "localisation": "Doubs",
+        "lien": "https://fr.linkedin.com/jobs/view/adjoint-au-responsable-de-la-s%C3%A9curit%C3%A9-des-syst%C3%A8mes-d-information-f-h-dsin-at-universit%C3%A9-marie-et-louis-pasteur-4470737907",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-09-26",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Thales",
+        "titre": "Program Manager IT F/H",
+        "localisation": "Élancourt",
+        "lien": "https://fr.linkedin.com/jobs/view/program-manager-it-f-h-at-thales-4477350735",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Thales",
+        "titre": "Service Manager – Support en Orbite - H/F",
+        "localisation": "Cannes",
+        "lien": "https://fr.linkedin.com/jobs/view/service-manager-%E2%80%93-support-en-orbite-h-f-at-thales-4479585016",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "manager"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Thales",
+        "titre": "Project Design Authority - Système Appui Feu F/H",
+        "localisation": "Gennevilliers",
+        "lien": "https://fr.linkedin.com/jobs/view/project-design-authority-syst%C3%A8me-appui-feu-f-h-at-thales-4479582265",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-14",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "Veolia | Energie Performance",
+        "titre": "Responsable d’Activités CVC & Multitechnique H/F",
+        "localisation": "Vaulx-en-Velin",
+        "lien": "https://fr.linkedin.com/jobs/view/responsable-d%E2%80%99activit%C3%A9s-cvc-multitechnique-h-f-at-veolia-energie-performance-4477374573",
+        "score": 6,
+        "mots_cles_matches": [
+            "it",
+            "tech"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "EDF",
+        "titre": "Responsable d'interventions Site Nucléaire F/H",
+        "localisation": "Lyon",
+        "lien": "https://fr.linkedin.com/jobs/view/responsable-d-interventions-site-nucl%C3%A9aire-f-h-at-edf-4480316367",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-16",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
+        "is_priority": false
+    },
+    {
+        "entreprise": "SNCF Voyageurs",
+        "titre": "Responsable Chantier Opérationnel (H/F) site de Paris Conflans, Paris 12",
+        "localisation": "Paris et périphérie",
+        "lien": "https://fr.linkedin.com/jobs/view/responsable-chantier-op%C3%A9rationnel-h-f-site-de-paris-conflans-paris-12-at-sncf-voyageurs-4479781586",
+        "score": 6,
+        "mots_cles_matches": [
+            "si",
+            "it"
+        ],
+        "source": "LinkedIn",
+        "posted_date": "2026-10-15",
+        "first_seen": "16/10/2026",
+        "last_seen": "16/10/2026",
         "is_priority": false
     },
     {
